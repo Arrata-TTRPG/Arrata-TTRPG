@@ -1,5 +1,5 @@
+<img src="https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png" alt="rat" width="100"/>
 
-![Arrata Logo](https://drive.google.com/uc?export=view&id=1_ye9lnOQjBXR8TNb4jJ7140XjHNcPU-7)
 # II - Fundamentals
 ## Actions, Consequence, and Checks
 When you're roleplaying a character, you will have to make decisions. Those decisions are called *Actions*, and what happens as a result of those Actions is called the *Consequence*. Not all Actions are equal, some require effort and skill, and for those we use **Checks**. 
