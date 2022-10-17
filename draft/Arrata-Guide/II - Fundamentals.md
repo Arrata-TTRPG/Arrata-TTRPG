@@ -32,6 +32,7 @@ Quality represents how much work a person can do with a stat or skill, along wit
 With dice pools, a critical mechanic is called **Quality**, this value determines the odds of each die being rolled. It defines how high each die must be rolled to as a minimum for said die to be counted as a **Success**. Any dice not considered a success are called **Failures**.
 
 There are 3 levels of Quality. From least to most:
+
 **B**asic: Roll 4 or Higher.
 Basic represents a basic or standard level of ability and understanding.
 
