@@ -122,6 +122,9 @@ Those are the fundamentals that make up the basic mechanics of Arrata! With thes
 - What an action and check are.
   - Actions are decisions you make for your character.
   - Checks happen when an Action is contested in a serious manner and require a roll to defeat.
+- Dice Notation.
+  - Dice are represented as /[**# of dice being rolled**]d/[**sides of the dice being rolled**]
+  - When we add or subtract dice, we use +/-/[**# of dice**]
 - Dice pools/Quantity.
   - Quantity is the attribute of a stat that determines how many d6s to roll.
 - Quality.
