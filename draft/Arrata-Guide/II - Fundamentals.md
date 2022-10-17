@@ -13,10 +13,10 @@ When using and discussing quantities of dice, often the term Dice Notation may b
 - How many dice are being rolled.
 - How many sides the dice being rolled have.
 
-This is represented as [# of dice being rolled]**d**[sides of the dice being rolled].
+This is represented as \[**# of dice being rolled**]**d**\[**sides of the dice being rolled**].
 For instance, if you wanted to roll 3 dice with 20 sides each, you'd say you were rolling 3d20 and pronounce it "*three-dee-twenty*".
 
-In addition, if you see +1D or -1D, this refers to adding or subtracting 1 from the [# of dice being rolled]. 
+In addition, if you see +1D or -1D, this refers to adding or subtracting 1 from the \[**# of dice being rolled**]. 
 For instance, if you were rolling 3d20 -1D, you're really rolling 2d20. If you rolled 3d20 +1D, you're rolling 4d20. 
 
 ## Dice Pools - Quantity
@@ -25,7 +25,7 @@ This means that a number representing a stat or skill is the number representing
 
 This number shall be refered to as **Quantity** - the number of dice to be rolled. 
 
-In dice notation, this makes up the [#of dice to be rolled] section, which we can shorten to [*Quantity*]d6, as again, Arrata uses the d6 for its dice rolls.
+In dice notation, this makes up the \[**#of dice to be rolled**] section, which we can shorten to \[*Quantity*]d6, as again, Arrata uses the d6 for its dice rolls.
 
 Quality represents how much work a person can do with a stat or skill, along with how knowledgable they are in the subject.
 
@@ -123,8 +123,8 @@ Those are the fundamentals that make up the basic mechanics of Arrata! With thes
   - Actions are decisions you make for your character.
   - Checks happen when an Action is contested in a serious manner and require a roll to defeat.
 - Dice Notation.
-  - Dice are represented as /[**# of dice being rolled**]d/[**sides of the dice being rolled**]
-  - When we add or subtract dice, we use +/-/[**# of dice**]
+  - Dice are represented as \[**# of dice being rolled**]d\[**sides of the dice being rolled**]
+  - When we add or subtract dice, we use +/-\[**# of dice**]
 - Dice pools/Quantity.
   - Quantity is the attribute of a stat that determines how many d6s to roll.
 - Quality.
@@ -134,7 +134,7 @@ Those are the fundamentals that make up the basic mechanics of Arrata! With thes
 - Obstacle (Ob).
   - Obstacle is how many successes are needed as a minimum for the check to be passed successfully. Additional successes can offer additional potential, though.
 - What a stat is.
-  - Stats are a value that represent something. In Arrata, a stat is made up of /[**Q**uality]/[**Quantity**].
+  - Stats are a value that represent something. In Arrata, a stat is made up of [**Q**uality][**Quantity**].
 - Open-Ended Rolls and Close-Ended Rolls.
   - Open-Ended Rolls allow give you +1D for every 6 rolled.
   - Close-Ended Rolls do not give you anything special, what you roll initially is what you get.
