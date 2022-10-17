@@ -45,8 +45,6 @@ Superb stats are usually held by geniuses. They're mythical in capability and ra
 Note that the first letter of each level of Quality is bold here. That's because in Arrata we refer to a level of Quality by the capital first letter, so a Superb skill is an S skill, and an Adept skill is an A skill.
 
 ## Defining Stats
-When we refer to the word "stat", there are two meanings.
-
 Generally speaking, a stat is a statistic, just a value that represents something. Stats in Arrata come in many different varieties, but they're all made up of two components that we just discussed: **Quantity** and **Quality**. Each stat has both of these attributes.
 
 In Arrata, the notation for a stat is \[First letter of Quality]\[Quantity]. 
@@ -118,6 +116,30 @@ With further levels of Disadvantage, I recieve -1D per level.
 For instance, if I had 4 levels of Disadvantage while rolling a B6, I'd really be rolling a B3, and any 1s would reduce the number of successes by 1. This one's a little more confusing, so here's an example:
 
 > George just shot at me! I fell into a pile of leaves and now have 2 levels of Disadvantage against his next shot! Well, I've got an A6 in Speed, so let's see what I rolled. With 2 levels of Disadvantage, I'm really rolling an A5, here's the results: ***1***, *2*, **4**, **5**, **6**. I count 3 successes here, but since I have Disadvantage, any 1s reduce that my successes by 1 each, and I rolled a 1! Which means my 3 successes becomes 2... Uh oh.
+
+#### Congrats!
+Those are the fundamentals that make up the basic mechanics of Arrata! With these, you should understand:
+- What an action and check are.
+  - Actions are decisions you make for your character.
+  - Checks happen when an Action is contested in a serious manner and require a roll to defeat.
+- Dice pools/Quantity.
+  - Quantity is the attribute of a stat that determines how many d6s to roll.
+- Quality.
+  - Quality comes in 3 levels: **B**asic, **A**dept, and **S**uperb. It's the attribute of a stat that determines the minimum a die must be rolled to for it to be counted as a success.
+- Successes and Failures.
+  - Successes are dice that have been rolled at or past the Quality, Failures are dice that are rolled under the Quality.
+- Obstacle (Ob).
+  - Obstacle is how many successes are needed as a minimum for the check to be passed successfully. Additional successes can offer additional potential, though.
+- What a stat is.
+  - Stats are a value that represent something. In Arrata, a stat is made up of /[**Q**uality]/[**Quantity**].
+- Open-Ended Rolls and Close-Ended Rolls.
+  - Open-Ended Rolls allow give you +1D for every 6 rolled.
+  - Close-Ended Rolls do not give you anything special, what you roll initially is what you get.
+- Advantage and Disadvantage.
+  - Advantage makes rolls Open-Ended and grants +1D for every level past the first.
+  - Disadvantage makes 1s subtract from the total number of successes, and reduces the dice you roll by -1D per level past the first.
+
+The next few sections will go over character creation and the components that they're made of. 
 
 [<- Go back Section I - Introductions](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/I%20-%20Introduction.md)
 <br>[Next Section III - Character Setup ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/III%20-%20Character%20Setup.md)
