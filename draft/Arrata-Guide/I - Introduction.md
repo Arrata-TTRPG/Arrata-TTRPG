@@ -1,5 +1,5 @@
 ![Arrata Logo](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png) 
-# I - Introuction
+# I - Introduction
 ### What is Arrata?
 The word Arrata is a misspelling of errata, the plural of erratum; a list of mistakes in a written document.
 
