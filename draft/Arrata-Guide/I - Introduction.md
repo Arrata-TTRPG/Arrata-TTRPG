@@ -1,4 +1,4 @@
-![Arrata Logo](https://drive.google.com/uc?export=view&id=1_ye9lnOQjBXR8TNb4jJ7140XjHNcPU-7) 
+![Arrata Logo](rat.png) 
 # I - Introuction
 ### What is Arrata?
 The word Arrata is a misspelling of errata, the plural of erratum; a list of mistakes in a written document.
