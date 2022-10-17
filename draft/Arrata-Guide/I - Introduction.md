@@ -62,3 +62,4 @@ Make sure to get up and stretch when playing for extended periods of time - dyin
 Whenever any division or decimal value is made in this document (½, ⅓, etc.) always round up if the decimal is 0.5 or higher and always round down if the decimal is less than 0.5. 
 <br>\>= ½ -> 1
 <br>\< ½ -> 0
+<br><br> [Next Section (Fundamentals) ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/II%20-%20Fundamentals.md)
