@@ -55,4 +55,4 @@ A stat that's Basic with a Quantity of 4 is a **B4**.
 A stat that's Adept with a Quantity of 9889 is a **A9889**.
 
 [<- Go back Section I - Introductions](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/I%20-%20Introduction.md)
-[Next Section III - Character Setup ->]()
+<br> [Next Section III - Character Setup ->]()
