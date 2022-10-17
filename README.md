@@ -1,4 +1,4 @@
-![Arrata Logo](https://drive.google.com/uc?export=view&id=1_ye9lnOQjBXR8TNb4jJ7140XjHNcPU-7)
+![Arrata Logo](rat.png)
 # ARRATA - A Roleplaying System
 ### Welcome!
 To Arrata - A TTRPG project I've been working on since its ancestor BD&D in 2017.
