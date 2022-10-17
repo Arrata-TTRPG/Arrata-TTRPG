@@ -86,5 +86,38 @@ Let's go back to those examples and see who succeeded.
 
 > Moron 2 got hit. My GM told me the Ob for the Perception check was 4, and since I got 5 successes I succeed. The idiot currently bleeding out had a sizable coinpurse and some expensive jewelry. Perhaps that's why Moron 1 was shooting at him. Guess I'll have to see what I can pick off when Moron 1 leaves.
 
+### Open-Ended vs Close-Ended Rolls
+In Arrata, you will most likely come across a modifier specifying that a roll be **Open-Ended**. This refers to how the dice function after a roll is already made. 
+
+Close-Ended rolls are rolls we've already discussed - when a die is rolled, you simply look at the value it comes up as and determine if it's a success or failure. Nothing fancy here.
+
+Open-Ended rolls function the same, *except when you roll a 6*. If a roll is Open-Ended, any 6s are counted as successes and give you +1D to roll again. In effect, you reroll any 6s and keep the success. This can happen for the same die theoretically infinitely, although the odds also seem to tend to infinitely more impossible odds.
+
+### Advantage
+There will eventually be a situation in which performing an action might seem easier than it usually would be - you have some sort of significant **Advantage**. Things like exploiting your environment, having a helpful Quirk, having specific tools, etc. usually call for your roll *having Advantage*.
+
+Advantage comes in levels, and provides you with boons for your roll. These levels can be determined mechanically, such as getting levels of Advantage equal to a roll, or having multiple environmental factors assist you in attacking a foe. With the latter, consult your GM and determine just how many levels of Advantage are called for.
+
+The first level of Advantage makes your roll Open-Ended, which as said before, means you get to count any 6s as successes and roll them again, effectively gaining +1D to the roll.
+
+With further levels of Advantage, you gain +1D to your roll.
+
+For intsance, with 3 levels of Advantage, my roll is both Open-Ended and gains +2D.
+
+It's also important to note that Open-Ended rolls include all dice being rolled, so dice being added by Advantage are also Open-Ended given that the roll is Open-Ended. Let's look at an example:
+
+> Todd jumped into a pile of leaves? What? Well, the GM said since he did that, I get 3 levels of Advantage so we'll take it. I've got a B5 in Archery, but since I've got 3 levels of Advantage that becomes a B7! Let's roll and see what we get: *2*, ***6***, **4**, **5**, *1*,**3**, **4**. Wow! I got 5 successes, but even better, I rolled a 6! That means I get to roll that die again! I roll and it became a **4**, that's another success! We add that on and now I've got 6 successes!
+
+### Disadvantage
+In the same manner we got Advantage, we can do the opposite to impose **Disadvantage**. Disadvantage comes in levels much as Advantage does, but applies the opposite effect. 
+
+With the first level of Disadvantage, any 1s rolled subtract 1 success from my roll.
+
+With further levels of Disadvantage, I recieve -1D per level.
+
+For instance, if I had 4 levels of Disadvantage while rolling a B6, I'd really be rolling a B3, and any 1s would reduce the number of successes by 1. This one's a little more confusing, so here's an example:
+
+> George just shot at me! I fell into a pile of leaves and now have 2 levels of Disadvantage against his next shot! Well, I've got an A6 in Speed, so let's see what I rolled. With 2 levels of Disadvantage, I'm really rolling an A5, here's the results: ***1***, *2*, **4**, **5**, **6**. I count 3 successes here, but since I have Disadvantage, any 1s reduce that my successes by 1 each, and I rolled a 1! Which means my 3 successes becomes 2... Uh oh.
+
 [<- Go back Section I - Introductions](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/I%20-%20Introduction.md)
-<br>[Next Section III - Character Setup ->]()
+<br>[Next Section III - Character Setup ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/III%20-%20Character%20Setup.md)
