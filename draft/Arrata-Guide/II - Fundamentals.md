@@ -149,7 +149,7 @@ Those are the fundamentals that make up the basic mechanics of Arrata! With thes
 - Obstacle (Ob).
   - Obstacle is how many successes are needed as a minimum for the check to be passed successfully. Additional successes can offer additional potential, though.
 - What a stat is.
-  - Stats are a value that represent something. In Arrata, a stat is made up of [**Q**uality][**Quantity**].
+  - Stats are a value that represent something. In Arrata, a stat is made up of \[**Q**uality]\[**Quantity**].
 - Open-Ended Rolls and Close-Ended Rolls.
   - Open-Ended Rolls allow give you +1D for every 6 rolled.
   - Close-Ended Rolls do not give you anything special, what you roll initially is what you get.
