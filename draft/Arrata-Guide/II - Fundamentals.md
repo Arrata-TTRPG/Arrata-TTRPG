@@ -1,35 +1,41 @@
 <img src="https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png" alt="rat" width="100"/>
 
 # II - Fundamentals
+
 ## Actions, Consequence, and Checks
-When you're roleplaying a character, you will have to make decisions. Those decisions are called *Actions*, and what happens as a result of those Actions is called the *Consequence*. Not all Actions are equal, some require effort and skill, and for those we use **Checks**. 
+
+When you're roleplaying a character, you will have to make decisions. Those decisions are called *Actions*, and what happens as a result of those Actions is called the *Consequence*. Not all Actions are equal, some require effort and skill, and for those we use **Checks**.
 
 Checks are a way of providing a level of randomness and realistic challenge to the game.
 
 When a Check is encountered occurs, the character whose actions were contested will roll a relevant *Stat* or *Skill* to determine the outcome.
 
 #### Dice Notation
+
 When using and discussing quantities of dice, often the term Dice Notation may be used. This refers to a system that helps define two things about the dice being rolled:<br>
+
 - How many dice are being rolled.
 - How many sides the dice being rolled have.
 
 This is represented as \[**# of dice being rolled**]**d**\[**sides of the dice being rolled**].
 For instance, if you wanted to roll 3 dice with 20 sides each, you'd say you were rolling 3d20 and pronounce it "*three-dee-twenty*".
 
-In addition, if you see +1D or -1D, this refers to adding or subtracting 1 from the \[**# of dice being rolled**]. 
-For instance, if you were rolling 3d20 -1D, you're really rolling 2d20. If you rolled 3d20 +1D, you're rolling 4d20. 
+In addition, if you see +1D or -1D, this refers to adding or subtracting 1 from the \[**# of dice being rolled**].
+For instance, if you were rolling 3d20 -1D, you're really rolling 2d20. If you rolled 3d20 +1D, you're rolling 4d20.
 
 ## Dice Pools - Quantity
+
 Arrata is an RPG system that relies on **dice pools**, using the **d6** or *6-sided-die*.
 This means that a number representing a stat or skill is the number representing how many 6-sided-dice are to be rolled when using that stat or skill.
 
-This number shall be refered to as **Quantity** - the number of dice to be rolled. 
+This number shall be refered to as **Quantity** - the number of dice to be rolled.
 
 In dice notation, this makes up the \[**#of dice to be rolled**] section, which we can shorten to \[*Quantity*]d6, as again, Arrata uses the d6 for its dice rolls.
 
 Quality represents how much work a person can do with a stat or skill, along with how knowledgable they are in the subject.
 
 ## Success and Failure - Quality
+
 With dice pools, a critical mechanic is called **Quality**, this value determines the odds of each die being rolled. It defines how high each die must be rolled to as a minimum for said die to be counted as a **Success**. Any dice not considered a success are called **Failures**.
 
 There are 3 levels of Quality. From least to most:
@@ -45,20 +51,23 @@ Superb stats are usually held by geniuses. They're mythical in capability and ra
 Note that the first letter of each level of Quality is bold here. That's because in Arrata we refer to a level of Quality by the capital first letter, so a Superb skill is an S skill, and an Adept skill is an A skill.
 
 ## Defining Stats
+
 Generally speaking, a stat is a statistic, just a value that represents something. Stats in Arrata come in many different varieties, but they're all made up of two components that we just discussed: **Quantity** and **Quality**. Each stat has both of these attributes.
 
-In Arrata, the notation for a stat is \[First letter of Quality]\[Quantity]. 
+In Arrata, the notation for a stat is \[First letter of Quality]\[Quantity].
 
 For instance, if I had a Stat with a Quality of Superb and Quantity of 10, I would write and say that the stat was an **S10**.
 A stat that's Basic with a Quantity of 4 is a **B4**.
 A stat that's Adept with a Quantity of 9889 is a **A9889**.
 
 ### Rolling Stats - Successes
-Now that we can define any stat within a new notation, let's look at rolling it. We can refered to before on how Quantity was defined, that being a number which represented the number of d6s to be rolled. 
+
+Now that we can define any stat within a new notation, let's look at rolling it. We can refered to before on how Quantity was defined, that being a number which represented the number of d6s to be rolled.
 
 Quality is how high we have to roll on each die for that die to be counted as a **success**.
 
 Bringing those together, when a roll is made, two things happen;
+
 1. The number of dice is counted and rolled.
 2. Each die is inspected and successes are counted.
 
@@ -70,9 +79,10 @@ Let's look at a few examples:
 > These two morons are fighting eachother, and I want to see what they have on them to know if I should hang around and pick off whatever's left on the corpse. I roll my S7 in Perception to see what they have and get the following results: **2**, *1*, **3**, **4**, **2**, **5**, *1* Since I have a **S**uperb in my stat, all 2s and above are counted as successes. I got 5 successes!
 
 ### Rolling Stats - Obstacle
-Great, we can  define how well a roll goes. Now we need to define what we should compare that to. Enter **Obstacle** (Ob). 
 
-Ob determines *how many successes are required to succeed*. You need only reach the Ob on a Check to succeed, but getting more can often be beneficial. 
+Great, we can  define how well a roll goes. Now we need to define what we should compare that to. Enter **Obstacle** (Ob).
+
+Ob determines *how many successes are required to succeed*. You need only reach the Ob on a Check to succeed, but getting more can often be beneficial.
 
 In addition, we can set an Ob using another character's roll - their successes determine our Obstacle.
 
@@ -85,13 +95,15 @@ Let's go back to those examples and see who succeeded.
 > Moron 2 got hit. My GM told me the Ob for the Perception check was 4, and since I got 5 successes I succeed. The idiot currently bleeding out had a sizable coinpurse and some expensive jewelry. Perhaps that's why Moron 1 was shooting at him. Guess I'll have to see what I can pick off when Moron 1 leaves.
 
 ### Open-Ended vs Close-Ended Rolls
-In Arrata, you will most likely come across a modifier specifying that a roll be **Open-Ended**. This refers to how the dice function after a roll is already made. 
+
+In Arrata, you will most likely come across a modifier specifying that a roll be **Open-Ended**. This refers to how the dice function after a roll is already made.
 
 Close-Ended rolls are rolls we've already discussed - when a die is rolled, you simply look at the value it comes up as and determine if it's a success or failure. Nothing fancy here.
 
 Open-Ended rolls function the same, *except when you roll a 6*. If a roll is Open-Ended, any 6s are counted as successes and give you +1D to roll again. In effect, you reroll any 6s and keep the success. This can happen for the same die theoretically infinitely, although the odds also seem to tend to infinitely more impossible odds.
 
 ### Advantage
+
 There will eventually be a situation in which performing an action might seem easier than it usually would be - you have some sort of significant **Advantage**. Things like exploiting your environment, having a helpful Quirk, having specific tools, etc. usually call for your roll *having Advantage*.
 
 Advantage comes in levels, and provides you with boons for your roll. These levels can be determined mechanically, such as getting levels of Advantage equal to a roll, or having multiple environmental factors assist you in attacking a foe. With the latter, consult your GM and determine just how many levels of Advantage are called for.
@@ -107,7 +119,8 @@ It's also important to note that Open-Ended rolls include all dice being rolled,
 > Todd jumped into a pile of leaves? What? Well, the GM said since he did that, I get 3 levels of Advantage so we'll take it. I've got a B5 in Archery, but since I've got 3 levels of Advantage that becomes a B7! Let's roll and see what we get: *2*, ***6***, **4**, **5**, *1*,**3**, **4**. Wow! I got 5 successes, but even better, I rolled a 6! That means I get to roll that die again! I roll and it became a **4**, that's another success! We add that on and now I've got 6 successes!
 
 ### Disadvantage
-In the same manner we got Advantage, we can do the opposite to impose **Disadvantage**. Disadvantage comes in levels much as Advantage does, but applies the opposite effect. 
+
+In the same manner we got Advantage, we can do the opposite to impose **Disadvantage**. Disadvantage comes in levels much as Advantage does, but applies the opposite effect.
 
 With the first level of Disadvantage, any 1s rolled subtract 1 success from my roll.
 
@@ -117,8 +130,10 @@ For instance, if I had 4 levels of Disadvantage while rolling a B6, I'd really b
 
 > George just shot at me! I fell into a pile of leaves and now have 2 levels of Disadvantage against his next shot! Well, I've got an A6 in Speed, so let's see what I rolled. With 2 levels of Disadvantage, I'm really rolling an A5, here's the results: ***1***, *2*, **4**, **5**, **6**. I count 3 successes here, but since I have Disadvantage, any 1s reduce that my successes by 1 each, and I rolled a 1! Which means my 3 successes becomes 2... Uh oh.
 
-#### Congrats!
+#### Congrats
+
 Those are the fundamentals that make up the basic mechanics of Arrata! With these, you should understand:
+
 - What an action and check are.
   - Actions are decisions you make for your character.
   - Checks happen when an Action is contested in a serious manner and require a roll to defeat.
@@ -142,7 +157,7 @@ Those are the fundamentals that make up the basic mechanics of Arrata! With thes
   - Advantage makes rolls Open-Ended and grants +1D for every level past the first.
   - Disadvantage makes 1s subtract from the total number of successes, and reduces the dice you roll by -1D per level past the first.
 
-The next few sections will go over character creation and the components that they're made of. 
+The next few sections will go over character creation and the components that they're made of.
 
 [<- Go back Section I - Introductions](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/I%20-%20Introduction.md)
 <br>[Next Section III - Character Setup ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/III%20-%20Character%20Setup.md)
