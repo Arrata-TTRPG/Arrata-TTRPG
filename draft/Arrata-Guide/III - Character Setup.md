@@ -28,17 +28,21 @@ Having a history is kind of like a cover letter - you're less likely to have you
 ### Stock
 This is an element that depends on the setting the GM creates. It's the GM's job to provide a list of playable Stocks. 
 
-Stocks are the race, species, or category of *thing* your character is. Think Elves, Dwarves, Goblins, Humans. Stocks have a relatively muted role in Arrata, offering typically only a Quirk for the character, but they do not directly influence Stats or Skills.
+Stocks are the race, species, or category of *thing* your character is. Think Elves, Dwarves, Goblins, Humans. Stocks have a relatively muted role in Arrata, they don't offer any Stat or Skill boons innately. Instead, Stocks will usually provide a Quirk (discussed next) unique to that Stock. 
 
+## Quirks
+Quirks are an integral part of any character. They're usually a one to two word descriptor of a particular characteristic. Each Quirk is broken down into 3 pieces of information:
+- Defines: Different interpretations and possible meanings of the Quirk, specific to roleplaying scenarios.
+- Boons: Ways in which the Quirk can be used to your Advantage.
+- Flaws: Ways the Quirk can work towards your Disadvantage.
 
-### Quirks and Argos
+### Ethos
 
-### Stats
+### Argos
+
+## Stats
 
 ### Skills
-
-### Inventory
-
 
 [<- Go back Section II - Fundamentals](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/II%20-%20Fundamentals.md)
 <br> [Next Section IV - Quirks ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/IV%20-%20Quirks.md)
