@@ -44,41 +44,65 @@ Quirks are an integral part of any character. They're usually a one to two word 
 - Boons: Ways in which the Quirk can be used to your Advantage.
 - Flaws: Ways the Quirk can work towards your Disadvantage.
 
-Each Quirk is sorted into one of three rhetorical categories: Ethos, Pathos, or Logos.
-
-### Ethos
-
-Ethos Quirks express a character’s Ethical, Moral, Societal, and Religious beliefs and context. Often it contains information about their past and how they're currently seen by the society they live in today.
-
-### Pathos
-
-Pathos deals with how a character is emotionally - how they act around other people and with what level of apathy or empathy they approach different tasks. It tends to define things that may seem simple but can be used in much more nuanced ways when combined with other Quirks.
-
-### Logos
-
-Logos is how a character makes decisions; how they choose to solve problems and treat other people.
-
-Many Logos and Pathos Quirks are very similar, but their differentiation lies in what level they derive their reasoning for an action. Logos Quirks are innate - Pathos Quirks are artifacts of personality and culture.
-
-### Argos
-
-In Greek mythology, the Argonauts were a band of heroes that suffered through and completed a four-month journey to fetch the Golden Fleece. In much the same light, Argos shall be that grand quest; the goal for which our characters fight and suffer dearly.
-
-Argos is a statement. A declaration about the true intent and desire the character has. It acts as a sort of 4th component of Quirks, one which you as a player will have to define for your character on your own.
-
-Only one ARGOS may be had at any time, and:
-
-- It must relate to at least one Quirk.
-- It must be something the character would say or think.
-- It must not be something in reach.
-- It must be of great worth to the character.
-- It must be a call to action.
-
-Argos is your character's mission. In many TTRPGs, the objective may seem detatched from what the characters believe and want, but in Arrata the objective is defined around a character. As a player, your Argos is your goal - complete it at all costs.
+Quirks are expanded on in the next section, IV - Quirks.
 
 ## Stats
 
+**Stats** here refers to the primary, non-Skill statistics of the character. These are the attributes and values that define your character roughtly, and allow you to derive Major Skills.
+
+Stats are usually employed to roll against more rudimentary checks, such as dodging an attack, resisting poisons and toxins, pushing a large object, etc.
+
+Stats have 3 components:
+
+- **Name**: The name of the Stat.
+- **Stat**: The Quality and Quantity of the Stat.
+- **Checks**: The number of checks made with the Stat, used for levelling.
+
+A character has 6 primary Stats, grouped into 3 mental and 3 physical Stats:
+
+Mental:
+
+- **Will**
+  - General knowledge, mental health, and willpower.
+- **Perception**
+  - Ability to perceive and detect things.
+- **Conscious**
+  - Ability to process and understand information.
+
+Physical:
+
+- **Power**
+  - Physical strength and capability.
+- **Speed**
+  - Dexterity and swiftness.
+- **Forte**
+  - Physical health and conditioning.
+
+There are several auxilary Stats are well:
+
+- **Armor**
+  - Used in Defense rolls, this is much armor a character has.
+- **Injuries**
+  - How many physical/mental wounds the character has.
+  - Broken down into 3 categories:
+    - Stingers - Small cuts, bruises, usually annoying but not fatal.
+    - Wounds - Broken bones, deep cuts, major bleeding. These can evolve and eventually lead to death if untreated.
+    - Fatal Wounds - A catastrophic Injury, usually able to knock someone out. Death will occur without immediate medical intervention.
+- **Fatigue**
+  - A measure of magical/physical/mental tiredness. These have a negative effect on Forte and Will rolls.
+
+All of these stats are expanded on later on in V - Stats and Skills.
+
 ### Skills
+
+**Skills** make up the majority of the way characters interact with the world. There are an infinite number of Skills in Arrata, as none are inherently defined, but an Appendix is included at the end that details a number of potentially useful Skills. These are also included on the [Official Arrata Character Sheet]().
+
+Skills have 4 components, including the ones from Stats as discussed before:
+
+- **Root**: What Stats the Skill is derived from.
+- **Name**: The name of the Skill.
+- **Stat**: The Quality and Quantity of the Skill. Written as \[**First letter of the Quality**]\[**Quantity**].
+- **Checks**: The number of checks made with the Skill, used for levelling.
 
 [<- Go back Section II - Fundamentals](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/II%20-%20Fundamentals.md)
 <br> [Next Section IV - Quirks ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/IV%20-%20Quirks.md)
