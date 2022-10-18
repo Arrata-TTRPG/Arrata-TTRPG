@@ -1,4 +1,6 @@
-![Arrata Logo](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png)
+![Arrata Logo](rat.png)
+
+<a name="i"></a>
 
 # I - Introduction
 
@@ -71,6 +73,9 @@ Make sure to get up and stretch when playing for extended periods of time - dyin
 ### A Quick Note - Division
 
 Whenever any division or decimal value is made in this document (½, ⅓, etc.) always round up if the decimal is 0.5 or higher and always round down if the decimal is less than 0.5.
-<br>\>= ½ -> 1
-<br>\< ½ -> 0
-<br><br> [Next Section II - Fundamentals ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/II%20-%20Fundamentals.md)
+
+\>= ½ = 1
+
+\< ½ = 0
+
+[Next Section II - Fundamentals ->](ii)

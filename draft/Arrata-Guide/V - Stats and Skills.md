@@ -1,3 +1,7 @@
-<img src="https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png" alt="rat" width="100"/>
+<img src="rat.png" alt="rat" width="100"/>
+
+<a name="v"></a>
 
 # V - Stats and Skills
+
+[<- Go back Section IV - Quirks](iv)

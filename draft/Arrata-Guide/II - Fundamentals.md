@@ -1,4 +1,6 @@
-<img src="https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png" alt="rat" width="100"/>
+<img src="rat.png" alt="rat" width="100"/>
+
+<a name="ii"></a>
 
 # II - Fundamentals
 
@@ -159,5 +161,6 @@ Those are the fundamentals that make up the basic mechanics of Arrata! With thes
 
 The next few sections will go over character creation and the components that they're made of.
 
-[<- Go back Section I - Introductions](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/I%20-%20Introduction.md)
-<br>[Next Section III - Character Setup ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/III%20-%20Character%20Setup.md)
+[<- Go back Section I - Introductions](i)
+
+[Next Section III - Character Setup ->](iii)

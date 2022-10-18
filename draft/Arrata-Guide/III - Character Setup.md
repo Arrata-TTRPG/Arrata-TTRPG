@@ -1,4 +1,6 @@
-<img src="https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/rat.png" alt="rat" width="100"/>
+<img src="rat.png" alt="rat" width="100"/>
+
+<a name="iii"></a>
 
 # III Character Setup
 
@@ -104,5 +106,6 @@ Skills have 4 components, including the ones from Stats as discussed before:
 - **Stat**: The Quality and Quantity of the Skill. Written as \[**First letter of the Quality**]\[**Quantity**].
 - **Checks**: The number of checks made with the Skill, used for levelling.
 
-[<- Go back Section II - Fundamentals](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/II%20-%20Fundamentals.md)
-<br> [Next Section IV - Quirks ->](https://github.com/kalebvonburris/Arrata-TTRPG/blob/main/draft/Arrata-Guide/IV%20-%20Quirks.md)
+[<- Go back Section II - Fundamentals](ii)
+
+[Next Section IV - Quirks ->](iv)
