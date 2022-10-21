@@ -95,7 +95,9 @@ All of these stats are expanded on later on in V - Stats and Skills.
 
 ### Skills
 
-**Skills** make up the majority of the way characters interact with the world. There are an infinite number of Skills in Arrata, as none are inherently defined, but an Appendix is included at the end that details a number of potentially useful Skills. These are also included on the [Official Arrata Character Sheet]().
+**Skills** make up the majority of the way characters interact with the world. They're a type of Stat used in very specific situations.
+
+There are an infinite number of Skills in Arrata, as none are inherently defined, but an Appendix is included at the end that details a number of potentially useful Skills. These are also included on the [Official Arrata Character Sheet]().
 
 Skills have 4 components, including the ones from Stats as discussed before:
 
@@ -103,6 +105,17 @@ Skills have 4 components, including the ones from Stats as discussed before:
 - **Name**: The name of the Skill.
 - **Stat**: The Quality and Quantity of the Skill. Written as \[**First letter of the Quality**]\[**Quantity**].
 - **Checks**: The number of checks made with the Skill, used for levelling.
+
+To review:
+
+- Characters are actors that make choices in a story. They are both influence and are influenced by they story.
+  - Characters are made of of several parts;
+    - Cosmetics: Things like age, appearance, role, weight, etc. They may have some impact on roleplay, but won't have a defined mechanical effect.
+    - Stock: What race, species, or specific group the character comes from. These often come with a designated Quirk.
+    - Quirks: Defining qualities of their personality and past, they define who they are. Quirks are organized into Ethos, Pathos, and Logos.
+      - Argos: Your character's **goal**, the thing they want to accomplish by the end of this story.
+    - Stats: Values quantifying different aspects of what they are. These include Auxilary stats such as Fatigue and Armor.
+      - Skills: Stats pertaining to specific activities
 
 [<- Go back Section II - Fundamentals](ii)
 
