@@ -1,20 +1,10 @@
 <img src="rat.png" alt="rat" width="100"/>
 
-<a name="ii"></a>
-
 # II - Fundamentals
 
-## Actions, Consequence, and Checks
+## Dice Notation
 
-When you're roleplaying a character, you will have to make decisions. Those decisions are called *Actions*, and what happens as a result of those Actions is called the *Consequence*. Not all Actions are equal, some require effort and skill, and for those we use **Checks**.
-
-Checks are a way of providing a level of randomness and realistic challenge to the game.
-
-When a Check is encountered occurs, the character whose actions were contested will roll a relevant *Stat* or *Skill* to determine the outcome.
-
-#### Dice Notation
-
-When using and discussing quantities of dice, often the term Dice Notation may be used. This refers to a system that helps define two things about the dice being rolled:<br>
+When using and discussing quantities of dice, often the term Dice Notation may be used. This refers to a system that helps define two things about the dice being rolled:
 
 - How many dice are being rolled.
 - How many sides the dice being rolled have.
@@ -84,9 +74,11 @@ Let's look at a few examples:
 
 Great, we can  define how well a roll goes. Now we need to define what we should compare that to. Enter **Obstacle** (Ob).
 
-Ob determines *how many successes are required to succeed*. You need only reach the Ob on a Check to succeed, but getting more can often be beneficial.
+Ob determines *how many successes are required to succeed*, and how difficult a task is to complete. You need only reach the Ob on a Check to succeed, but getting more can often be beneficial.
 
 In addition, we can set an Ob using another character's roll - their successes determine our Obstacle.
+
+When we refer to an Obstacle, the nomenclature is to say "Ob /[level of the Obstacle]. A task that has an Obstacle of 4 would be refered to as an Ob 4 task.
 
 Let's go back to those examples and see who succeeded.
 
@@ -131,6 +123,33 @@ With further levels of Disadvantage, I recieve -1D per level.
 For instance, if I had 4 levels of Disadvantage while rolling a B6, I'd really be rolling a B3, and any 1s would reduce the number of successes by 1. This one's a little more confusing, so here's an example:
 
 > George just shot at me! I fell into a pile of leaves and now have 2 levels of Disadvantage against his next shot! Well, I've got an A6 in Speed, so let's see what I rolled. With 2 levels of Disadvantage, I'm really rolling an A5, here's the results: ***1***, *2*, **4**, **5**, **6**. I count 3 successes here, but since I have Disadvantage, any 1s reduce that my successes by 1 each, and I rolled a 1! Which means my 3 successes becomes 2... Uh oh.
+
+## Actions, Checks, and Consequence
+
+When you're roleplaying a character, you will have to make decisions. Those decisions are called *Actions*, and what happens as a result of those Actions are the *Consequences*. Not all Actions are equal, some require effort and skill, and for those we use **Checks** to determine the outcome.
+
+### Actions -> Consequence: What is a Check?
+
+When a character's action is contested, a series of events must occur:
+
+- Establish the **Intent**. What are we trying to *do*?
+- Establish the **Obstacle**. What is *contesting* the action?
+- Establish the **Expectation**. Based off of the *Intent*, what do we *expect* to happen if we succeed on this Check?
+- Establish **Consequences**. What will happen if we meet the *Expectations*? What happens if we don't?
+- **Roll**. We roll dice and determine *how much of the Expectation* is met.
+- **Consequence** The GM states what the result of the Rolling stage means - did the character complete the action? Did they complete their *Intent*, but not as to our *Expectation* of it?.
+
+When we make a check, the most critical part mechanically is establishing the **Obstacle**, or Ob. It is typically the GM's job to do this - a PC will make an action and the GM will define how hard it is to reach the Expected outcome as an Ob.
+
+Then, the Player rolls their PC's relevant Stat and compares their successes to the Ob - as iterated before, if the successes meet or exceed the Ob, their Expectation is met and the Action *Succeeds*.
+
+However, rolling under the Obstacle will result in *Failure*, but that failure is relative to the Expectation. Every Failure will come with some **Degree of Success**.
+
+### Checks - Degrees of Success
+
+Now that we've established what we use to roll in Arrata and ho
+
+### Checks - Let it Roll
 
 #### Congrats
 

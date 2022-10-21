@@ -1,7 +1,5 @@
 ![Arrata Logo](rat.png)
 
-<a name="i"></a>
-
 # I - Introduction
 
 ### What is Arrata?

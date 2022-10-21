@@ -1,7 +1,5 @@
 <img src="rat.png" alt="rat" width="100"/>
 
-<a name="iii"></a>
-
 # III Character Setup
 
 ## Who Are They?
