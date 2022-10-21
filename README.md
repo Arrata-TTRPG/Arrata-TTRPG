@@ -1,4 +1,4 @@
-![Arrata Logo](https://github.com/kalebvonburris/Arrata-TTRPG/blob/66ed3e589006e17b216c6e198d23fce18fe1c787/draft/Arrata-Guide/rat.png)
+![Arrata Logo](https://github.com/kalebvonburris/Arrata-TTRPG/blob/cf13fc5a6b32410cb7db299d1cb6df57b7f5e62b/rat.png)
 
 # ARRATA - A Roleplaying System
 

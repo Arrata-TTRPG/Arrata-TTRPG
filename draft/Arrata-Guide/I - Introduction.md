@@ -1,12 +1,12 @@
-![Arrata Logo](rat.png)
+![Arrata Logo](https://github.com/kalebvonburris/Arrata-TTRPG/blob/cf13fc5a6b32410cb7db299d1cb6df57b7f5e62b/rat.png)
 
 # I - Introduction
 
-### What is Arrata?
+## What is Arrata?
 
 The word Arrata is a misspelling of errata, the plural of erratum; a list of mistakes in a written document.
 
-Entomology aside, Arrata is a Tabletop-Roleplaying Game (TTRPG) system with a focus on meaningful characters and their development. To emphasize, Arrata is a <i>system</i>, designed with tools to allow it to be used in many different settings. There are some tools for playing in more fantastical settings provided, but Arrata is certainly not limited to them.
+Entomology aside, Arrata is a Tabletop-Roleplaying Game (TTRPG) system with a focus on meaningful characters and their development. To emphasize, Arrata is a *system*, designed with tools to allow it to be used in many different settings. There are some tools for playing in more fantastical settings provided, but Arrata is certainly not limited to them.
 
 ### What is Roleplaying?
 
