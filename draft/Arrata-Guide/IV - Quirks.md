@@ -2,6 +2,9 @@
 
 # IV - Quirks
 
-[<- Go back Section III - Character Setup](iii)
+Quirks are critical core pillars of every character. They make up ***who they are***, defining how they interact with the environment and other people, how society sees them, 
+
+
+[<- Go back to Section III - Character Setup](iii)
 
 [Next Section V - Stats and Skills ->](v)

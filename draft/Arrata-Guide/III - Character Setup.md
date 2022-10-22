@@ -46,9 +46,13 @@ Quirks are an integral part of any character. They're usually a one to two-word 
 
 Quirks are expanded on in the next section, IV - Quirks.
 
+## Argos
+
+Argos is the primary goal of a character. It defines their motivation to be on the current journey; the reason why they suffer and fail, risk life and limb, and fight tooth and nail. This is what you should have in the back of your mind at all times when roleplaying a character.
+
 ## Stats
 
-**Stats** here refers to the primary, non-Skill statistics of the character. These are the attributes and values that define your character roughtly, and allow you to derive Major Skills.
+**Stats** here refers to the primary, non-Skill statistics of the character. These are the attributes and values that define your character roughly, and allow you to derive Major Skills.
 
 Stats are usually employed to roll against more rudimentary checks, such as dodging an attack, resisting poisons and toxins, pushing a large object, etc.
 
