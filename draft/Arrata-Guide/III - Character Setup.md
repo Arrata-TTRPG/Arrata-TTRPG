@@ -4,7 +4,7 @@
 
 ## Who Are They?
 
-A character is a actor in the story who commits actions and changes. The following section provides an overview of different elements to a character, but does not necessarily go into depth with them. Specifically, Quirks and Argos, as well as Stats and Skills are discussed in detail later on.
+A character is an actor in the story who commits actions and changes. The following section provides an overview of different elements to a character, but does not necessarily go into depth with them. Specifically, Quirks and Argos, as well as Stats and Skills are discussed in detail later on.
 
 ### Cosmetic Details
 
@@ -14,11 +14,11 @@ When creating a character, there are many different bits and pieces that may not
 - Age; how old are they?
 - Sex/Gender; what are they packing, and what do they identify as?
 - Role; what sort of occupation, party role, or term best describes the character?
-- Physical description; things like their height, weight, hair and skin color, hair style, etc. What do they look like?
+- Physical description; things like their height, weight, hair and skin color, hairstyle, etc. What do they look like?
 
 ### History
 
-While a character's past is technically cosmetic, it's important they do have one. Placing them into a world with no history can lead to an underdeveloped and probably uninteresting character. When defining their history, consider the following, and consult your GM;
+While a character's past is technically cosmetic, they must have one. Placing them in a world with no history can lead to an underdeveloped and probably uninteresting character. When defining their history, consider the following, and consult your GM;
 
 - What setting are they in?
 - What sort of technology do they have access to?
@@ -33,11 +33,11 @@ Having a history is kind of like a cover letter - you're less likely to have you
 
 This is an element that depends on the setting the GM creates. It's the GM's job to provide a list of playable Stocks.
 
-Stocks are the race, species, or category of *thing* your character is. Think Elves, Dwarves, Goblins, Humans. Stocks have a relatively muted role in Arrata, they don't offer any Stat or Skill boons innately. Instead, Stocks will usually provide a Quirk (discussed next) unique to that Stock.
+Stocks are the race, species, or category of *thing* your character is. Think Elves, Dwarves, Goblins, and Humans. Stocks have a relatively muted role in Arrata, they don't offer any Stat or Skill boons innately. Instead, Stocks will usually provide a Quirk (discussed next) unique to that Stock.
 
 ## Quirks
 
-Quirks are an integral part of any character. They're usually a one to two word descriptor of a particular characteristic. Each Quirk is broken down into 4 pieces of information:
+Quirks are an integral part of any character. They're usually a one to two-word descriptor of a particular characteristic. Each Quirk is broken down into 4 pieces of information:
 
 - Name: The name of the Quirk.
 - Defines: Different interpretations and possible meanings of the Quirk, specific to roleplaying scenarios.
@@ -56,7 +56,7 @@ Stats have 3 components:
 
 - **Name**: The name of the Stat.
 - **Stat**: The Quality and Quantity of the Stat.
-- **Checks**: The number of checks made with the Stat, used for levelling.
+- **Checks**: The number of checks made with the Stat, used for leveling.
 
 A character has 6 primary Stats, grouped into 3 mental and 3 physical Stats:
 
@@ -78,14 +78,14 @@ Physical:
 - **Forte**
   - Physical health and conditioning.
 
-There are several auxilary Stats are well:
+There are several auxiliary Stats are well:
 
 - **Armor**
   - Used in Defense rolls, this is much armor a character has.
 - **Injuries**
   - How many physical/mental wounds the character has.
   - Broken down into 3 categories:
-    - Stingers - Small cuts, bruises, usually annoying but not fatal.
+    - Stingers - Small cuts and bruises, usually annoying but not fatal.
     - Wounds - Broken bones, deep cuts, major bleeding. These can evolve and eventually lead to death if untreated.
     - Fatal Wounds - A catastrophic Injury, usually able to knock someone out. Death will occur without immediate medical intervention.
 - **Fatigue**
@@ -104,19 +104,19 @@ Skills have 4 components, including the ones from Stats as discussed before:
 - **Root**: What Stats the Skill is derived from.
 - **Name**: The name of the Skill.
 - **Stat**: The Quality and Quantity of the Skill. Written as \[**First letter of the Quality**]\[**Quantity**].
-- **Checks**: The number of checks made with the Skill, used for levelling.
+- **Checks**: The number of checks made with the Skill, used for leveling.
 
 To review:
 
-- Characters are actors that make choices in a story. They are both influence and are influenced by they story.
-  - Characters are made of of several parts;
+- Characters are actors that make choices in a story. They both influence and are influenced by their story.
+  - Characters are made of several parts;
     - Cosmetics: Things like age, appearance, role, weight, etc. They may have some impact on roleplay, but won't have a defined mechanical effect.
     - Stock: What race, species, or specific group the character comes from. These often come with a designated Quirk.
-    - Quirks: Defining qualities of their personality and past, they define who they are. Quirks are organized into Ethos, Pathos, and Logos.
+    - Quirks: Qualities of their personality and past, who they are. Quirks are organized into Ethos, Pathos, and Logos.
       - Argos: Your character's **goal**, the thing they want to accomplish by the end of this story.
-    - Stats: Values quantifying different aspects of what they are. These include Auxilary stats such as Fatigue and Armor.
-      - Skills: Stats pertaining to specific activities
+    - Stats: Values quantifying different aspects of what they are. These include auxiliary stats such as Fatigue and Armor.
+      - Skills: Stats used for specific activities
 
-[<- Go back Section II - Fundamentals](ii)
+[<- Go back to Section II - Fundamentals](ii)
 
 [Next Section IV - Quirks ->](iv)
