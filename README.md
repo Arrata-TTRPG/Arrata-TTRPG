@@ -10,6 +10,6 @@ Arrata is a Tabletop Roleplaying system with an emphasis on characters and their
 
 It draws influence from games such as The Elder Scrolls, Dungeons and Dragons, Burning Wheel, and much more.
 
-The hope is to take a lot of the nuance character interaction and development from games such as Burning Wheel, mesh them with systems similar to those in games such as D&D and TES and provide an experience that's both mechanically rewarding and emotionally impactful.
+The hope is to take a lot of the nuanced character interaction and development from games such as Burning Wheel, mesh them with systems similar to those in games such as D&D and TES, and provide an experience that's both mechanically rewarding and emotionally impactful.
 
-As I work towards a release, the current draft of the current ruleset can be found [here](https://github.com/kalebvonburris/Arrata-TTRPG/tree/main/draft/Arrata-Guide) under the Draft/Arrata-Guide section.
+There is a draft and review branch. The draft branch contains overall changes to the system, things that are overhaul major changes and usually constitute a #.1 release, but these are often unpolished. The draft branch is the pushed to the review branch which will contain #.# releases as the work is polished, which is then pushed here in a #.0 release.
