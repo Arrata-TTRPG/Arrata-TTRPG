@@ -4,4 +4,4 @@
 
 ## Draft Branch
 
-This branch is for working on new updates. Complete drafts are sent to the review branch for refinement before being pushed to the main branch.
+This branch is for working on new updates. Complete drafts are sent to the review branch for refinement before being published as review releases and eventually being pushed and published to the main branch.

@@ -8,7 +8,7 @@ A character is an actor in the story who commits actions and changes. The follow
 
 ### Cosmetic Details
 
-When creating a character, there are many different bits and pieces that may not have a mechanical effect, but might be very useful to help you roleplay them. Here's a list of some (but not all) of the cosmetic details a character might have:
+When creating a character, there are many bits and pieces that may not have a mechanical effect but might be very useful to help you roleplay them. Here's a list of some (but not all) of the cosmetic details a character might have:
 
 - Name; what do we refer to them as? Do they also have any pseudonyms?
 - Age; how old are they?
@@ -37,7 +37,7 @@ Stocks are the race, species, or category of *thing* your character is. Think El
 
 ## Quirks
 
-Quirks are an integral part of any character. They're usually a one to two-word descriptor of a particular characteristic. Each Quirk is broken down into 4 pieces of information:
+Quirks are an integral part of any character. They're usually a one word descriptor of a particular characteristic. Each Quirk is broken down into 4 pieces of information:
 
 - Name: The name of the Quirk.
 - Defines: Different interpretations and possible meanings of the Quirk, specific to roleplaying scenarios.
