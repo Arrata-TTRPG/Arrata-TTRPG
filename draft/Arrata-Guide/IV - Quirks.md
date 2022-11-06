@@ -63,11 +63,33 @@ You can see how quickly you can build synergy with Quirks, and they can often he
 
 ### Intuition
 
-**Intuition** is experience gained from accomplishing tasks that *oppose Quirks*. It's measured in individual points for each Quirk category.
+**Intuition** is experience gained from accomplishing tasks that *oppose Quirks*. It's measured in individual points for each Quirk category and acts as a *meta-currency*.
 
+Intuition is awarded to a PC by the GM when the player of that character does one of the following:
 
+- Roleplays a Quirk especially well,
+- Roleplays a scenario especially well,
+- Creates a particularly funny scenario,
+- Fights against a Quirk (against the Flaw(s)) successfully.
+
+How often and numerous Intuition is given out depends on the GM, but every player should be earning 1-2 intuition per session.
+
+It's also important to note that for the given methods of gaining Intuition, if a particular Quirk is the reason why Intuition is being gained, then the Intuition will go into that Quirk's Intuition category. If there isn't a Quirk that caused it, the player may choose which category they want the Intuition to go to freely.
+
+#### Spending Intuition - Intuition Boons
+
+Intuition is a meta-currency and thus can be spent in multiple ways as **Intuition Boons**:
+
+- Luck: Spend 1 point of Intuition from any category to gain 1 level of advantage.
+- Trifecta: Spend 1 point of Intuition from each category to double the number of dice being initially rolled.
+- Hindsight: Spend 1 point of Intuition with twice the Quantity's worth of checks for a skill or stat to level-up its Quantity (Discussed later).
+- Heroism: (Used during Hindsight) Spend 1 of each category to increase the Quality of the skill or stat.
+
+Note: More than one Intuition boon can be used at once, but they cannot affect one another. Trifectas do not double the dice rolled from levels of advantage gained from Luck.
 
 ### Challenges
+
+
 
 ## Writing Quirks
 
