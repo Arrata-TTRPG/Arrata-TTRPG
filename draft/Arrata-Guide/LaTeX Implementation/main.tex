@@ -1,20 +1,32 @@
 \documentclass{book}
 
 % Package imports
-\usepackage{titlepic}
 \usepackage{graphicx}
 \usepackage{import}
 \usepackage{subfiles}
 \usepackage{titlesec}
+\usepackage{xcolor}
 
 % Images path
 \graphicspath{{./images}}
 
+% Color settings.
+% Color of the background.
+\pagecolor[rgb]{0,0,0}
+% Color of the words.
+\color[rgb]{1,1,1}
+
 % Title page information
-\title{ARRATA}
-\author{Kaleb Burris}
+\title{
+    \textbf{ARRATA} 
+    \\
+    \large Change Through Purpose.
+    \\
+    \includegraphics[width=\textwidth]{rat.png}
+}
 \date{}
-\titlepic{\includegraphics[width=\textwidth]{rat.png}}
+\author{Developed by {\em Kaleb Burris}}
+
 
 % Formatting
 \renewcommand\thechapter{\arabic{chapter}}
@@ -30,13 +42,55 @@
     \tableofcontents
 
     % Core of the book
+    \part{Core Rules}
+
     \chapter{Introduction}
     \subfile{sections/I - Introduction}
 
-    \chapter{Fundamentals}
+    \chapter{Dice and Obstacle}
+
+    \chapter{Stats}
 
     \chapter{Quirks}
 
-    \chapter{Stats}
+    \chapter{Character Change}
+
+    \chapter{Character Creation}
+
+    % These are rules that are optional but are 
+    % typically recommended based on the setting.
+    \part{Subsystems}
+
+    \chapter{Combat}
+
+    \chapter{Injury}
+
+    \chapter{Sorcery}
+
+    \chapter{Faith}
+
+    \chapter{Engineering}
+
+    % Appendicies
+    \appendix
+
+    % Tables comparing the probability of each
+    % paring of Quantity and Quality to each Obstacle level.
+    % A table for each Quality.
+    \chapter{Dice Probability Distributions}
+
+    % A comprehensive list of viable skills.
+    \chapter{Skills}
+
+    % A compiled list of recommended Quirks to choose from.
+    \chapter{Quirks}
+        \section{Ethos}
+        \section{Pathos}
+        \section{Logos}
+
+    \chapter{Equipment}
+        \section{Armors}
+        \section{Weapons}
+        \section{Miscellaneous}
 
 \end{document}

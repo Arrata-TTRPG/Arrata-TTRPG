@@ -1,8 +1,29 @@
-\contentsline {chapter}{\numberline {1}Introduction}{5}{}%
-\contentsline {section}{\numberline {1.1}What is Arrata?}{5}{}%
-\contentsline {section}{\numberline {1.2}What is Roleplaying?}{5}{}%
-\contentsline {section}{\numberline {1.3}Game Masters (GMs)}{5}{}%
-\contentsline {section}{\numberline {1.4}Players and their Characters (PCs)}{6}{}%
-\contentsline {chapter}{\numberline {2}Fundamentals}{7}{}%
-\contentsline {chapter}{\numberline {3}Quirks}{9}{}%
-\contentsline {chapter}{\numberline {4}Stats}{11}{}%
+\contentsline {part}{I\hspace {1em}Core Rules}{5}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{7}{}%
+\contentsline {section}{\numberline {1.1}What is Arrata?}{7}{}%
+\contentsline {subsection}{\numberline {1.1.1}Entomologically}{7}{}%
+\contentsline {subsection}{\numberline {1.1.2}Literally}{7}{}%
+\contentsline {section}{\numberline {1.2}What is Roleplaying?}{7}{}%
+\contentsline {section}{\numberline {1.3}Game Masters (GMs)}{8}{}%
+\contentsline {section}{\numberline {1.4}Players and their Characters (PCs)}{8}{}%
+\contentsline {chapter}{\numberline {2}Dice and Obstacle}{11}{}%
+\contentsline {chapter}{\numberline {3}Stats}{13}{}%
+\contentsline {chapter}{\numberline {4}Quirks}{15}{}%
+\contentsline {chapter}{\numberline {5}Character Change}{17}{}%
+\contentsline {chapter}{\numberline {6}Character Creation}{19}{}%
+\contentsline {part}{II\hspace {1em}Subsystems}{21}{}%
+\contentsline {chapter}{\numberline {7}Combat}{23}{}%
+\contentsline {chapter}{\numberline {8}Injury}{25}{}%
+\contentsline {chapter}{\numberline {9}Sorcery}{27}{}%
+\contentsline {chapter}{\numberline {10}Faith}{29}{}%
+\contentsline {chapter}{\numberline {11}Engineering}{31}{}%
+\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{33}{}%
+\contentsline {chapter}{\numberline {B}Skills}{35}{}%
+\contentsline {chapter}{\numberline {C}Quirks}{37}{}%
+\contentsline {section}{\numberline {C.1}Ethos}{37}{}%
+\contentsline {section}{\numberline {C.2}Pathos}{37}{}%
+\contentsline {section}{\numberline {C.3}Logos}{37}{}%
+\contentsline {chapter}{\numberline {D}Equipment}{39}{}%
+\contentsline {section}{\numberline {D.1}Armors}{39}{}%
+\contentsline {section}{\numberline {D.2}Weapons}{39}{}%
+\contentsline {section}{\numberline {D.3}Miscellaneous}{39}{}%
