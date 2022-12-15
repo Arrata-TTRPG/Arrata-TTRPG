@@ -6,6 +6,7 @@
 \usepackage{subfiles}
 \usepackage{titlesec}
 \usepackage{xcolor}
+\usepackage[toc,page]{appendix}
 
 % Images path
 \graphicspath{{./images}}
@@ -29,7 +30,7 @@
 
 
 % Formatting
-\renewcommand\thechapter{\arabic{chapter}}
+\renewcommand\thechapter{\centering\arabic{chapter}}
 \renewcommand\thesection{\thechapter.\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 
@@ -72,25 +73,31 @@
     \chapter{Engineering}
 
     % Appendicies
-    \appendix
+    \begin{appendices}
 
-    % Tables comparing the probability of each
-    % paring of Quantity and Quality to each Obstacle level.
-    % A table for each Quality.
-    \chapter{Dice Probability Distributions}
+        % Tables comparing the probability of each
+        % paring of Quantity and Quality to each Obstacle level.
+        % A table for each Quality.
+        \chapter{Dice Probability Distributions}
 
-    % A comprehensive list of viable skills.
-    \chapter{Skills}
+        % A comprehensive list of viable skills.
+        \chapter{Skills}
 
-    % A compiled list of recommended Quirks to choose from.
-    \chapter{Quirks}
-        \section{Ethos}
-        \section{Pathos}
-        \section{Logos}
+        % A compiled list of recommended Quirks to choose from.
+        \chapter{Quirks}
+            \section{Ethos}
+            \section{Pathos}
+            \section{Logos}
 
-    \chapter{Equipment}
-        \section{Armors}
-        \section{Weapons}
-        \section{Miscellaneous}
+        \chapter{Equipment}
+            \section{Armors}
+            \section{Weapons}
+            \section{Miscellaneous}
+
+    \end{appendices}
+
+    \addcontentsline{toc}{chapter}{Credits}
+    \chapter*{Credits}
+    \subfile{sections/Credits}
 
 \end{document}
