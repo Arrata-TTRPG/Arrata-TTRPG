@@ -5,3 +5,7 @@
 *.sta
 *.synctex.gz
 **/sections/*.pdf
+*.idx
+*.ilg
+*.ind
+*.toc

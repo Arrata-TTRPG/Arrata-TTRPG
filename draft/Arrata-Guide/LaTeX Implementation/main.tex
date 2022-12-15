@@ -1,12 +1,13 @@
-\documentclass{book}
+\documentclass[oneside]{book}
 
-% Package imports
+% Package imports.
 \usepackage{graphicx}
 \usepackage{import}
 \usepackage{subfiles}
 \usepackage{titlesec}
 \usepackage{xcolor}
-\usepackage[toc,page]{appendix}
+\usepackage{appendix}
+% \usepackage{makeidx}
 
 % Images path
 \graphicspath{{./images}}
@@ -17,7 +18,7 @@
 % Color of the words.
 \color[rgb]{1,1,1}
 
-% Title page information
+% Title page information.
 \title{
     \textbf{ARRATA} 
     \\
@@ -28,24 +29,25 @@
 \date{}
 \author{Developed by {\em Kaleb Burris}}
 
+\makeindex
 
-% Formatting
+
+% Formatting.
 \renewcommand\thechapter{\centering\arabic{chapter}}
 \renewcommand\thesection{\thechapter.\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 
-% Fix double sidedness.
-\let\cleardoublepage\clearpage
-
 \begin{document}
 
-    % Establishes title page
+    % Establishes title page.
     \maketitle
 
-    % Creates table of contents
+    \let\cleardoublepage\clearpage
+
+    % Creates table of contents.
     \tableofcontents
 
-    % Core of the book
+    % Core of the book.
     \part{Core Rules}
 
     \chapter{Introduction}
@@ -75,7 +77,11 @@
 
     \chapter{Engineering}
 
+    % \addcontentsline{toc}{chapter}{Index}
+    % \printindex
+
     % Appendicies
+    \part{Appendicies}
     \begin{appendices}
 
         % Tables comparing the probability of each
