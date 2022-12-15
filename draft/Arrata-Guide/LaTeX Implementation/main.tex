@@ -3,6 +3,8 @@
 % Package imports.
 \usepackage{graphicx}
 \usepackage{import}
+\usepackage{nopageno}
+\usepackage{fancyhdr}
 \usepackage{subfiles}
 \usepackage{titlesec}
 \usepackage{xcolor}
@@ -37,12 +39,31 @@
 \renewcommand\thesection{\thechapter.\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 
+% Removing the fancy formatting for pages
+% that are not sections.
+\pagestyle{fancy}
+\fancypagestyle{plain}
+
+% Formatting page headers and footers.
+% Headers.
+\fancyhead[L]{\em Change Through Purpose.}
+\fancyhead[C]{\includegraphics[width=1cm]{rat.png}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Footers.
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+
+
 \begin{document}
 
     % Establishes title page.
     \maketitle
 
+    % Formatting to be done after title.
     \let\cleardoublepage\clearpage
+    \setlength{\headheight}{1.8cm}
+    \addtolength{\topmargin}{-2cm}
 
     % Creates table of contents.
     \tableofcontents
