@@ -31,4 +31,4 @@
 \contentsline {section}{\numberline {D.1}Armors}{22}{}%
 \contentsline {section}{\numberline {D.2}Weapons}{22}{}%
 \contentsline {section}{\numberline {D.3}Miscellaneous}{22}{}%
-\contentsline {chapter}{Credits}{22}{}%
+\contentsline {part}{IV\hspace {1em}Credits}{23}{}%

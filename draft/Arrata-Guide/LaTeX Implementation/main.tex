@@ -3,6 +3,7 @@
 % Package imports.
 \usepackage{graphicx}
 \usepackage{import}
+\usepackage{array}
 \usepackage{nopageno}
 \usepackage{fancyhdr}
 \usepackage{subfiles}
@@ -46,8 +47,16 @@
 
 % Formatting page headers and footers.
 % Headers.
-\fancyhead[L]{\em Change Through Purpose.}
-\fancyhead[R]{\includegraphics[width=1cm]{rat.png}}
+\fancyhead[R]{
+    \setlength{\extrarowheight}{-10px}
+    \begin{tabular}{r l}
+        \shortstack[r]{\textbf{ARRATA} \\ {\em Change Through Purpose.}} & \includegraphics[width=0.8cm]{rat.png}
+    \end{tabular}
+}
+\fancyhead[L]{
+    \parbox{6cm}{\raggedright\textsl{\rightmark}}
+}
+
 \renewcommand{\headrulewidth}{0.4pt}
 
 % Footers.
@@ -61,7 +70,7 @@
 
     % Formatting to be done after title.
     \let\cleardoublepage\clearpage
-    \setlength{\headheight}{1.8cm}
+    \setlength{\headheight}{2cm}
     \addtolength{\topmargin}{-2cm}
 
     % Creates table of contents.
@@ -125,8 +134,7 @@
 
     \end{appendices}
 
-    \addcontentsline{toc}{chapter}{Credits}
-    \chapter*{Credits}
+    \part{Credits}
     \subfile{sections/Credits}
 
 \end{document}
