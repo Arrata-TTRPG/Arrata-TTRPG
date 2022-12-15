@@ -4,3 +4,4 @@
 *.log
 *.sta
 *.synctex.gz
+**/sections/*.pdf
