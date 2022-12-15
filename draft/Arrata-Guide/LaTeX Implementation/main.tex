@@ -1,0 +1,42 @@
+\documentclass{book}
+
+% Package imports
+\usepackage{titlepic}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{subfiles}
+\usepackage{titlesec}
+
+% Images path
+\graphicspath{{./images}}
+
+% Title page information
+\title{ARRATA}
+\author{Kaleb Burris}
+\date{}
+\titlepic{\includegraphics[width=\textwidth]{rat.png}}
+
+% Formatting
+\renewcommand\thechapter{\arabic{chapter}}
+\renewcommand\thesection{\thechapter.\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+
+\begin{document}
+
+    % Establishes title page
+    \maketitle
+
+    % Creates table of contents
+    \tableofcontents
+
+    % Core of the book
+    \chapter{Introduction}
+    \subfile{sections/I - Introduction}
+
+    \chapter{Fundamentals}
+
+    \chapter{Quirks}
+
+    \chapter{Stats}
+
+\end{document}

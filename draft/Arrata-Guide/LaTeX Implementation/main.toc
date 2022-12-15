@@ -1,2 +1,8 @@
-\contentsline {part}{I\hspace {1em}Introduction}{5}{}%
-\contentsline {section}{\numberline {0.1}Pain}{7}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{5}{}%
+\contentsline {section}{\numberline {1.1}What is Arrata?}{5}{}%
+\contentsline {section}{\numberline {1.2}What is Roleplaying?}{5}{}%
+\contentsline {section}{\numberline {1.3}Game Masters (GMs)}{5}{}%
+\contentsline {section}{\numberline {1.4}Players and their Characters (PCs)}{6}{}%
+\contentsline {chapter}{\numberline {2}Fundamentals}{7}{}%
+\contentsline {chapter}{\numberline {3}Quirks}{9}{}%
+\contentsline {chapter}{\numberline {4}Stats}{11}{}%
