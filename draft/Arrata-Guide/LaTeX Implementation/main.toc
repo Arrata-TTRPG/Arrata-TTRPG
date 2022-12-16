@@ -9,34 +9,42 @@
 \contentsline {subsection}{\numberline {\centering 1.3.2}Non-Player Characters}{6}{}%
 \contentsline {section}{\numberline {\centering 1.4}Players and their Characters}{6}{}%
 \contentsline {subsection}{\numberline {\centering 1.4.1}Player Characters}{6}{}%
-\contentsline {chapter}{\numberline {\centering 2}Dice and Obstacle}{7}{}%
+\contentsline {chapter}{\numberline {\centering 2}Dice}{7}{}%
 \contentsline {section}{\numberline {\centering 2.1}Why Dice?}{7}{}%
 \contentsline {section}{\numberline {\centering 2.2}Dice Notation}{7}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.1}Addition and Subtraction}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.2}Exploding Dice}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.3}Evil Dice}{8}{}%
-\contentsline {section}{\numberline {\centering 2.3}Dice Pools}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.3.1}The d6}{9}{}%
-\contentsline {subsection}{\numberline {\centering 2.3.2}Comparison}{9}{}%
+\contentsline {subsection}{\numberline {\centering 2.2.1}Rolled Dice}{8}{}%
+\contentsline {subsection}{\numberline {\centering 2.2.2}Addition and Subtraction}{8}{}%
+\contentsline {subsection}{\numberline {\centering 2.2.3}Exploding Dice}{8}{}%
+\contentsline {subsection}{\numberline {\centering 2.2.4}Evil Dice}{8}{}%
+\contentsline {section}{\numberline {\centering 2.3}Dice Pools}{9}{}%
+\contentsline {subsection}{\numberline {\centering 2.3.1}Conditionals}{9}{}%
+\contentsline {subsection}{\numberline {\centering 2.3.2}The d6}{9}{}%
 \contentsline {chapter}{\numberline {\centering 3}Stats}{10}{}%
-\contentsline {chapter}{\numberline {\centering 4}Quirks}{11}{}%
-\contentsline {chapter}{\numberline {\centering 5}Character Change}{12}{}%
-\contentsline {chapter}{\numberline {\centering 6}Character Creation}{13}{}%
-\contentsline {part}{II\hspace {1em}Subsystems}{14}{}%
-\contentsline {chapter}{\numberline {\centering 7}Combat}{15}{}%
-\contentsline {chapter}{\numberline {\centering 8}Injury}{16}{}%
-\contentsline {chapter}{\numberline {\centering 9}Sorcery}{17}{}%
-\contentsline {chapter}{\numberline {\centering 10}Faith}{18}{}%
-\contentsline {chapter}{\numberline {\centering 11}Engineering}{19}{}%
-\contentsline {part}{III\hspace {1em}Appendicies}{20}{}%
-\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{21}{}%
-\contentsline {chapter}{\numberline {B}Skills}{22}{}%
-\contentsline {chapter}{\numberline {C}Quirks}{23}{}%
-\contentsline {section}{\numberline {C.1}Ethos}{23}{}%
-\contentsline {section}{\numberline {C.2}Pathos}{23}{}%
-\contentsline {section}{\numberline {C.3}Logos}{23}{}%
-\contentsline {chapter}{\numberline {D}Equipment}{24}{}%
-\contentsline {section}{\numberline {D.1}Armors}{24}{}%
-\contentsline {section}{\numberline {D.2}Weapons}{24}{}%
-\contentsline {section}{\numberline {D.3}Miscellaneous}{24}{}%
-\contentsline {part}{IV\hspace {1em}Credits}{25}{}%
+\contentsline {section}{\numberline {\centering 3.1}Definition}{10}{}%
+\contentsline {subsection}{\numberline {\centering 3.1.1}Quantity}{10}{}%
+\contentsline {subsection}{\numberline {\centering 3.1.2}Quality}{10}{}%
+\contentsline {subsection}{\numberline {\centering 3.1.3}Composition}{11}{}%
+\contentsline {section}{\numberline {\centering 3.2}Checks}{11}{}%
+\contentsline {subsection}{\numberline {\centering 3.2.1}Obstacle}{11}{}%
+\contentsline {subsection}{\numberline {\centering 3.2.2}Successes and Failures}{11}{}%
+\contentsline {chapter}{\numberline {\centering 4}Quirks}{12}{}%
+\contentsline {chapter}{\numberline {\centering 5}Character Change}{13}{}%
+\contentsline {chapter}{\numberline {\centering 6}Character Creation}{14}{}%
+\contentsline {part}{II\hspace {1em}Subsystems}{15}{}%
+\contentsline {chapter}{\numberline {\centering 7}Combat}{16}{}%
+\contentsline {chapter}{\numberline {\centering 8}Injury}{17}{}%
+\contentsline {chapter}{\numberline {\centering 9}Sorcery}{18}{}%
+\contentsline {chapter}{\numberline {\centering 10}Faith}{19}{}%
+\contentsline {chapter}{\numberline {\centering 11}Engineering}{20}{}%
+\contentsline {part}{III\hspace {1em}Appendicies}{21}{}%
+\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{22}{}%
+\contentsline {chapter}{\numberline {B}Skills}{23}{}%
+\contentsline {chapter}{\numberline {C}Quirks}{24}{}%
+\contentsline {section}{\numberline {C.1}Ethos}{24}{}%
+\contentsline {section}{\numberline {C.2}Pathos}{24}{}%
+\contentsline {section}{\numberline {C.3}Logos}{24}{}%
+\contentsline {chapter}{\numberline {D}Equipment}{25}{}%
+\contentsline {section}{\numberline {D.1}Armors}{25}{}%
+\contentsline {section}{\numberline {D.2}Weapons}{25}{}%
+\contentsline {section}{\numberline {D.3}Miscellaneous}{25}{}%
+\contentsline {part}{IV\hspace {1em}Credits}{26}{}%
