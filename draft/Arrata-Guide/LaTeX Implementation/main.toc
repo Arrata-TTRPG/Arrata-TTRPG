@@ -36,7 +36,7 @@
 \contentsline {chapter}{\numberline {\centering 9}Sorcery}{18}{}%
 \contentsline {chapter}{\numberline {\centering 10}Faith}{19}{}%
 \contentsline {chapter}{\numberline {\centering 11}Engineering}{20}{}%
-\contentsline {part}{III\hspace {1em}Appendicies}{21}{}%
+\contentsline {part}{III\hspace {1em}Appendices}{21}{}%
 \contentsline {chapter}{\numberline {A}Dice Probability Distributions}{22}{}%
 \contentsline {chapter}{\numberline {B}Skills}{23}{}%
 \contentsline {chapter}{\numberline {C}Quirks}{24}{}%
