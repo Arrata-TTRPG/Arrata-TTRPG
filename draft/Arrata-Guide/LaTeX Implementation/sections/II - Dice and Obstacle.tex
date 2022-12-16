@@ -1,0 +1,81 @@
+\documentclass[../main.tex]{subfiles}
+
+\setlength\extrarowheight{2pt}
+
+\graphicspath{{\subfix{../images/}}}
+
+\begin{document}
+
+    \setlength{\headheight}{2cm}
+    \addtolength{\topmargin}{-2cm}
+
+    \section{Why Dice?}
+
+    Dice are tools that are used to generate random numbers, which are in turn used to determine the outcome of certain scenarios. By adjusting things like how we count the value of each die, how many dice are rolled, and what special rules apply to them, we turn completely random, arbitrary values into probabilities that reflect upper and lower bounds of a particular thing.
+
+    \section{Dice Notation}
+
+    When using and discussing quantities of dice, often the term Dice Notation may be used. This refers to a system that helps define two things about the dice being rolled:
+
+    \begin{itemize}
+        \item How many dice are to be rolled, represented as $Y$.
+        \item How many sides the dice being rolled have, represented as $X$.
+    \end{itemize}
+
+    This is composed with a $D$ inbetween, which stands for dice, in the form $YDX$, although I prefer and will use a lower case $d$ for the rest of this document. Individual dice are written without the Y value. Here are a few examples:
+
+    \begin{itemize}
+        \item 3 dice with 20 sides each: $3d20$.
+        \item 14 dice with 6 sides each: $14d6$.
+        \item 100 dice with 100 sides each: $100d100$.
+        \item 1 6 sided die: $d6$.
+        \item and so on\dots
+    \end{itemize}
+
+    I will refer to the composed value generated from this schema as {\em rolls}.
+
+    \subsection{Addition and Subtraction}
+
+    There will be cases where a roll would be given or have lost dice to roll, in which case we represent the change in a quantity of dice as $+/-XD$, where $X$ is the number of dice being added or substracted and $D$ (always capitalized) is denoting that $X$ represents a number of dice.
+
+    For example:
+    \begin{itemize}
+        \item I gained 3d6 for my 6d6 roll: $6d6 + 3D = 9d6$.
+        \item I lost 2d20 from my 4d20 roll: $4d20 - 2D = 2d20$.
+    \end{itemize}
+
+    \subsection{Exploding Dice}
+
+    There are also cases where dice can ``explode''. This means that when the maximum possible value of a die is rolled, the value of that die is kept, and you can add an additional $+1D$ to the roll, rolling one more die. This can theoretically repeat infinitely, although the probability of that is essentially impossible.
+
+    To denote a roll as exploding, add a $!$ to the front. Here are a few examples:
+
+    \begin{itemize}
+        \item $!3d6 = (6 + 2 + 5) = !1d6 + (6 + 2 + 5) = 4 + 13 = 17$.
+        \item $!2d20 = (20 + 20) = !2d20 + 40 = (10 + 15) + 40 = 65$.
+        \item $!6d2 = (1 + 2 + 1 + 1 + 2 + 2) = !3d6 + 9 = \dots$
+    \end{itemize}
+
+    \subsection{Evil Dice}
+
+    In opposition to exploding dice, Arrata will deal with {\em Evil dice}. Evil dice are denoted by a !`. Instead of giving the roll an additional die to roll and add to the sum, Evil dice give an extra $D1$ that subtracts from the roll. For example:
+
+    \begin{itemize}
+        \item!`$2d20 = (1 + 5) = 6 - $!`$1d20 = 6 - (10) = -10$
+        \item!`$6d6 = (4 + 5 + 3 + 1 + 2 + 6) = 19 - $!`$1d6 = 19 - (6) = 13$
+        \item!`$3d10 = (1 + 1 + 1) = 3 - $!`$3d10 = 3 - (1 + 2 + 1) = \dots$
+    \end{itemize}
+
+    {\em Note: Evil dice and Exploding dice and happen simultaneously!}
+
+    \section{Dice Pools}
+
+    Arrata functions on {\em Dice Pools}. This is a way of rolling dice that focuses not on the sum of the values of the dice rolled, but by comparing each value to a constant.
+
+    \subsection{The d6}
+
+    Arrata uses the d6 as its primary die, and no others. It's a convienient die as they're extremely stackable, provide a decent window of probabilities, and are often very cheap and numerous, which is excellent for Arrata because Dice Pool-based rolls can call for 10+ dice at once.
+
+    \subsection{Comparison}
+
+\end{document}
