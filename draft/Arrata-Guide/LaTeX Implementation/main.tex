@@ -1,8 +1,10 @@
-\documentclass[oneside]{book}
+\documentclass[12pt, oneside]{book}
 
 % Package imports.
 \usepackage{graphicx}
+\usepackage{geometry}
 \usepackage{import}
+\usepackage[parfill]{parskip}
 \usepackage{array}
 \usepackage{nopageno}
 \usepackage{fancyhdr}
@@ -44,6 +46,14 @@
 
 
 % Formatting.
+
+% Margins.
+\geometry{
+    a4paper,
+    total={160mm,220mm},
+}
+
+% Section naming.
 \renewcommand\thechapter{\centering\arabic{chapter}}
 \renewcommand\thesection{\thechapter.\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
@@ -73,13 +83,13 @@
 
 \begin{document}
 
+    % Formatting to be done in the document.
+    \let\cleardoublepage\clearpage
+    % Separation between the header and body of the page.
+    \setlength{\headsep}{1cm}
+
     % Establishes title page.
     \maketitle
-
-    % Formatting to be done after the title.
-    \let\cleardoublepage\clearpage
-    \setlength{\headheight}{2cm}
-    \addtolength{\topmargin}{-2cm}
 
     % Creates a table of contents.
     \tableofcontents
@@ -98,9 +108,9 @@
 
     \chapter{Quirks}
 
-    \chapter{Character Change}
-
     \chapter{Character Creation}
+
+    \chapter{Character Change}
 
     % These are rules that are optional but are 
     % typically recommended based on the setting.
@@ -132,14 +142,8 @@
 
         % A compiled list of recommended Quirks to choose from.
         \chapter{Quirks}
-            \section{Ethos}
-            \section{Pathos}
-            \section{Logos}
 
         \chapter{Equipment}
-            \section{Armors}
-            \section{Weapons}
-            \section{Miscellaneous}
 
     \end{appendices}
 
