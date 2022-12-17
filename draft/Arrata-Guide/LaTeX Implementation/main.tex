@@ -8,14 +8,13 @@
 \usepackage{array}
 \usepackage{nopageno}
 \usepackage{fancyhdr}
+\usepackage{afterpage}
 \usepackage{subfiles}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{appendix}
 \usepackage{amsmath}
 \usepackage{tabularx}
-
-% \usepackage{makeidx}
 
 % Images path
 \graphicspath{{./images}}
@@ -32,7 +31,7 @@
     \\
     \large Change Through Purpose.
     \\
-    \includegraphics[width=\textwidth]{rat.png}
+    \includegraphics[width=12cm]{rat.png}
     \\
     Compiled on \today.
 }
@@ -42,16 +41,7 @@
     Version 0.5
 }
 
-\makeindex
-
-
 % Formatting.
-
-% Margins.
-\geometry{
-    a4paper,
-    total={160mm,220mm},
-}
 
 % Section naming.
 \renewcommand\thechapter{\centering\arabic{chapter}}
@@ -62,6 +52,12 @@
 % that are not sections.
 \pagestyle{fancy}
 \fancypagestyle{plain}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 
 % Formatting page headers and footers.
 % Headers.
@@ -80,16 +76,26 @@
 % Footers.
 \renewcommand{\footrulewidth}{0.4pt}
 
+% Margins.
+\geometry{
+    a4paper,
+    total={160mm,220mm}
+}
 
 \begin{document}
 
     % Formatting to be done in the document.
     \let\cleardoublepage\clearpage
+
     % Separation between the header and body of the page.
     \setlength{\headsep}{1cm}
+    \setlength{\headheight}{30.0pt}
+    \addtolength{\topmargin}{-0.75cm}
 
     % Establishes title page.
     \maketitle
+
+    \afterpage{\blankpage}
 
     % Creates a table of contents.
     \tableofcontents
