@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {\centering 2.2.1}Rolled Dice}{8}{}%
 \contentsline {subsection}{\numberline {\centering 2.2.2}Addition and Subtraction}{8}{}%
 \contentsline {subsection}{\numberline {\centering 2.2.3}Exploding Dice}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.4}Evil Dice}{8}{}%
+\contentsline {subsection}{\numberline {\centering 2.2.4}Evil Dice}{9}{}%
 \contentsline {section}{\numberline {\centering 2.3}Dice Pools}{9}{}%
 \contentsline {subsection}{\numberline {\centering 2.3.1}Conditionals}{9}{}%
 \contentsline {subsection}{\numberline {\centering 2.3.2}The d6}{9}{}%

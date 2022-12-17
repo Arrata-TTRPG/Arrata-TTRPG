@@ -22,7 +22,7 @@
     Quantity has essentially already been defined; it is the Quantity of dice rolled, specifically in d6s. It specifies the $Y$ component of $YdX$ or the value of the dice pool.
 
     In a more character-focused sense, Quantity represents the capacity to do what a particular stat does. It defines the upper bound for the stat's capability.
-    
+
     \subsection{Quality}
 
     Quality is the $C$ constant used for a conditional roll for the dice pool. In Arrata, Quantity comes in 3 levels:
@@ -39,6 +39,7 @@
         \item $10d6>3$ is $B$ Quality.
         \item $4d6>2$ is $A$ Quality.
         \item $5d6>1$ is $S$ Quality.
+        \item \dots
     \end{itemize}
 
     Quality is special in terms of characters' stats as it represents not how much a person could do with a stat, but how easily they reach that maximum.
@@ -51,6 +52,7 @@
         \item $B6 = 6d6>3$
         \item $A100 = 100d6>2$
         \item $S40000 = 40000d6>1$
+        \item \dots
     \end{itemize}
 
     Now that stats are defined, we can discuss what exactly they're used for.
@@ -69,6 +71,7 @@
         \item Rolling $B2$: $(4, 2)>3 =$ 1 Success, 1 Failure.
         \item Rolling $A5$: $(2, 6, 1, 3, 5)>2 =$ 3 Successes, 2 Failures.
         \item Rolling $S4$: $(6, 2, 5, 4)>1 =$ 4 Succeses, 0 Failures.
+        \item \dots
     \end{itemize}
 
     \subsection{Obstacle}
@@ -80,9 +83,10 @@
     Here are a few examples:
 
     \begin{itemize}
-        \item Rolling $B2\mathrm{\; vs \;}Ob\; 1: (2, 2)>3\mathrm{\; vs \;}1 =$ 0 Successes vs $Ob\; 1$ = $failure$.
-        \item Rolling $A4\mathrm{\; vs \;}Ob\; 2: (5, 6, 3, 5)>2\mathrm{\; vs \;}2 =$ 4 Successes vs $Ob\; 2$ = $pass$.
-        \item Rolling $S6\mathrm{\; vs \;}Ob\; 4: (1, 5, 1, 2, 3, 4)>1\mathrm{\; vs \;}4 =$ 4 Successes vs $Ob\; 4$ = $pass$.
+        \item Rolling $B2\mathrm{\; vs \;}Ob\; 1: (2, 2)>3\mathrm{\; vs \;}Ob\; 1 =$ 0 Successes vs $Ob\; 1$ = $failure$.
+        \item Rolling $A4\mathrm{\; vs \;}Ob\; 2: (5, 6, 3, 5)>2\mathrm{\; vs \;}Ob\; 2 =$ 4 Successes vs $Ob\; 2$ = $pass$.
+        \item Rolling $S6\mathrm{\; vs \;}Ob\; 4: (1, 5, 1, 2, 3, 4)>1\mathrm{\; vs \;}Ob\; 4 =$ 4 Successes vs $Ob\; 4$ = $pass$.
+        \item \dots
     \end{itemize}
 
     \subsection{Intent}

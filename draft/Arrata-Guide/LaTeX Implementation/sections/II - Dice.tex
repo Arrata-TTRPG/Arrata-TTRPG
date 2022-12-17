@@ -17,14 +17,14 @@
         \item How many sides the dice being rolled have, represented as $X$.
     \end{itemize}
 
-    This is composed with a $D$ in between, which stands for dice, in the form $YDX$, although I prefer and will use a lowercase $d$ for the rest of this document. Individual dice are written without the Y value. Here are a few examples:
+    This is composed with a $D$ in between, which stands for dice, in the form $YDX$, although I prefer and will use a lowercase $d$ for the rest of this document. Individual dice are written without the $Y$ value. Here are a few examples:
 
     \begin{itemize}
         \item 3 dice with 20 sides each: $3d20$.
         \item 14 dice with 6 sides each: $14d6$.
         \item 100 dice with 100 sides each: $100d100$.
         \item 1 6-sided die: $d6$.
-        \item and so on\dots
+        \item \dots
     \end{itemize}
 
     I will refer to the composed value generated from this schema as {\em rolls}.
@@ -38,6 +38,7 @@
     \begin{itemize}
         \item $4d20 = (10, 5, 14, 20)$.
         \item $10d2 = (1, 0, 1, 0, 1, 0, 1, 0, 1, 0)$.
+        \item $5d6 = (4, 1, 6, 1, 5)$.
         \item $\dots$
     \end{itemize}
 
@@ -49,26 +50,27 @@
     \begin{itemize}
         \item I gained 3d6 for my 6d6 roll: $6d6 + 3D = 9d6$.
         \item I lost 2d20 from my 4d20 roll: $4d20 - 2D = 2d20$.
+        \item \dots
     \end{itemize}
 
     \subsection{Exploding Dice}
 
     There are also cases where dice can ``explode''. This means that when the maximum possible value of a die is rolled, the value of that die is kept, and you can add $+1D$ to the roll, rolling one more die. This can theoretically repeat infinitely, although the probability of that is essentially impossible.
 
-    To denote a roll as exploding, add a $!$ to the front. Here are a few examples:
+    To denote a roll as exploding, add an exclamation point, $!$, to the front. Here are a few examples, not that they are summed to show how the value of the exploded dice affected the outcome:
 
     \begin{itemize}
-        \item $!3d6 = (6 + 2 + 5) = !1d6 + (6 + 2 + 5) = 4 + 13 = 17$.
-        \item $!2d20 = (20 + 20) = !2d20 + 40 = (10 + 15) + 40 = 65$.
-        \item $!6d2 = (1 + 2 + 1 + 1 + 2 + 2) = !3d6 + 9 = \dots$
+        \item $!3d6 = (6 + 2 + 5) =\; !1d6 + (6 + 2 + 5) = 4 + 13 = 17$.
+        \item $!2d20 = (20 + 20) =\; !2d20 + 40 = (10 + 15) + 40 = 65$.
+        \item $!6d2 = (1 + 2 + 1 + 1 + 2 + 2) =\; !3d6 + 9 = \dots$
     \end{itemize}
 
     \subsection{Evil Dice}
 
-    In opposition to exploding dice, Arrata will deal with {\em Evil dice}. Evil dice are denoted by a !`. Instead of giving the roll an additional die to roll and add to the sum, Evil dice give an extra $D1$ that subtracts from the roll. For example:
+    In opposition to exploding dice, Arrata will deal with {\em Evil dice}. Evil dice are denoted by adding an upside-down exclamation point, !`. Instead of giving the roll an additional die to roll and add to the sum, Evil dice give an extra $D1$ that subtracts from the roll. For example:
 
     \begin{itemize}
-        \item!`$2d20 = (1 + 5) = 6 - $!`$1d20 = 6 - (10) = -10$
+        \item!`$2d20 = (1 + 5) = 6 - $!`$1d20 = 6 - (10) = -4$
         \item!`$6d6 = (4 + 5 + 3 + 1 + 2 + 6) = 19 - $!`$1d6 = 19 - (6) = 13$
         \item!`$3d10 = (1 + 1 + 1) = 3 - $!`$3d10 = 3 - (1 + 2 + 1) = \dots$
     \end{itemize}
@@ -81,7 +83,7 @@
 
     \subsection{Conditionals}
 
-    For Dice Pools, conditionals are used along with a given constant ($C$) to achieve a specific effect. For Arrata, this conditional is the $>$ operator. This is used to count the number of dice rolled that are larger than $C$.
+    For Dice Pools, conditionals are used along with a given constant $C$ to achieve a specific effect. For Arrata, this conditional is the $>$ operator. This is used to count the number of dice rolled that are larger than $C$.
 
     For example:
 
@@ -89,6 +91,7 @@
         \item $4d20>10 = (12, 13, 4, 1)>10 = 2$
         \item $5d4>1 = (1, 4, 2, 1, 3)>1 = 3$
         \item $2d10>9 = (4, 7)>9 = 0$
+        \item \dots
     \end{itemize}
 
     This counted sum can be used for several schemas, and the value of $C$ can be used to further tune probabilities. Arrata makes heavy use of conditionals for its systems.
@@ -97,6 +100,6 @@
 
     Arrata uses the d6 as its primary die and no others. It's a convenient die as they're extremely stackable, provide a decent window of probabilities, and are often very cheap and numerous, which is excellent for Arrata because Dice Pool-based rolls can call for 10+ dice at once.
 
-    Because of this, whenever a Quantity of dice is discussed, dice notation will not be used. Instead, the roll will be compiled into a \textbf{Stat}.
+    Because we know all rolls in Arrata use the d6, whenever a Quantity of dice is discussed, dice notation will not be used. Instead, the roll will be composed into a \textbf{Stat}.
 
 \end{document}
