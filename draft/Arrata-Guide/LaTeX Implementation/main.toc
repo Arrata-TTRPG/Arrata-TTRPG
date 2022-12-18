@@ -16,25 +16,24 @@
 \contentsline {section}{\numberline {\centering 2.8}Conditionals}{9}{}%
 \contentsline {section}{\numberline {\centering 2.9}The d6}{10}{}%
 \contentsline {chapter}{\numberline {\centering 3}Stats}{11}{}%
-\contentsline {section}{\numberline {\centering 3.1}Definition}{11}{}%
-\contentsline {section}{\numberline {\centering 3.2}Quantity}{11}{}%
-\contentsline {section}{\numberline {\centering 3.3}Quality}{12}{}%
-\contentsline {section}{\numberline {\centering 3.4}Composition}{12}{}%
-\contentsline {section}{\numberline {\centering 3.5}Checks}{13}{}%
-\contentsline {section}{\numberline {\centering 3.6}Success and Failure}{13}{}%
-\contentsline {section}{\numberline {\centering 3.7}Obstacle}{13}{}%
-\contentsline {section}{\numberline {\centering 3.8}Intent}{14}{}%
-\contentsline {section}{\numberline {\centering 3.9}Extra Successes and Failures}{14}{}%
-\contentsline {section}{\numberline {\centering 3.10}Advantage}{15}{}%
-\contentsline {section}{\numberline {\centering 3.11}Disadvantage}{15}{}%
-\contentsline {section}{\numberline {\centering 3.12}Types of Checks}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.12.1}Close-ended Checks}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.12.2}VS Checks}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.12.3}Open-ended Checks}{15}{}%
-\contentsline {section}{\numberline {\centering 3.13}Help}{15}{}%
-\contentsline {section}{\numberline {\centering 3.14}Character Stats}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.14.1}Core Stats}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.14.2}Skills}{15}{}%
+\contentsline {section}{\numberline {\centering 3.1}Quantity}{11}{}%
+\contentsline {section}{\numberline {\centering 3.2}Quality}{11}{}%
+\contentsline {section}{\numberline {\centering 3.3}Composition}{12}{}%
+\contentsline {section}{\numberline {\centering 3.4}Checks}{12}{}%
+\contentsline {section}{\numberline {\centering 3.5}Success and Failure}{13}{}%
+\contentsline {section}{\numberline {\centering 3.6}Obstacle}{13}{}%
+\contentsline {section}{\numberline {\centering 3.7}Intent}{14}{}%
+\contentsline {section}{\numberline {\centering 3.8}Extra Successes}{14}{}%
+\contentsline {section}{\numberline {\centering 3.9}Advantage}{15}{}%
+\contentsline {section}{\numberline {\centering 3.10}Disadvantage}{15}{}%
+\contentsline {section}{\numberline {\centering 3.11}Types of Checks}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.11.1}Close-ended Checks}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.11.2}VS Checks}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.11.3}Open-ended Checks}{15}{}%
+\contentsline {section}{\numberline {\centering 3.12}Help}{15}{}%
+\contentsline {section}{\numberline {\centering 3.13}Character Stats}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.13.1}Core Stats}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.13.2}Skills}{15}{}%
 \contentsline {chapter}{\numberline {\centering 4}Quirks}{16}{}%
 \contentsline {chapter}{\numberline {\centering 5}Character Creation}{17}{}%
 \contentsline {chapter}{\numberline {\centering 6}Character Change}{18}{}%
