@@ -1,59 +1,52 @@
 \contentsline {part}{I\hspace {1em}Core Rules}{3}{}%
 \contentsline {chapter}{\numberline {\centering 1}Introduction}{4}{}%
 \contentsline {section}{\numberline {\centering 1.1}What is Arrata?}{4}{}%
-\contentsline {subsection}{\numberline {\centering 1.1.1}Etymologically}{4}{}%
-\contentsline {subsection}{\numberline {\centering 1.1.2}Literally}{4}{}%
-\contentsline {section}{\numberline {\centering 1.2}What is Roleplaying?}{5}{}%
-\contentsline {section}{\numberline {\centering 1.3}Game Masters}{5}{}%
-\contentsline {subsection}{\numberline {\centering 1.3.1}GM Authority}{6}{}%
-\contentsline {subsection}{\numberline {\centering 1.3.2}Non-Player Characters}{6}{}%
+\contentsline {section}{\numberline {\centering 1.2}Game Masters}{5}{}%
+\contentsline {section}{\numberline {\centering 1.3}Non-Player Characters}{6}{}%
 \contentsline {section}{\numberline {\centering 1.4}Players and their Characters}{6}{}%
-\contentsline {subsection}{\numberline {\centering 1.4.1}Player Characters}{6}{}%
+\contentsline {paragraph}{Player Characters}{6}{}%
 \contentsline {chapter}{\numberline {\centering 2}Dice}{7}{}%
 \contentsline {section}{\numberline {\centering 2.1}Why Dice?}{7}{}%
 \contentsline {section}{\numberline {\centering 2.2}Dice Notation}{7}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.1}Rolled Dice}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.2}Addition and Subtraction}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.3}Exploding Dice}{8}{}%
-\contentsline {subsection}{\numberline {\centering 2.2.4}Evil Dice}{9}{}%
-\contentsline {section}{\numberline {\centering 2.3}Dice Pools}{9}{}%
-\contentsline {subsection}{\numberline {\centering 2.3.1}Conditionals}{9}{}%
-\contentsline {subsection}{\numberline {\centering 2.3.2}The d6}{9}{}%
-\contentsline {chapter}{\numberline {\centering 3}Stats}{10}{}%
-\contentsline {section}{\numberline {\centering 3.1}Definition}{10}{}%
-\contentsline {subsection}{\numberline {\centering 3.1.1}Quantity}{10}{}%
-\contentsline {subsection}{\numberline {\centering 3.1.2}Quality}{10}{}%
-\contentsline {subsection}{\numberline {\centering 3.1.3}Composition}{11}{}%
-\contentsline {section}{\numberline {\centering 3.2}Checks}{11}{}%
-\contentsline {subsection}{\numberline {\centering 3.2.1}Success and Failure}{11}{}%
-\contentsline {subsection}{\numberline {\centering 3.2.2}Obstacle}{12}{}%
-\contentsline {subsection}{\numberline {\centering 3.2.3}Intent}{12}{}%
-\contentsline {subsection}{\numberline {\centering 3.2.4}Outcomes}{13}{}%
-\contentsline {paragraph}{Passing a Check}{13}{}%
-\contentsline {paragraph}{Failing a Check}{13}{}%
-\contentsline {paragraph}{Extra Successes and Failures}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.2.5}Advantage}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.2.6}Disadvantage}{13}{}%
-\contentsline {section}{\numberline {\centering 3.3}Types of Checks}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.3.1}Close-ended Checks}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.3.2}VS Checks}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.3.3}Open-ended Checks}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.3.4}Help}{13}{}%
-\contentsline {section}{\numberline {\centering 3.4}Character Stats}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.4.1}Core Stats}{13}{}%
-\contentsline {subsection}{\numberline {\centering 3.4.2}Skills}{13}{}%
-\contentsline {chapter}{\numberline {\centering 4}Quirks}{14}{}%
-\contentsline {chapter}{\numberline {\centering 5}Character Creation}{15}{}%
-\contentsline {chapter}{\numberline {\centering 6}Character Change}{16}{}%
-\contentsline {part}{II\hspace {1em}Subsystems}{17}{}%
-\contentsline {chapter}{\numberline {\centering 7}Combat}{18}{}%
-\contentsline {chapter}{\numberline {\centering 8}Injury}{19}{}%
-\contentsline {chapter}{\numberline {\centering 9}Sorcery}{20}{}%
-\contentsline {chapter}{\numberline {\centering 10}Faith}{21}{}%
-\contentsline {chapter}{\numberline {\centering 11}Engineering}{22}{}%
-\contentsline {part}{III\hspace {1em}Appendices}{23}{}%
-\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{24}{}%
-\contentsline {chapter}{\numberline {B}Skills}{25}{}%
-\contentsline {chapter}{\numberline {C}Quirks}{26}{}%
-\contentsline {chapter}{\numberline {D}Equipment}{27}{}%
-\contentsline {part}{IV\hspace {1em}Credits}{28}{}%
+\contentsline {section}{\numberline {\centering 2.3}Rolled Dice}{8}{}%
+\contentsline {section}{\numberline {\centering 2.4}Addition and Subtraction}{8}{}%
+\contentsline {section}{\numberline {\centering 2.5}Exploding Dice}{8}{}%
+\contentsline {section}{\numberline {\centering 2.6}Evil Dice}{9}{}%
+\contentsline {section}{\numberline {\centering 2.7}Dice Pools}{9}{}%
+\contentsline {section}{\numberline {\centering 2.8}Conditionals}{9}{}%
+\contentsline {section}{\numberline {\centering 2.9}The d6}{10}{}%
+\contentsline {chapter}{\numberline {\centering 3}Stats}{11}{}%
+\contentsline {section}{\numberline {\centering 3.1}Definition}{11}{}%
+\contentsline {section}{\numberline {\centering 3.2}Quantity}{11}{}%
+\contentsline {section}{\numberline {\centering 3.3}Quality}{12}{}%
+\contentsline {section}{\numberline {\centering 3.4}Composition}{12}{}%
+\contentsline {section}{\numberline {\centering 3.5}Checks}{13}{}%
+\contentsline {section}{\numberline {\centering 3.6}Success and Failure}{13}{}%
+\contentsline {section}{\numberline {\centering 3.7}Obstacle}{13}{}%
+\contentsline {section}{\numberline {\centering 3.8}Intent}{14}{}%
+\contentsline {section}{\numberline {\centering 3.9}Extra Successes and Failures}{14}{}%
+\contentsline {section}{\numberline {\centering 3.10}Advantage}{15}{}%
+\contentsline {section}{\numberline {\centering 3.11}Disadvantage}{15}{}%
+\contentsline {section}{\numberline {\centering 3.12}Types of Checks}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.1}Close-ended Checks}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.2}VS Checks}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.3}Open-ended Checks}{15}{}%
+\contentsline {section}{\numberline {\centering 3.13}Help}{15}{}%
+\contentsline {section}{\numberline {\centering 3.14}Character Stats}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.14.1}Core Stats}{15}{}%
+\contentsline {subsection}{\numberline {\centering 3.14.2}Skills}{15}{}%
+\contentsline {chapter}{\numberline {\centering 4}Quirks}{16}{}%
+\contentsline {chapter}{\numberline {\centering 5}Character Creation}{17}{}%
+\contentsline {chapter}{\numberline {\centering 6}Character Change}{18}{}%
+\contentsline {part}{II\hspace {1em}Subsystems}{19}{}%
+\contentsline {chapter}{\numberline {\centering 7}Combat}{20}{}%
+\contentsline {chapter}{\numberline {\centering 8}Injury}{21}{}%
+\contentsline {chapter}{\numberline {\centering 9}Sorcery}{22}{}%
+\contentsline {chapter}{\numberline {\centering 10}Faith}{23}{}%
+\contentsline {chapter}{\numberline {\centering 11}Engineering}{24}{}%
+\contentsline {part}{III\hspace {1em}Appendices}{25}{}%
+\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{26}{}%
+\contentsline {chapter}{\numberline {B}Skills}{27}{}%
+\contentsline {chapter}{\numberline {C}Quirks}{28}{}%
+\contentsline {chapter}{\numberline {D}Equipment}{29}{}%
+\contentsline {part}{IV\hspace {1em}Credits}{30}{}%
