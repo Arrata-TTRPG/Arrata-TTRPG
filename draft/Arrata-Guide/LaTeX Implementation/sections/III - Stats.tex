@@ -15,7 +15,7 @@
 
     \section{Quantity}
 
-    Quantity has essentially already been defined; it is the Quantity of dice rolled, specifically in d6s. It specifies the $Y$ component of $YdX$ or the value of the dice pool. In a more character-focused sense, Quantity represents the capacity to do what a particular stat does. It defines the upper bound for the stat's capability.
+    Quantity has already been defined; it is the number of dice rolled, specifically in d6s. It specifies the $Y$ component of $YdX$ or the value of the dice pool. In a more character-focused sense, Quantity represents the capacity to do what a particular stat does. It defines the upper bound for the stat's capability.
 
     Quantity is an {\em uncapped} value, meaning that Quantity values can be arbitrarily large, from 1 to whatever lies just below infinity. Luckily, you won't need to purchase $\inf - 1$ d6s, as Arrata will almost always deal with Quantity values from 1 to 10. In rare cases, Quantities might be in excess of 20, but those are extremely rare and represent supernatural forces beyond conventional limits.
 
@@ -105,21 +105,63 @@
         {\em A cook is making a large volume of stew with their $B5$ cooking skill. The GM declares that with their ingredients, the Obstacle of the check will be $Ob\; 2$. The cook rolls and gets all 5 successes! The GM says that because the cook not only met but surpassed the Obstacle, the resultant stew is incredibly delicious, and the patrons consuming it are mesmerized.}
     \end{displayquote}
 
-    There are no extra consequences to having successes under the Obstacle of the check. You just fail the check and the consequences happen.
+    There are no extra consequences to having successes under the Obstacle of the check.
     
     \section{Advantage}
 
+    Some situations will happen where a side in a check has an advantage in doing their task. For example; exploiting the environment, having a relevant Quirk, playing into your Argos, having the high ground in a fight, and getting Help from another character would all induce a level of advantage. 
+
+    When advantage is had, the rolling side with advantage turns their roll into an open-ended roll. In addition, if multiple sources provide a level of advantage higher than 1, or the roll was already open-ended, then the extra levels of advantage turn into $+1D$ each.
+
+    With open-ended rolls, remember that any maxes of the die (6) will add $+1D$ to the roll. The 6s that are rolled are also counted as successes. Open-ended rolls in Arrata are denoted with a $!$ in front of the roll.
+
+    For example:
+
+    \begin{itemize}
+        \item $!B3 =\; !(6, 4, 6)>3 = 2$\; Successes $+\; !B2 = $\; 2 Successes $ +\; !(4, 2)>3 = $ 3 Successes.
+        \item $!G4 =\; !(6, 2, 3, 5)>2 = 3$\; Successes $+\; !G1 = $\; 3 Successes $+\; !(4)>2 = $ 4 Successes.
+        \item $!S6 =\; !(6, 4, 6, 3, 5, 3)>1 = 6$\; Successes $+\; !S2 = $\; 6 Successes $+\; !(2, 2)>1 = $ 8 Successes.
+        \item \dots
+    \end{itemize}
+
     \section{Disadvantage}
 
-    \section{Types of Checks}
+    There are also situations where the inverse may be true; the terrain is unfavorable, your Quirks are opposed to the action, it opposes your Argos, having the low ground in combat, and enemies harrying you would all induce a level of disadvantage.
 
-    \subsection{Close-ended Checks}
+    Disadvantage imposes Evil dice to the roll, and may also be obtained in levels. Past the first level of disadvantage, or if the roll already has Evil dice, the check will have +1 Ob imposed per level of extra disadvantage.
 
-    \subsection{VS Checks}
+    Evil dice subtract -1 Success from rolls that result in a minimum value (1). In Arrata, they're denoted with a !` in front of the roll.
 
-    \subsection{Open-ended Checks}
+    For example:
+    % Fix examples.
+    \begin{itemize}
+        \item $!B3 =\; !(6, 4, 6)>3 = 2$\; Successes $+\; !B2 = $\; 2 Successes $ +\; !(4, 2)>3 = $ 3 Successes.
+        \item $!G4 =\; !(6, 2, 3, 5)>2 = 3$\; Successes $+\; !G1 = $\; 3 Successes $+\; !(4)>2 = $ 4 Successes.
+        \item $!S6 =\; !(6, 4, 6, 3, 5, 3)>1 = 6$\; Successes $+\; !S2 = $\; 6 Successes $+\; !(2, 2)>1 = $ 8 Successes.
+        \item \dots
+    \end{itemize}
 
-    \section{Help}
+    \section{Help, All at Once}
+
+    There comes a time when two or more characters will be working towards the same intent at the same time. It could be that some are attempting to help others, which is called Help, or that they're doing a sensitive task in parallel, which is called All at Once. Choose a character to act as the leader of the roll - this person should be the one who is relying the most on the other characters - the weakest link in the scenario.
+
+    Have the non-leading characters roll first, summing the success {\em and} failures. Subtract the successes from the failures, and give that level of advantage to the leader of the roll. If the number is negative, give that level of disadvantage instead. Also, note down a check for all characters rolling here.
+
+    Here is an example of Help:
+
+    \begin{displayquote}
+        {\em Agnar woke up at the bottom of a pit with a large boulder on top of him! He's uninjured, but at an awkward angle; luckily, his comrade Steven has arrived to help! Since Agnar is in the disadvantaged position and is the one in need of help, he'll be making this supporting roll with his A5 Power stat, and Steven will be leading the roll with his weaker B4 Power stat. The GM puts that, to free Agnar, the Ob will be 3. Failing to meet that Ob will result in the boulder crushing Agnar's foot, injuring him!
+
+        Agnar rolls first: 3 successes - 2 failures, a net of +1! That means Steven gets to roll with a level of advantage! Steven rolls: !(6, 1, 5, 2), 2 successes but he gets to roll an extra B1 because of the help from Agnar: (4), making 3 successes! They both roll the boulder off Agnar, an act that seems to have won Steven some free liquor tonight!}
+    \end{displayquote}
+
+    And one of All at Once:
+
+    \begin{displayquote}
+        {\em Steven hears the scraping of boots up ahead. Unfortunately, both Agnar and himself lost their weapons in the fall and will need to deploy stealth if they hope to avoid getting gutted. Unfortunately, this calls for a Stealth check, one that falls under All at Once, and Agnar has the tact and Stealthiness of a pregnant horse (B2). Steven sighs, and prepares his A6 Stealth roll. The GM declares that this Stealth check will be an Ob 4.
+        
+        He gets 5 successes - 1 failure! A net +4 advantage for Agnar! That means Agnar rolls a !B5: (6, 6, 3, 4, 1). 3 Successes so far, but he gets 2 more from the open-endedness of the roll: (4, 1). That makes 4 successes! Through some miracle, Steven manages to compensate for Agnar's bumbling mess of a stealth attempt, and they sneak past whatever's prowling these halls in one- well, two pieces.}
+    \end{displayquote}
 
     \section{Character Stats}
 

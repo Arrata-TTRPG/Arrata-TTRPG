@@ -2,9 +2,8 @@
 \contentsline {chapter}{\numberline {\centering 1}Introduction}{4}{}%
 \contentsline {section}{\numberline {\centering 1.1}What is Arrata?}{4}{}%
 \contentsline {section}{\numberline {\centering 1.2}Game Masters}{5}{}%
-\contentsline {section}{\numberline {\centering 1.3}Non-Player Characters}{6}{}%
-\contentsline {section}{\numberline {\centering 1.4}Players and their Characters}{6}{}%
-\contentsline {paragraph}{Player Characters}{6}{}%
+\contentsline {section}{\numberline {\centering 1.3}Players and their Characters}{6}{}%
+\contentsline {section}{\numberline {\centering 1.4}Non-Player Characters}{6}{}%
 \contentsline {chapter}{\numberline {\centering 2}Dice}{7}{}%
 \contentsline {section}{\numberline {\centering 2.1}Why Dice?}{7}{}%
 \contentsline {section}{\numberline {\centering 2.2}Dice Notation}{7}{}%
@@ -24,28 +23,24 @@
 \contentsline {section}{\numberline {\centering 3.6}Obstacle}{13}{}%
 \contentsline {section}{\numberline {\centering 3.7}Intent}{14}{}%
 \contentsline {section}{\numberline {\centering 3.8}Extra Successes}{14}{}%
-\contentsline {section}{\numberline {\centering 3.9}Advantage}{15}{}%
+\contentsline {section}{\numberline {\centering 3.9}Advantage}{14}{}%
 \contentsline {section}{\numberline {\centering 3.10}Disadvantage}{15}{}%
-\contentsline {section}{\numberline {\centering 3.11}Types of Checks}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.11.1}Close-ended Checks}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.11.2}VS Checks}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.11.3}Open-ended Checks}{15}{}%
-\contentsline {section}{\numberline {\centering 3.12}Help}{15}{}%
-\contentsline {section}{\numberline {\centering 3.13}Character Stats}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.13.1}Core Stats}{15}{}%
-\contentsline {subsection}{\numberline {\centering 3.13.2}Skills}{15}{}%
-\contentsline {chapter}{\numberline {\centering 4}Quirks}{16}{}%
-\contentsline {chapter}{\numberline {\centering 5}Character Creation}{17}{}%
-\contentsline {chapter}{\numberline {\centering 6}Character Change}{18}{}%
-\contentsline {part}{II\hspace {1em}Subsystems}{19}{}%
-\contentsline {chapter}{\numberline {\centering 7}Combat}{20}{}%
-\contentsline {chapter}{\numberline {\centering 8}Injury}{21}{}%
-\contentsline {chapter}{\numberline {\centering 9}Sorcery}{22}{}%
-\contentsline {chapter}{\numberline {\centering 10}Faith}{23}{}%
-\contentsline {chapter}{\numberline {\centering 11}Engineering}{24}{}%
-\contentsline {part}{III\hspace {1em}Appendices}{25}{}%
-\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{26}{}%
-\contentsline {chapter}{\numberline {B}Skills}{27}{}%
-\contentsline {chapter}{\numberline {C}Quirks}{28}{}%
-\contentsline {chapter}{\numberline {D}Equipment}{29}{}%
-\contentsline {part}{IV\hspace {1em}Credits}{30}{}%
+\contentsline {section}{\numberline {\centering 3.11}Help, All at Once}{15}{}%
+\contentsline {section}{\numberline {\centering 3.12}Character Stats}{16}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.1}Core Stats}{16}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.2}Skills}{16}{}%
+\contentsline {chapter}{\numberline {\centering 4}Quirks}{17}{}%
+\contentsline {chapter}{\numberline {\centering 5}Character Creation}{18}{}%
+\contentsline {chapter}{\numberline {\centering 6}Character Change}{19}{}%
+\contentsline {part}{II\hspace {1em}Subsystems}{20}{}%
+\contentsline {chapter}{\numberline {\centering 7}Combat}{21}{}%
+\contentsline {chapter}{\numberline {\centering 8}Injury}{22}{}%
+\contentsline {chapter}{\numberline {\centering 9}Sorcery}{23}{}%
+\contentsline {chapter}{\numberline {\centering 10}Faith}{24}{}%
+\contentsline {chapter}{\numberline {\centering 11}Engineering}{25}{}%
+\contentsline {part}{III\hspace {1em}Appendices}{26}{}%
+\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{27}{}%
+\contentsline {chapter}{\numberline {B}Skills}{28}{}%
+\contentsline {chapter}{\numberline {C}Quirks}{29}{}%
+\contentsline {chapter}{\numberline {D}Equipment}{30}{}%
+\contentsline {part}{IV\hspace {1em}Credits}{31}{}%
