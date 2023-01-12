@@ -1,87 +1,4 @@
-\documentclass[12pt, oneside]{book}
-
-% Package imports.
-\usepackage{graphicx}
-\usepackage{geometry}
-\usepackage{import}
-\usepackage[parfill]{parskip}
-\usepackage{array}
-\usepackage{nopageno}
-\usepackage{fancyhdr}
-\usepackage{afterpage}
-\usepackage{subfiles}
-\usepackage{titlesec}
-\usepackage{xcolor}
-\usepackage{appendix}
-\usepackage{amsmath}
-\usepackage{tabularx}
-\usepackage{csquotes}
-
-% Images path
-\graphicspath{{./images}}
-
-% Color settings.
-% Color of the background.
-\pagecolor[rgb]{0,0,0}
-% Color of the words.
-\color[rgb]{1,1,1}
-
-% Title page information.
-\title{
-    \textbf{ARRATA} 
-    \\
-    \large Change Through Purpose.
-    \\
-    \includegraphics[width=12cm]{rat.png}
-    \\
-    Compiled on \today.
-}
-\date{}
-\author{
-    Developed by {\em Kaleb Burris} \\
-    Version 0.5
-}
-
-% Formatting.
-
-% Section naming.
-\renewcommand\thechapter{\centering\arabic{chapter}}
-\renewcommand\thesection{\thechapter.\arabic{section}}
-\renewcommand\thesubsection{\thesection.\arabic{subsection}}
-
-% Removing the fancy formatting for pages
-% that are not sections.
-\pagestyle{fancy}
-\fancypagestyle{plain}
-
-\newcommand\blankpage{%
-    \null
-    \thispagestyle{empty}%
-    \addtocounter{page}{-1}%
-    \newpage}
-
-% Formatting page headers and footers.
-% Headers.
-\fancyhead[R]{
-    \setlength{\extrarowheight}{-10px}
-    \begin{tabular}{r l}
-        \shortstack[r]{\textbf{ARRATA} Ver. 0.5 \\ {\em Change Through Purpose.}} & \includegraphics[width=0.8cm]{rat.png}
-    \end{tabular}
-}
-\fancyhead[L]{
-    \parbox{6cm}{\raggedright\textsl{\rightmark}}
-}
-
-\renewcommand{\headrulewidth}{0.4pt}
-
-% Footers.
-\renewcommand{\footrulewidth}{0.4pt}
-
-% Margins.
-\geometry{
-    a4paper,
-    total={150mm,220mm}
-}
+\input{preamble}
 
 \begin{document}
 
@@ -110,6 +27,7 @@
     \chapter{Dice}
     \subfile{sections/II - Dice}
 
+    \renewcommand{\hsubtitle}{Do I Want to be Me?}
     \chapter{Quirks}
     \subfile{sections/III - Quirks}
 
