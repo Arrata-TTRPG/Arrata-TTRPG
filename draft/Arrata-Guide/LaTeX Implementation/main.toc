@@ -1,63 +1,63 @@
-\contentsline {part}{I\hspace {1em}Core Rules}{4}{}%
-\contentsline {chapter}{\numberline {\centering 1}Introduction}{5}{}%
-\contentsline {section}{\numberline {\centering 1.1}What is Arrata?}{5}{}%
-\contentsline {section}{\numberline {\centering 1.2}Game Masters}{6}{}%
-\contentsline {section}{\numberline {\centering 1.3}Players and their Characters}{7}{}%
-\contentsline {section}{\numberline {\centering 1.4}Non-Player Characters}{8}{}%
-\contentsline {chapter}{\numberline {\centering 2}Dice}{9}{}%
-\contentsline {section}{\numberline {\centering 2.1}Why Dice?}{9}{}%
-\contentsline {section}{\numberline {\centering 2.2}Dice Notation}{9}{}%
-\contentsline {section}{\numberline {\centering 2.3}Rolled Dice}{10}{}%
-\contentsline {section}{\numberline {\centering 2.4}Addition and Subtraction}{10}{}%
-\contentsline {section}{\numberline {\centering 2.5}Exploding Dice}{11}{}%
-\contentsline {section}{\numberline {\centering 2.6}Evil Dice}{11}{}%
-\contentsline {section}{\numberline {\centering 2.7}Dice Pools}{11}{}%
-\contentsline {section}{\numberline {\centering 2.8}Conditionals}{12}{}%
-\contentsline {section}{\numberline {\centering 2.9}The d6}{12}{}%
-\contentsline {chapter}{\numberline {\centering 3}Stats}{13}{}%
-\contentsline {section}{\numberline {\centering 3.1}Quantity}{13}{}%
-\contentsline {section}{\numberline {\centering 3.2}Quality}{14}{}%
-\contentsline {section}{\numberline {\centering 3.3}Composition}{14}{}%
-\contentsline {section}{\numberline {\centering 3.4}Checks}{15}{}%
-\contentsline {section}{\numberline {\centering 3.5}Success and Failure}{15}{}%
-\contentsline {section}{\numberline {\centering 3.6}Obstacle}{16}{}%
-\contentsline {section}{\numberline {\centering 3.7}Intent}{16}{}%
-\contentsline {section}{\numberline {\centering 3.8}Extra Successes}{16}{}%
-\contentsline {section}{\numberline {\centering 3.9}Advantage}{17}{}%
-\contentsline {section}{\numberline {\centering 3.10}Disadvantage}{18}{}%
-\contentsline {section}{\numberline {\centering 3.11}Help, All at Once}{18}{}%
-\contentsline {section}{\numberline {\centering 3.12}Leveling}{19}{}%
-\contentsline {subsubsection}{Level-ability}{20}{}%
-\contentsline {subsection}{\numberline {\centering 3.12.1}Checks}{20}{}%
-\contentsline {subsection}{\numberline {\centering 3.12.2}Optional: Intuition}{20}{}%
-\contentsline {chapter}{\numberline {\centering 4}Quirks}{21}{}%
-\contentsline {section}{\numberline {\centering 4.1}Quirk Types}{21}{}%
-\contentsline {subsubsection}{Ethos}{21}{}%
-\contentsline {subsubsection}{Pathos}{22}{}%
-\contentsline {subsubsection}{Logos}{22}{}%
-\contentsline {section}{\numberline {\centering 4.2}Intuition}{22}{}%
-\contentsline {section}{\numberline {\centering 4.3}Fighting and Accepting Quirks}{23}{}%
-\contentsline {subsection}{\numberline {\centering 4.3.1}Acceptance}{23}{}%
-\contentsline {subsection}{\numberline {\centering 4.3.2}Boons and Flaws}{23}{}%
-\contentsline {subsection}{\numberline {\centering 4.3.3}Rejection}{24}{}%
-\contentsline {section}{\numberline {\centering 4.4}Argos}{24}{}%
-\contentsline {subsection}{\numberline {\centering 4.4.1}Completing Argos}{24}{}%
-\contentsline {subsection}{\numberline {\centering 4.4.2}Breaking Argos}{24}{}%
-\contentsline {section}{\numberline {\centering 4.5}Roleplaying and Quirks}{24}{}%
-\contentsline {chapter}{\numberline {\centering 5}Characters}{25}{}%
-\contentsline {section}{\numberline {\centering 5.1}Character Stats}{25}{}%
-\contentsline {subsection}{\numberline {\centering 5.1.1}Core Stats}{25}{}%
-\contentsline {subsection}{\numberline {\centering 5.1.2}Stat Resources}{26}{}%
-\contentsline {subsection}{\numberline {\centering 5.1.3}Skills}{27}{}%
-\contentsline {part}{II\hspace {1em}Subsystems}{28}{}%
-\contentsline {chapter}{\numberline {\centering 6}Combat}{29}{}%
-\contentsline {chapter}{\numberline {\centering 7}Injury}{30}{}%
-\contentsline {chapter}{\numberline {\centering 8}Sorcery}{31}{}%
-\contentsline {chapter}{\numberline {\centering 9}Faith}{32}{}%
-\contentsline {chapter}{\numberline {\centering 10}Engineering}{33}{}%
-\contentsline {part}{III\hspace {1em}Appendices}{34}{}%
-\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{35}{}%
-\contentsline {chapter}{\numberline {B}Skills}{36}{}%
-\contentsline {chapter}{\numberline {C}Quirks}{37}{}%
-\contentsline {chapter}{\numberline {D}Equipment}{38}{}%
-\contentsline {part}{IV\hspace {1em}Credits}{39}{}%
+\contentsline {part}{I\hspace {1em}Core Rules}{2}{}%
+\contentsline {chapter}{\numberline {\centering 1}Introduction}{3}{}%
+\contentsline {section}{\numberline {\centering 1.1}What is Arrata?}{3}{}%
+\contentsline {section}{\numberline {\centering 1.2}Game Masters}{4}{}%
+\contentsline {section}{\numberline {\centering 1.3}Players and their Characters}{5}{}%
+\contentsline {section}{\numberline {\centering 1.4}Non-Player Characters}{5}{}%
+\contentsline {chapter}{\numberline {\centering 2}Dice}{7}{}%
+\contentsline {section}{\numberline {\centering 2.1}Why Dice?}{7}{}%
+\contentsline {section}{\numberline {\centering 2.2}Dice Notation}{7}{}%
+\contentsline {section}{\numberline {\centering 2.3}Rolled Dice}{8}{}%
+\contentsline {section}{\numberline {\centering 2.4}Addition and Subtraction}{8}{}%
+\contentsline {section}{\numberline {\centering 2.5}Exploding Dice}{9}{}%
+\contentsline {section}{\numberline {\centering 2.6}Evil Dice}{9}{}%
+\contentsline {section}{\numberline {\centering 2.7}Dice Pools}{9}{}%
+\contentsline {section}{\numberline {\centering 2.8}Conditionals}{10}{}%
+\contentsline {section}{\numberline {\centering 2.9}The d6}{10}{}%
+\contentsline {chapter}{\numberline {\centering 3}Stats}{11}{}%
+\contentsline {section}{\numberline {\centering 3.1}Quantity}{11}{}%
+\contentsline {section}{\numberline {\centering 3.2}Quality}{12}{}%
+\contentsline {section}{\numberline {\centering 3.3}Composition}{12}{}%
+\contentsline {section}{\numberline {\centering 3.4}Checks}{13}{}%
+\contentsline {section}{\numberline {\centering 3.5}Success and Failure}{13}{}%
+\contentsline {section}{\numberline {\centering 3.6}Obstacle}{14}{}%
+\contentsline {section}{\numberline {\centering 3.7}Intent}{14}{}%
+\contentsline {section}{\numberline {\centering 3.8}Extra Successes}{14}{}%
+\contentsline {section}{\numberline {\centering 3.9}Advantage}{15}{}%
+\contentsline {section}{\numberline {\centering 3.10}Disadvantage}{16}{}%
+\contentsline {section}{\numberline {\centering 3.11}Help, All at Once}{16}{}%
+\contentsline {section}{\numberline {\centering 3.12}Leveling}{17}{}%
+\contentsline {subsubsection}{Level-ability}{18}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.1}Checks}{18}{}%
+\contentsline {subsection}{\numberline {\centering 3.12.2}Optional: Intuition}{18}{}%
+\contentsline {chapter}{\numberline {\centering 4}Quirks}{19}{}%
+\contentsline {section}{\numberline {\centering 4.1}Quirk Types}{19}{}%
+\contentsline {subsubsection}{Ethos}{19}{}%
+\contentsline {subsubsection}{Pathos}{20}{}%
+\contentsline {subsubsection}{Logos}{20}{}%
+\contentsline {section}{\numberline {\centering 4.2}Intuition}{20}{}%
+\contentsline {section}{\numberline {\centering 4.3}Fighting and Accepting Quirks}{21}{}%
+\contentsline {subsection}{\numberline {\centering 4.3.1}Acceptance}{21}{}%
+\contentsline {subsection}{\numberline {\centering 4.3.2}Boons and Flaws}{21}{}%
+\contentsline {subsection}{\numberline {\centering 4.3.3}Rejection}{22}{}%
+\contentsline {section}{\numberline {\centering 4.4}Argos}{22}{}%
+\contentsline {subsection}{\numberline {\centering 4.4.1}Completing Argos}{22}{}%
+\contentsline {subsection}{\numberline {\centering 4.4.2}Breaking Argos}{22}{}%
+\contentsline {section}{\numberline {\centering 4.5}Roleplaying and Quirks}{22}{}%
+\contentsline {chapter}{\numberline {\centering 5}Characters}{23}{}%
+\contentsline {section}{\numberline {\centering 5.1}Character Stats}{23}{}%
+\contentsline {subsection}{\numberline {\centering 5.1.1}Core Stats}{23}{}%
+\contentsline {subsection}{\numberline {\centering 5.1.2}Stat Resources}{24}{}%
+\contentsline {subsection}{\numberline {\centering 5.1.3}Skills}{25}{}%
+\contentsline {part}{II\hspace {1em}Subsystems}{26}{}%
+\contentsline {chapter}{\numberline {\centering 6}Combat}{27}{}%
+\contentsline {chapter}{\numberline {\centering 7}Injury}{28}{}%
+\contentsline {chapter}{\numberline {\centering 8}Sorcery}{29}{}%
+\contentsline {chapter}{\numberline {\centering 9}Faith}{30}{}%
+\contentsline {chapter}{\numberline {\centering 10}Engineering}{31}{}%
+\contentsline {part}{III\hspace {1em}Appendices}{32}{}%
+\contentsline {chapter}{\numberline {A}Dice Probability Distributions}{33}{}%
+\contentsline {chapter}{\numberline {B}Skills}{34}{}%
+\contentsline {chapter}{\numberline {C}Quirks}{35}{}%
+\contentsline {chapter}{\numberline {D}Equipment}{36}{}%
+\contentsline {part}{IV\hspace {1em}Credits}{37}{}%
