@@ -1,8 +1,8 @@
-\documentclass[12pt, oneside]{book}
+\documentclass[10pt, oneside]{book}
 
 % Package imports.
 \usepackage{graphicx}
-\usepackage{geometry}
+\usepackage[a5paper, width=120mm, top=25mm, bottom=20mm]{geometry}
 \usepackage{import}
 \usepackage[parfill]{parskip}
 \usepackage{array}
@@ -26,15 +26,15 @@
 % Color of the words.
 \color[rgb]{1,1,1}
 
-\newcommand{\hsubtitle}{Change Through Purpose.}
+\newcommand{\hsubtitle}{Change Through Purpose}
 
 % Title page information.
 \title{
     \textbf{ARRATA} 
     \\
-    \large Change Through Purpose.
+    \large \hsubtitle
     \\
-    \includegraphics[width=12cm]{rat.png}
+    \includegraphics[width=6cm]{rat.png}
     \\
     Compiled on \today.
 }
@@ -57,7 +57,7 @@
 \fancypagestyle{plain}
 
 \newcommand\blankpage{%
-    \null
+    \null%
     \thispagestyle{empty}%
     \addtocounter{page}{-1}%
     \newpage}
@@ -65,10 +65,10 @@
 % Formatting page headers and footers.
 % Headers.
 \fancyhead[R]{
-    \setlength{\extrarowheight}{-10px}
-    \begin{tabular}{r l}
-        \shortstack[r]{\textbf{ARRATA} Ver. 0.5 \\ {\em \hsubtitle}} & \includegraphics[width=0.8cm]{rat.png}
-    \end{tabular}
+    %\setlength{\extrarowheight}{-10px}
+    %\begin{tabular}{r l}
+    %    \shortstack[r]{\textbf{ARRATA} Ver. 0.5 \\ {\em \hsubtitle}} & \includegraphics[width=0.8cm]{rat.png}
+    %\end{tabular}
 }
 \fancyhead[L]{
     \parbox{6cm}{\raggedright\textsl{\rightmark}}
@@ -78,9 +78,3 @@
 
 % Footers.
 \renewcommand{\footrulewidth}{0.4pt}
-
-% Margins.
-\geometry{
-    a4paper,
-    total={150mm,220mm}
-}
