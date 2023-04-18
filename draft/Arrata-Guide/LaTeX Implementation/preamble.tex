@@ -17,6 +17,8 @@
 \usepackage{tabularx}
 \usepackage{csquotes}
 \usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage[usestackEOL]{stackengine}
 
 % Images path
 \graphicspath{{./images}}
@@ -73,6 +75,10 @@
 }
 \fancyhead[L]{
     \parbox{6cm}{\rightmark}
+}
+
+\fancyhead[R]{
+    \hsubtitle
 }
 
 \renewcommand{\headrulewidth}{0.4pt}
