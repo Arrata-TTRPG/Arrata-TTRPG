@@ -29,7 +29,9 @@
         \item \textbf{S}uperb: $C$ = 1.
     \end{itemize}
 
-    For the value of stats, refer to the first level of the name of the Quality. For example:
+    When referring to the Quality of a stat, we use the capital first letter of the name of the Quality, as highlighted above.
+
+    Here are a few examples of dice notation conditionals and their corresponding Quality:
 
     \begin{itemize}
         \item $10d6>3$ is $B$ Quality.
@@ -41,7 +43,8 @@
 
     \section{Composition}
 
-    Stats in Arrata are not written in dice notation, instead, they are composed in the format $BX$ where $B$ is the letter of the Quality and $X$ is the value of the Quantity. Here are three example stats:
+    Stats in Arrata are not written in dice notation. Instead, they are composed in the format $QY$ where $Q$ is the letter of the Quality and $Y$ is the value of the Quantity. Additionally, there may be modifiers, which are typically appended to the front of the stat when it's being rolled. Stats that are simply being stored, say on a character sheet, should never have modifiers. Here are three example stats:
+
     \begin{equation*}
         \overbracket[0.75pt]{B}^{\mathclap{\text{Quality}}}
         \underbracket[0.75pt]{6}_{\mathclap{\text{Quantity}}} \quad \quad
@@ -51,8 +54,9 @@
         \overbracket[0.75pt]{S}^{\mathclap{\text{Quality}}}
         \underbracket[0.75pt]{40,000}_{\mathclap{\text{Quantity}}}
     \end{equation*}
+
     Here are those examples of the Arrata-composed stat and its equivalent dice notation form:
-    
+
     \begin{itemize}
         \item $B6 = 6d6>3$
         \item $A100 = 100d6>2$
@@ -63,89 +67,124 @@
 
     \section{Checks}
 
-    A critical part of roleplaying is meeting something that is a challenge for the character to overcome; something that they may or may not be able to do. When this happens; when an action is contested, a \textbf{Check} is called for. Dice are rolled and compared to a {\em difficulty level} to determine the outcome, which the GM will interpret.
+    A critical part of roleplaying is meeting something that is challenging for the character to overcome. When this happens; when an action is contested, a \textbf{Check} is called for. Dice are rolled and compared to a {\em difficulty level} to determine the outcome.
 
-    Checks are the core of the system, knowing when a check occurs and what to do are critical pieces of information for GMs and players alike. Not only do they drive forwards the story, but checks are also used to challenge things about characters, which allows them to learn and improve.
+    Checks are the core of the vast majority of TTRPGs, and Arrata is no different in this regard. Knowing when a check occurs and what to do are critical pieces of information for GMs and players alike. Not only do they drive the story, but checks are also used to challenge aspects of characters, which allows them to discover, learn, and change. This seemingly secondary role is where you will often find the most drama, and how you choose to pursue challenges and how you guide your character's changes are what this is all about.
 
-    \section{Success and Failure}
+    \subsection{Success and Failure}
 
-    Because Arrata uses dice pools and comparisons, Arrata works on a binary success/failure schema. Quality defines the threshold for what a success is; if a die is rolled and is greater than its Quality constant, then the die rolled is counted as a success. This is done for each die you roll and the number of successes is summed up. Any die whose value rolled is equal to or less than the Quality is called a failure. The sum of the failures of a roll is not usually used for anything and that operation will be stated ahead of time, so when you roll, don't worry about summing them up.
+    Because Arrata uses dice pools and comparisons, every die rolled is defined as either a \emph{Success} or \emph{Failure}. 
+    
+    Quality defines the threshold for what a success is; if a die is rolled and is greater than its Quality constant, then the die rolled is counted as a success. This is done for each die you roll and the number of successes is summed up. Any die whose value is less than or equal to the Quality (value rolled $\leq$ Quality) is called a failure. The sum of the failures of a roll is not usually used for anything, and the need for that operation will be stated ahead of time, so when you make a typical roll, unless specified, don't worry about summing your Failures up, just the Successes.
+    
+    \emph{Note: Successes get probabilistically more occurrent with higher Quality.}
+    \\
+    \begin{mdframed}[style=Arrata]
+        \begin{equation*}
+            \begin{gathered}
+                \text{Rolling $B2$: } (4,2) > 3 = \text{ 1 Success, 1 Failure}
+            \end{gathered}
+        \end{equation*}
+        \begin{equation*}
+            \begin{gathered}
+                \text{Rolling $A5$: } (2, 6, 1, 3, 5) > 2 = \text{ 3 Successes, 2 Failures}
+            \end{gathered}
+        \end{equation*}
+        \begin{equation*}
+            \begin{gathered}
+                \text{Rolling $S4$: } (6, 2, 5, 4) > 1 = \text{4 Successes, 0 Failures}
+            \end{gathered}
+        \end{equation*}
+    \end{mdframed}
 
-    For example:
-
-    \begin{itemize}
-        \item Rolling $B2$: $(4, 2)>3 =$ 1 Success, 1 Failure.
-        \item Rolling $A5$: $(2, 6, 1, 3, 5)>2 =$ 3 Successes, 2 Failures.
-        \item Rolling $S4$: $(6, 2, 5, 4)>1 =$ 4 Succeses, 0 Failures.
-        \item \dots
-    \end{itemize}
-
-    \section{Obstacle}
+    \subsection{Obstacle}
 
     In Arrata we refer to the {\em difficulty level} as \textbf{Obstacle}. When making a check, this value will be provided by the GM, by a specific subsystem, or it may not be provided at all. Obstacle defines the lower bound of the number of successes needed to {\em pass} the check. If you roll successes below this value, you will {\em fail} the check. If an Obstacle value is higher than your stat's Quantity, you automatically fail the check.
 
     For nomenclature's sake, Obstacle is shortened to $Ob\; X$, where $Ob$ stands for Obstacle and $X$ represents the value of the Obstacle for the check. For an entire check, it is written in the form $Stat\text{\; vs \;}Ob\; X$.
 
-    Here are a few examples:
+    \emph{Note: Thank you for trying Arrata!} :) \emph{Have some example rolls:}
+    \\
+    \begin{mdframed}[style=Arrata]
+        \begin{equation*}
+            \begin{gathered}
+                \text{Rolling $B2$ vs Ob 1: }                      
+                B2 = (2, 2)>3 = 0 \text{ Successes}               \\
+                \text{0 Successes vs Ob 1: \boxed{\emph{Failure...}}}
+            \end{gathered}
+        \end{equation*}
 
-    \begin{itemize}
-        \item Rolling $B2\text{\; vs \;}Ob\; 1: (2, 2)>3\text{\; vs \;}Ob\; 1 =$ 0 Successes vs $Ob\; 1$ = $failure$.
-        \item Rolling $A4\text{\; vs \;}Ob\; 2: (5, 6, 3, 5)>2\text{\; vs \;}Ob\; 2 =$ 4 Successes vs $Ob\; 2$ = $pass$.
-        \item Rolling $S6\text{\; vs \;}Ob\; 4: (1, 5, 1, 2, 3, 4)>1\text{\; vs \;}Ob\; 4 =$ 4 Successes vs $Ob\; 4$ = $pass$.
-        \item \dots
-    \end{itemize}
+        \begin{equation*}
+            \begin{gathered}
+                \text{Rolling $A4$ vs Ob 2: }                      
+                A4 = (5, 6, 3, 5)>2 = 3 \text{ Successes}         \\
+                \text{3 Successes vs Ob 2: \boxed{\textbf{Success!}}}
+            \end{gathered}
+        \end{equation*}
 
-    \section{Intent}
+        \begin{equation*}
+            \begin{gathered}
+                \text{Rolling $S6$ vs Ob 4: }                      
+                A4 = (1, 5, 1, 2, 3, 4)>1 = 4 \text{ Successes}   \\
+                \text{4 Successes vs Ob 4: \boxed{\textbf{Success!}}}
+            \end{gathered}
+        \end{equation*}
+    \end{mdframed}
 
-    When a check is called for, {\em Intent} must be defined. State what exactly it is your character intends to do and what they hope will happen by doing it; that will be used to define the {\em difficulty level}. The GM will then determine the outcome:
+    \subsection{Intent}
 
-    \begin{itemize}
-        \item If you {\em pass} the check,
-        \item If you {\em fail} the check,
-        \item If you have extra successes/failures.
-    \end{itemize}
+    When a check is called for, \emph{Intent} must be defined for all parties involved. It's the GM's job to sum up these Intents and put forward \emph{outcomes}. For the GM, they should define at least two outcome: Success and Failure. If there is ambiguity, 
 
-    \section{Extra Successes}
+    \subsection{Extra Successes}
 
-    Some checks may have boons if you have successes extra. for example:
-
-    \begin{displayquote}
+    When you roll past the Obstacle of a check, it might be that your GM allows for additional boons depending on your intent in the task. If you're trying to attack someone, you might deal them additional wounds, if you're haggling for a better price, you may very well rob them of a golden ring for a measly button. The magnitude of this boon shall be determined by the GM, although moderation is advised; going too far may result in more negative outcomes than expected (see: The Monkey's Paw).
+    \\
+    \begin{mdframed}[style=Arrata]
         {\em A cook is making a large volume of stew with their $B5$ cooking skill. The GM declares that with their ingredients, the Obstacle of the check will be $Ob\; 2$. The cook rolls and gets all 5 successes! The GM says that because the cook not only met but surpassed the Obstacle, the resultant stew is incredibly delicious, and the patrons consuming it are mesmerized.}
-    \end{displayquote}
+    \end{mdframed}
 
-    There are no extra consequences to having successes under the Obstacle of the check.
+    \emph{Note: There are no extra consequences to having successes under the Obstacle of the check.}
     
     \section{Advantage}
 
-        Some situations will happen where a side in a check has an advantage in doing their task. For example; exploiting the environment, having a relevant Quirk, playing into your Argos, having the high ground in a fight, and getting Help from another character would all induce a level of advantage. 
+        Events may occur such that a side in a check has manipulated the circumstances in their favor. We refer to this favor as \emph{Advantage}, and multiple instances of favorable conditions induce higher levels of Advantage. For example: exploiting the environment, having a relevant Quirk, playing into your Argos, having the high ground in a fight, and getting Help from another character would all induce a level of advantage, \emph{each}. If someone truly possessed all of those conditions, we would say they \emph{have 5 levels of advantage}. 
 
         When advantage is had, the rolling side with advantage turns their roll into an open-ended roll. In addition, if multiple sources provide a level of advantage higher than 1, or the roll was already open-ended, then the extra levels of advantage turn into $+1D$ each.
 
-        With open-ended rolls, remember that any maxes of the die (6) will add $+1D$ to the roll. The 6s that are rolled are also counted as successes. Open-ended rolls in Arrata are denoted with a $!$ in front of the roll.
-
-        For example:
-
-    \begin{itemize}
-        \item $!B3 =\; !(6, 4, 6)>3 = 2$\; Successes $+\; !B2 = $\; 2 Successes $ +\; !(4, 2)>3 = $ \textbf{3 Successes}.
-        \item $!G4 =\; !(6, 2, 3, 5)>2 = 3$\; Successes $+\; !G1 = $\; 3 Successes $+\; !(4)>2 = $ \textbf{4 Successes}.
-        \item $!S6 =\; !(6, 4, 6, 3, 5, 3)>1 = 6$\; Successes $+\; !S2 = $\; 6 Successes $+\; !(2, 2)>1 = $ \textbf{8 Successes}.
-    \end{itemize}
+        With open-ended rolls, remember that any maxes of the die (6) will add $+1D$ to the roll. These 6s that have been rolled and are giving $+1D$ are also counted as successes. 
+        
+        \emph{Note: Open-ended rolls are denoted with a $!$ modifier.}
+        \\
+        \begin{mdframed}[style=Arrata]
+            \begin{equation*}
+                \begin{gathered}
+                    \text{Rolling $B$3 vs Ob 4 with 3 levels of advantage:}         \\
+                    !B3 + 2 = \; !(6, 4, 6, 2, 4)>3 = 4 \text{ Successes } +\; !B2  \\
+                    4 \text{ Successes } +\; !(4, 2)>3                              \\
+                    4 \text{ Successes  vs Ob 4: \textbf{Success}!}
+                \end{gathered}
+            \end{equation*}    
+        \end{mdframed}
 
     \section{Disadvantage}
 
-        There are also situations where the inverse may be true; the terrain is unfavorable, your Quirks are opposed to the action, it opposes your Argos, having the low ground in combat, and enemies harrying you would all induce a level of disadvantage.
+        There are also situations where the inverse may be true; the terrain is unfavorable, your Quirks are opposed to the action, it opposes your Argos, having the low ground in combat, and enemies harrying you would all induce a level of disadvantage each.
 
-        Disadvantage imposes Evil dice to the roll, and may also be obtained in levels. Past the first level of disadvantage, or if the roll already has Evil dice, the check will have +1 Ob imposed per level of extra disadvantage.
+        Disadvantage imposes Evil dice to the roll, and is also obtained in levels. Past the first level of disadvantage, or if the roll already has Evil dice, the check will have +1 Ob imposed per level of extra disadvantage.
 
-        Evil dice subtract -1 Success from rolls that result in a minimum value (1). In Arrata, they're denoted with a !` in front of the roll.
-
-    For example:
-    % Fix examples.
-    \begin{itemize}
-        \item !`$B3 =\; $!`$(6, 4, 1)>3 = 2$\; Successes $ - 1 = $ \textbf{1 Success}.
-        \item !`$G4 =\; $!`$(6, 1, 3, 5)>2 = 3$\; Successes $ - 1 = $ \textbf{2 Sucesses}.
-        \item !`$S6 =\; $!`$(6, 1, 6, 3, 5, 1)>1 = 4 $ Successes $ - 2 = $ \textbf{2 Successes}.
-    \end{itemize}
+        Evil dice subtract -1 Success from rolls that result in a minimum value for a d6 (1). 
+        
+        \emph{Note: Rolls with Evil Dice are denoted with a} !` \emph{modifier.}
+        \\
+        \begin{mdframed}[style=Arrata]
+            \begin{equation*}
+                \begin{gathered}
+                    \text{Rolling $S5$ vs Ob 3 with 2 levels of disadvantage:}      \\
+                    \text{!`}S5 = (4, 1, 5, 2, 6)>1 = (3 - 1) \text{ Successes}     \\
+                    2 \text{ Successes vs Ob 4: \emph{ Failure...}}
+                \end{gathered}
+            \end{equation*}
+        \end{mdframed}
 
     \section{Help, All at Once}
 
@@ -173,7 +212,7 @@
 
     Leveling is a mechanical process through which characters improve their abilities by performing actions and learning from their experiences. Most stats in the game are level-able, but it's important to consult your GM to confirm whether things like \emph{Resource stats} are eligible for leveling.
 
-    \subsection{Checks}
+    \subsection{Check `Points'}
 
     Each time you make a check for a stat that can be leveled, you gain a `check' (point). These points accumulate slowly, increasing by +1 for every check made. Once the check pool reaches a value of 2 times the Quantity of the stat, the stat immediately levels up! You can then rejoice as you increase the Quantity by +1, and reset the check pool back to 0.
 
