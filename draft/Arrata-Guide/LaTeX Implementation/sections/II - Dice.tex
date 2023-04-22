@@ -99,18 +99,18 @@
 
     \section{Conditionals}
 
-    For Dice Pools, conditionals are used along with a given constant $C$ to achieve a specific effect. For Arrata, this conditional is the $>$ operator. This is used to count the number of dice rolled that are larger than $C$.
+    For Dice Pools, conditionals are used along with a given constant $C$ to achieve a specific effect. For Arrata, this conditional is the $>$ comparison operator. This is used to count the number of dice rolled that are larger than $C$.
 
-    For example:
+    \emph{Note: This condition is a >, not $\geq$, so $(3) > 3$ is $0$, not $1$.}
+    \begin{mdframed}[style=Arrata]
+        \begin{align*}
+            4d20>10 & = (\textbf{12}, \textbf{13}, 4, 1)>10 = 2             \\
+            5d4>1   & = (1, \textbf{4}, \textbf{2}, 1, \textbf{3})>1 = 3   \\
+            2d10>9  & = (4, 7)>9 = 0
+        \end{align*}
+    \end{mdframed}
 
-    \begin{itemize}
-        \item $4d20>10 = (12, 13, 4, 1)>10 = 2$
-        \item $5d4>1 = (1, 4, 2, 1, 3)>1 = 3$
-        \item $2d10>9 = (4, 7)>9 = 0$
-        \item \dots
-    \end{itemize}
-
-    This counted sum can be used for several schemas, and the value of $C$ can be used to further tune probabilities. Arrata makes heavy use of conditionals for its systems.
+    This counted sum can be used for several schemas, and the value of $C$ can be used to further adjust probabilities.
 
     \section{The d6}
 
