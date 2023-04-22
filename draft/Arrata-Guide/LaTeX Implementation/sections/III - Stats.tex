@@ -45,23 +45,18 @@
 
     Stats in Arrata are not written in dice notation. Instead, they are composed in the format $QY$ where $Q$ is the letter of the Quality and $Y$ is the value of the Quantity. Additionally, there may be modifiers, which are typically appended to the front of the stat when it's being rolled. Stats that are simply being stored, say on a character sheet, should never have modifiers. Here are three example stats:
 
-    \begin{equation*}
-        \overbracket[0.75pt]{B}^{\mathclap{\text{Quality}}}
-        \underbracket[0.75pt]{6}_{\mathclap{\text{Quantity}}} \quad \quad
-        \overbracket[0.75pt]{A}^{\mathclap{\text{Quality}}}
-        \underbracket[0.75pt]{100}_{\mathclap{\text{Quantity}}} \quad \quad
-        \underbracket[0.75pt]{\text{?`?!!`}}_{\mathclap{\text{Modifiers}}}
-        \overbracket[0.75pt]{S}^{\mathclap{\text{Quality}}}
-        \underbracket[0.75pt]{40,000}_{\mathclap{\text{Quantity}}}
-    \end{equation*}
-
-    Here are those examples of the Arrata-composed stat and its equivalent dice notation form:
-
-    \begin{itemize}
-        \item $B6 = 6d6>3$
-        \item $A100 = 100d6>2$
-        \item $S40,000 = 40,000d6>1$
-    \end{itemize}
+    \emph{Note: Modifiers are used later, but are important to keep in mind.}
+    \begin{mdframed}[style=Arrata]
+        \begin{equation*}
+            \overbracket [0.75pt]{B}^{\mathclap{\text{Quality}}}
+            \underbracket[0.75pt]{6}_{\mathclap{\text{Quantity}}} \quad \quad
+            \overbracket [0.75pt]{A}^{\mathclap{\text{Quality}}}
+            \underbracket[0.75pt]{100}_{\mathclap{\text{Quantity}}} \quad \quad
+            \underbracket[0.75pt]{\text{?`?!!`}}_{\mathclap{\stackrel{\vert}{\text{Modifiers}}}}
+            \overbracket [0.75pt]{S}^{\mathclap{\text{Quality}}}
+            \underbracket[0.75pt]{40,000}_{\mathclap{\text{Quantity}}}
+        \end{equation*}
+    \end{mdframed}
 
     Now that stats are defined, we can discuss what they're used for.
 
