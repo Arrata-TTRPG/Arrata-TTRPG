@@ -14,33 +14,40 @@
 
     \begin{itemize}
         \item How many dice are to be rolled, represented as $Y$.
-        \item How many sides the dice being rolled have, represented as $X$.
+        \item How many sides the dice being rolled have; represented as $X$.
     \end{itemize}
 
-    This is composed with a $D$ in between, which stands for dice, in the form $YDX$, although I prefer and will use a lowercase $d$ for the rest of this document. Individual dice are written without the $Y$ value. Here are a few examples:
+    This is composed with a $D$ in between, which stands for dice, in the form $YDX$, although I prefer and will use a lowercase $d$ for the rest of this document. Individual dice are written without the $Y$ value
 
     \begin{itemize}
-        \item 3 dice with 20 sides each: $3d20$.
-        \item 14 dice with 6 sides each: $14d6$.
-        \item 100 dice with 100 sides each: $100d100$.
-        \item 1 6-sided die: $d6$.
-        \item \dots
+        \item 3 dice with 20 sides each: $3d20$
+        \item 14 dice with 6 sides each: $14d6$
+        \item 100 dice with 100 sides each: $100d100$
+        \item 1 6-sided die: $d6$
     \end{itemize}
-
-    I will refer to the composed value generated from this schema as {\em rolls}.
 
     \section{Rolled Dice}
 
     For reference, when a roll is made, the result in this document will be recorded in parentheses () and each die's result will be separated by commas. These values are chosen at random for this document.
-
-    Here are a few examples:
-
-    \begin{itemize}
-        \item $4d20 = (10, 5, 14, 20)$.
-        \item $10d2 = (1, 0, 1, 0, 1, 0, 1, 0, 1, 0)$.
-        \item $5d6 = (4, 1, 6, 1, 5)$.
-        \item $\dots$
-    \end{itemize}
+    
+    \emph{Note: I didn't really flip a coin ten times.}
+    \begin{mdframed}[style=Arrata]
+        \begin{multicols}{2}[
+                \begin{center}
+                    $YdX = (r_{0},r_{1},\cdots,r_{y})$
+                \end{center}
+            ] \noindent 
+            \begin{align*}
+                4d20 & = (10, 5, 14, 20)                \\
+                10d2 & = (1, 0, 1, 0, 1, 0, 1, 0, 1, 0) 
+            \end{align*}
+            \columnbreak
+            \begin{align*}
+                5d6 & = (1, 4, 5, 6, 2)                 \\
+                4d4 & = (3, 2, 1, 1) 
+            \end{align*}
+        \end{multicols}
+    \end{mdframed}
 
     \section{Addition and Subtraction}
 
