@@ -4,7 +4,7 @@
   fill: white
 )
 #set page(
-  paper: "a5",
+  paper: "a6",
   width: 115mm,
   fill: black
 )
@@ -14,11 +14,19 @@
 )
 
 #align(center)[
-  Arrata
+  = Arrata
 
-  #emph[Change Through Purpose]
+  === #emph[Change Through Purpose]
 
-  Developed by #emph[Kaleb Burris]
+  #figure(
+    image("rat.png", width: 80%)
+  )
+
+  #v(0.8fr)
+
+  === Developed by #emph[Kaleb Burris]
+
+  #pagebreak()
 
   #columns(2)[
     #lorem(20)
