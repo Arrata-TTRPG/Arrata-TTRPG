@@ -10,6 +10,9 @@
   logo: "rat.png"
 )
 
+#set page(numbering: "1")
+#counter(page).update(1)
+
 #include("sections/introduction.typ")
 
 #include("sections/dice.typ")
