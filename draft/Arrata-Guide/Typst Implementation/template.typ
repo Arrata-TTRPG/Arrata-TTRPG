@@ -20,8 +20,9 @@
   // Set body font family.
   set text(
     size: 10pt,
-    font: "New Computer Modern",
-    fill: white
+    font: "Fira Sans",
+    fill: white,
+
   )
 
   // Set paragraph spacing.
@@ -34,7 +35,7 @@
   show heading: it => {
     if it.level > 3 {
       parbreak()
-      text(12pt, style: "italic", weight: "regular", it.body + ".")
+      text(10pt, style: "italic", weight: "regular", it.body + ".")
     } else {
       it
     }
@@ -58,11 +59,10 @@
   // Author information.
   pad(
     top: 0.7em,
-    right: 20%,
     grid(
       columns: (1fr,) * calc.min(3, authors.len()),
       gutter: 1em,
-      ..authors.map(author => align(start, strong(author))),
+      ..authors.map(author => align(center, strong(author))),
     ),
   )
 
@@ -76,7 +76,7 @@
 
 
   // Main body.
-  set par(justify: false)
+  set par(justify: true)
 
   show link: underline
 

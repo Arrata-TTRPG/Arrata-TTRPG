@@ -2,11 +2,7 @@
 
 = Introduction
 
- This part contains all of the core mechanics of Arrata; detailing Roleplaying, Characters, their components, dice rolling, and how Characters change.
-
-== What is Arrata?
-
-Arrata is a roleplaying system inspired by the works of more traditional roleplaying games, with an emphasis on universality. The purpose of this system is to allow you to write stories with as much, or as little, nuance as you want.
+Arrata is a roleplaying system inspired by the works of more traditional roleplaying games with an emphasis on universality. The purpose of this system is to allow you to write stories with as much, or as little nuance as you want.
 
 Arrata comes with no setting; I believe it is better to create something of your own and flesh it out as you go along. Whether that's characters, the world, or the context in which those interact, you will be able to do things far more suited to your understanding than I ever could.
 
