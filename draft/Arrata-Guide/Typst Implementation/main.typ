@@ -1,40 +1,23 @@
-﻿#set text(
-  size: 12pt,
-  font: "New Computer Modern",
-  fill: white
-)
-#set page(
-  paper: "a6",
-  width: 115mm,
-  fill: black
-)
-#set par(
-  justify: true,
-  leading: 0.52em,
+﻿// For formatting rules
+#import "template.typ": *
+
+// Take a look at the file `template.typ` in the file panel
+// to customize this template and discover how it works.
+#show: project.with(
+  authors: (
+    "Kaleb Burris",
+  ),
+  logo: "rat.png"
 )
 
-#align(center)[
-  = Arrata
+#include("sections/introduction.typ")
 
-  === #emph[Change Through Purpose]
+#include("sections/dice.typ")
 
-  #figure(
-    image("rat.png", width: 80%)
-  )
+#include("sections/stats.typ")
 
-  #v(0.8fr)
+#include("sections/quirks.typ")
 
-  === Developed by #emph[Kaleb Burris]
+#include("sections/characters.typ")
 
-  #pagebreak()
-
-  #columns(2)[
-    #lorem(20)
-    #colbreak()
-    #lorem(20)
-  ]
-
-  Version *0.5t*
-
-  #lorem(100)
-]
+#include("sections/credits.typ")
