@@ -107,7 +107,7 @@ _Note: Rolled dice that have a modifier applied to them are bolded (*6*)_.
 
 == Evil Dice
 
-In opposition to exploding dice, Arrata will deal with *Evil dice*. Evil dice are denoted by adding an upside-down exclamation point, $!$. Instead of giving the roll an additional die to roll and add to the sum, Evil dice give an extra D1 that subtracts from the roll.
+In opposition to exploding dice, Arrata will deal with *Evil dice*. Evil dice are denoted by adding an upside-down exclamation point, $¡$. Instead of giving the roll an additional die to roll and add to the sum, Evil dice give an extra D1 that subtracts from the roll.
 
 #slantedColorbox(
   title: "Exploding Dice Examples",
