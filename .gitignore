@@ -1,0 +1,14 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.sta
+*.synctex.gz
+**/sections/*.pdf
+*.idx
+*.ilg
+*.ind
+*.toc
+*.out
+*.pdf
+!Arrata-*
