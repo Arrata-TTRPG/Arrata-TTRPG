@@ -65,7 +65,7 @@ jobs:
       - name: Zip release
         run: |
           mv src/main.pdf arrata-${{ env.VERSION }}.pdf
-          zip Arrata-${{ env.VERSION }}.zip arrata-${{ env.VERSION }}.pdf LICENSE.md src/Arrata-Ver04.pdf
+          zip Arrata-${{ env.VERSION }}.zip arrata-${{ env.VERSION }}.pdf LICENSE.md src/Arrata-Ver0.4.pdf
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
