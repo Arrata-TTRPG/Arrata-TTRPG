@@ -7,7 +7,7 @@
   authors: (
     "Kaleb Burris",
   ),
-  version: "v0.0.5",
+  version: "CURRENT_VERSION",
   logo: "rat.png",
 )
 

@@ -55,6 +55,9 @@ jobs:
           body_path: ${{ steps.git-cliff.outputs.changelog }}
           draft: false
           prerelease: false
+      - name: Write CURRENT_VERSION
+        run: |
+          sed -i "s/CURRENT_VERSION/CURR/" src/main.typ
       - name: Compile release
         uses: lvignoli/typst-action@main
         with:
