@@ -83,6 +83,10 @@ It's also important to note that for the given methods of gaining Intuition, if 
 
 How often and in what volume Intuition is given out is dependent on the GM, but every player should be earning 1-2 Intuition points per 3-4 hours of play.
 
+=== Spending Intuition
+
+
+
 == Argos
 
 #slantedColorbox(
@@ -95,7 +99,7 @@ How often and in what volume Intuition is given out is dependent on the GM, but 
     _Argos is a city in the Greek Peloponnese, the same island Sparta is situated on. Argo, the ship Jason used with his Argonauts, was the vessel by which he carried out his journey. Many terrible things happen on this adventure to find the Golden Fleece, but ultimately, they retrieve the Fleece and return to Greece where Jason assumes his father's throne. This story is short-lived though, and the people reject Jason and his wife, driving them into solitude. Jason breaks his vows to his wife in exile, and she takes his new wife's life as well as their child's ascending to Mount Olympus. Jason returns to his land, where the Argo is on display. As he rests next to it, a part of it breaks loose, crushing and killing Jason._
 ]
 
-*Argos* in Arrata is the drive a character has. Their goal, mission, and ultimate weakness. It is their source of power and the destination where they're ``retired''; their final resting place. It's from their Argos that a story is driven.
+*Argos* in Arrata is the drive a character has. Their goal, mission, and ultimate weakness. It is their source of power and the destination where they're "retired"; their final resting place. It's from their Argos that a story is driven.
 
 Argos is often a sentence or short phrase, written from the perspective of the character who has that Argos. The written Argos should be short, astute, and clear in its goal; it should be a stopping point the character deeply desires and wishes for. You should write a character's Argos as if it were their final words, and in a way only they could fully understand.
 

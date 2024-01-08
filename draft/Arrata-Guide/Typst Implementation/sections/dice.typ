@@ -10,10 +10,10 @@ Dice are tools that are used to generate random numbers, which are in turn used 
 
 When using and discussing quantities of dice, often the term Dice Notation may be used. This refers to a system that helps define two things about the dice being rolled:
 
-- How many dice are to be rolled, represented as Y.
-- How many sides the dice being rolled have; represented as X.
+- How many dice are to be rolled, represented as $Y$.
+- How many sides the dice being rolled have; represented as $X$.
 
-This is composed with a D in between, which stands for dice, in the form Y D X, although I prefer and will use a lowercase d for the rest of this book. Individual dice are often written without the Y value as d X. 
+This is composed with a D in between, which stands for dice, in the form $Y D X$, although I prefer and will use a lowercase d for the rest of this book. Individual dice are often written without the $Y$ value as $d X$. 
 
 #slantedColorbox(
   title: "Dice Notation Examples",
@@ -22,15 +22,15 @@ This is composed with a D in between, which stands for dice, in the form Y D X, 
   color: black,
 )[
 #set text(size: 8pt)
-_Note: 100-sided dice are often a composition of d 10+ d10 $*$ 10._
+_Note: 100-sided dice are often a composition of $1 d 10 + (1 d 10 times 10)$._
 #table(
   columns: (auto, auto),
   inset: 10pt,
   align: horizon,
-    [1 6-sided die:], [1d6 or d6],
-    [3 dice with 20 sides each:], [3d20],              
-    [14 dice with 6 sides each:], [14d6],              
-    [100 dice with 100 sides each:], [100d100]
+    [1 6-sided die:], [$1 d 6$ or $d 6$],
+    [3 dice with 20 sides each:], [$3 d 20$],              
+    [14 dice with 6 sides each:], [$14 d 6$],              
+    [100 dice with 100 sides each:], [$100 d 100$]
   )
 ]
 
@@ -45,18 +45,15 @@ When a roll is made, the result in this book will be recorded in parentheses () 
   color: black,
 )[
 #set text(size: 8pt)
-_Note: Ellipses (a,...,b) are used to represent a range of data._
-    #align(center)[$Y d X = (r_0,r_1,...,r_Y)$ where $r_k$ is the rolled value of the die $X_k$]
-    I rolled a six-sided die and got a $4$: 
-    
+_Note: Ellipses $(r_0,...,r_n)$ are used to represent a range of data._
+
+    I rolled a six-sided die and got a $4$:
     $ 1 d 6  = (4) $                                                            
     
     I rolled 3 twenty-sided dice and got 5, 15, and 20:
-    
     $ 3 d 20 = (5, 14, 20) $
     
     I rolled 100 one-hundred-sided dice and got 99, 65, ..., 23, and 55:
-      
     $ 100 d 100 = (99, 65, ..., 23, 55) $
 ]
 
@@ -73,6 +70,7 @@ Separately, if two different-sided quantities of dice are added, there is no att
   color: black,
 )[
   #set text(size: 8pt)
+  _Note: Different sided dice are never joined together into single a $X d Y$._
   #table(
     columns: (auto, auto),
     [I gained 3d6 for my 6d6 roll:], [6d6 + 3D = 9d6],
@@ -140,7 +138,7 @@ For Dice Pools, conditionals are used along with a given constant $C$ to achieve
   color: black,
 )[
 #set text(size: 8pt)
-_Note: This condition is a $>$, not $>=$, so $(3) > 3$ evaluates to $0$, not $1$._
+_Note: This condition is $>$, *not* $>=$, so $(3) > 3$ evaluates to $0$, not $1$._
 #table(columns: (auto, auto),
   [_Dice Pool $> C$_], [_$=$ Result $> C =$ Counted Sum_],
   [$4 d 20>10$], [$= (bold(12), bold(13), 4, 1)>10 = 2$],
