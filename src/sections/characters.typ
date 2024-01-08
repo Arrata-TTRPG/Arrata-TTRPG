@@ -186,7 +186,7 @@ You may choose _up to_ this number of skills to be _Major Skills_ - this means t
 
 The Character Sheet is an incredibly important part of playing any TTRPG - it's how you track your character's development and store all of their information. It's of the utmost importance to keep track of everything you can on the character sheet and to be honest. Liars who cheat end up ruining the game for everyone and should be removed from the game.
 
-There will be provided a character sheet with this guide in the form of a PDF for you to print. Physical character sheets are nice for in-person sessions as they provide a certain level of intimacy with your character - they are made of your writing and thus are in some way a part of you. 
+There will be provided a character sheet with this guide in the form of a PDF for you to print, although these require a lot of work to maintain with the current ruleset, so they will often be outdated - keep this in mind. Physical character sheets are nice for in-person sessions as they provide a certain level of intimacy with your character - they are made of your writing and thus are in some way a part of you. 
 
 _Note: Make sure you use a pencil for a physical character sheets._
 
