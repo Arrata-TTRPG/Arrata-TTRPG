@@ -3,7 +3,7 @@
 // The project function defines how your document looks.
 // It takes your content and some metadata and formats it.
 // Go ahead and customize it to your liking!
-#let project(title: "", authors: (), logo: none, body) = {
+#let project(title: "", authors: (), logo: none, version: "", body) = {
   // Set the document's basic properties.
   set document(author: authors, title: title)
   set page(
@@ -65,6 +65,12 @@
       ..authors.map(author => align(center, strong(author))),
     ),
   )
+
+  v(1.2fr)
+
+  align(center, strong(version))
+
+  align(center, strong(datetime.today().display()))
 
   v(2.4fr)
   pagebreak()

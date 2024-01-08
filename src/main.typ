@@ -7,7 +7,8 @@
   authors: (
     "Kaleb Burris",
   ),
-  logo: "rat.png"
+  version: "v0.0.5",
+  logo: "rat.png",
 )
 
 #set page(numbering: "1")
