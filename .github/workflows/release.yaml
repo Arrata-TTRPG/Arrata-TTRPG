@@ -61,7 +61,7 @@ jobs:
           source_file: src/main.typ
       - name: Zip release
         run: |
-          mv main.pdf arrata-${{ env.VERSION }}.pdf
+          mv src/main.pdf arrata-${{ env.VERSION }}.pdf
           zip Arrata-${{ env.VERSION }}.zip arrata-${{ env.VERSION }}.pdf LICENSE.md
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
