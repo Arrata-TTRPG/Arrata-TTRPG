@@ -3,16 +3,18 @@
 
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
-#show: project.with(
-  authors: (
-    "Kaleb Burris",
-  ),
-  version: "v0.0.5",
+#show: book.with(
+  title: "Arrata",
+  author: "Kaleb Burris",
+  version: "CURRENT_VERSION",
   logo: "rat.png",
 )
 
-#set page(numbering: "1")
 #counter(page).update(1)
+
+#set page(
+  numbering: "1",
+)
 
 #include("sections/foreword.typ")
 
@@ -25,5 +27,7 @@
 #include("sections/quirks.typ")
 
 #include("sections/characters.typ")
+
+#include("sections/combat.typ")
 
 #include("sections/credits.typ")
