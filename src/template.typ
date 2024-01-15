@@ -96,17 +96,5 @@
     v(0.5em)
   }
 
-  show heading.where(level: 1): it => {
-      pagebreak(to: "odd")
-      // Create the heading numbering.
-      let number = if it.numbering != none {
-        counter(heading).display(it.numbering)
-        h(7pt, weak: true)
-      }
-
-      align(center, text(block([#number #it.body])))
-      v(1.25em)
-  }
-
   body
 }
