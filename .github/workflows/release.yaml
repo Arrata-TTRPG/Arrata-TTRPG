@@ -1,73 +1,76 @@
 ﻿# Thanks to https://github.com/NiklasEi/bevy_game_template/blob/main/.github/workflows/release.yaml for much of this code
 on:
-    push:
-      # Sequence of patterns matched against refs/tags
-      tags:
-        - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
-        - 'V*'
-    workflow_dispatch:
-      inputs:
-        version:
-          description: 'Version - in the form of v1.2.3'
-          required: true
-          type: string
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+      - 'V*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version - in the form of v1.2.3'
+        required: true
+        type: string
 
 permissions: write-all
 
 name: Create release
 jobs:
   get-version:
-      runs-on: ubuntu-latest
-      steps:
-      - name: Get tag
-        id: tag
-        run: echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
-      outputs:
-        version: ${{ inputs.version || steps.tag.outputs.tag }}
-  
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get tag
+      id: tag
+      run: echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+    outputs:
+      version: ${{ inputs.version || steps.tag.outputs.tag }}
+
   create-release:
-      name: Create Release
-      runs-on: ubuntu-latest
-      needs: get-version
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: get-version
+    env:
+      VERSION: ${{needs.get-version.outputs.version}}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Generate a changelog
+      uses: orhun/git-cliff-action@v2
+      id: git-cliff
+      with:
+        config: cliff.toml
+        args: --verbose --latest
       env:
-        VERSION: ${{needs.get-version.outputs.version}}
-      steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Generate a changelog
-        uses: orhun/git-cliff-action@v2
-        id: git-cliff
-        with:
-          config: cliff.toml
-          args: --verbose --latest
-        env:
-          OUTPUT: CHANGELOG.md
-      - name: Create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: ${{ env.VERSION }}
-          release_name: Release ${{ env.VERSION }}
-          body_path: ${{ steps.git-cliff.outputs.changelog }}
-          draft: false
-          prerelease: false
-      - name: Compile release
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: src/main.typ
-      - name: Zip release
-        run: |
-          mv main.pdf arrata-${{ env.VERSION }}.pdf
-          zip Arrata-${{ env.VERSION }}.zip arrata-${{ env.VERSION }}.pdf LICENSE.md
-      - name: Upload release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: Arrata-${{ env.VERSION }}.zip
-          release_name: ${{ env.VERSION }}
-          tag: ${{ env.VERSION }}
-          overwrite: true
+        OUTPUT: CHANGELOG.md
+    - name: Create release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+      with:
+        tag_name: ${{ env.VERSION }}
+        release_name: Release ${{ env.VERSION }}
+        body_path: ${{ steps.git-cliff.outputs.changelog }}
+        draft: false
+        prerelease: false
+    - name: Write CURRENT_VERSION
+      run: |
+        sed -i "s/CURRENT_VERSION/CURR/" src/main.typ
+    - name: Compile release
+      uses: lvignoli/typst-action@main
+      with:
+        source_file: src/main.typ
+    - name: Zip release
+      run: |
+        mv src/main.pdf arrata-${{ env.VERSION }}.pdf
+        zip -r Arrata-${{ env.VERSION }}.zip arrata-${{ env.VERSION }}.pdf LICENSE.md src/Arrata-Ver0.4.pdf
+    - name: Upload release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: Arrata-${{ env.VERSION }}.zip
+        release_name: ${{ env.VERSION }}
+        tag: ${{ env.VERSION }}
+        overwrite: true
