@@ -57,7 +57,7 @@ jobs:
           prerelease: false
       - name: Write CURRENT_VERSION
         run: |
-          sed -i "s/CURRENT_VERSION/CURR/" src/main.typ
+          sed -i "s/CURRENT_VERSION/${{ env.VERSION }}/" src/main.typ
       - name: Compile release
         uses: lvignoli/typst-action@main
         with:
