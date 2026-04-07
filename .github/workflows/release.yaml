@@ -70,12 +70,13 @@ jobs:
           mv src/cards/armor.pdf armor-${{ env.VERSION }}.pdf
           mv src/cards/talents.pdf talents-${{ env.VERSION }}.pdf
           mv src/cards/weapons.pdf weapons-${{ env.VERSION }}.pdf
+          zip arrata-complete-${{ env.VERSION }}.zip *.pdf LICENSE.md
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
-          file: ./*.pdf
+          file: ./*.pdf LICENSE.md ./*.zip
           release_name: ${{ env.VERSION }}
           tag: ${{ env.VERSION }}
           overwrite: true
