@@ -25,7 +25,7 @@ and succeed in amazing and interesting ways.
 
 In using this system, a fictional world is constructed by a _Game Master_ (GM).
 This world is populated with characters and given things like factions, peoples,
-places, and conflict; things that make the world alive and interactable. _Players_ take
+places, and conflict; things that make the world alive and interactive. _Players_ take
 control of _Player Characters_ (PCs) who are built with _Quirks_ that define who
 they are as people, and _Stats_ that define what they are as beings in the
 world. Together, the players and GM create a story with the PCs as the
@@ -39,7 +39,6 @@ their decisions determined by their Stats.
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
   _The word Arrata is a misspelling of errata, the plural of erratum; a list of
   mistakes in a written document. The word was chosen as it embodies the spirit of
   Arrata: *Change Through Purpose*. By failing; making mistakes and blunders, you
@@ -60,11 +59,10 @@ look like this:
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
-  _Note: notes often describe intrinsic rules or behaviors._
-   
-  This is an example. Have the Gamma function:
-   
+  #text(size: 10pt)[_Note: notes often describe intrinsic rules or behaviors._]
+
+  This is an example. Have the Gamma function, my treat:
+
   $ Gamma(x) = integral_(0)^(infinity)t^(x-1)e^(-1) dif x $
 ]
 == Game Masters
@@ -116,7 +114,7 @@ responsibilities:
 - Being courteous to the Game Master and fellow players.
 - Knowing the rules.
 - Following the rules and decisions of the Game Master.
-- Being honest about rolls, outcomes, and and their character.
+- Being honest about rolls, outcomes, and their character.
 
 PCs are the protagonists of any Arrata game. They exist to provide a player with
 a point of view on the collective story being told, and to allow that player to
@@ -127,7 +125,7 @@ back up their PC and fight on their behalf.
 == Non-Player Characters
 Non-Player Characters (NPCs) are characters in the story created by the GM or
 players that act without player input. Instead, the GM acts as the "soul" of
-every NPC and treats one of many of their characters. 
+every NPC and treats one of many of their characters.
 
 GMs can generate hundreds or even thousands of NPCs throughout long campaigns,
 so NPCs that are underdeveloped or single-purpose are acceptable as long as they

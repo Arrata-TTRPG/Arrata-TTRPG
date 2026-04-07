@@ -72,7 +72,7 @@
     width: width,
   )[
     #slantedBackground(color: strokeColor)[#title]
-    #block(width: 100%, inset: (top: -2pt, x: 10pt, bottom: 10pt))[
+    #block(width: 100%, inset: (top: 4pt, x: 10pt, bottom: 10pt), spacing: 2pt)[
       #body
     ]
   ]

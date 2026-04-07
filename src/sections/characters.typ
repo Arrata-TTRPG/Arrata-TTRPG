@@ -3,7 +3,7 @@
 = Characters
 
 This chapter deals with what and who characters are; what are they composed of,
-how are they compiled, and how do we go about creating them? 
+how are they compiled, and how do we go about creating them?
 
 == Character Stats
 
@@ -20,14 +20,14 @@ aspects of characters that don't deserve an entire section:
 == Core Stats
 
 The core stats of a character are generalized parts of them: how strong, fast,
-and smart they are. These stats are used for generalistic scenarios that involve
+and smart they are. These stats are used for general scenarios that involve
 less tact and more brute force to solve a problem, and are often used to
 determine the magnitude of a particular check's effectiveness if it succeeds.
 
 The core stats are divided into two groups of three, the first being _mental stats_:
 
 - *Will*: General knowledge or common sense, ability to learn, and ability to
-  resist urges. 
+  resist urges.
 - *Perception*: Ability to see, smell, hear, and detect the environment and
   subtleties of the world.
 - *Conscious*: Ability to process and understand information as well as the speed
@@ -60,45 +60,20 @@ Stat resources are divided into being either _Finite_ or _Infinite_.
 
 Finite stat resources are things like wealth, the favor of the people, rations
 for a journey, and so on. These are things that are destroyed, lost, or
-diminished as you employ them. 
+diminished as you employ them.
 
 Finite stat resources generally aren't rolled alone. They're used to add onto
 and modify rolls, but at a cost. When rolling a finite stat resource, _any failures_ reduce
 the Quantity of the resource by 1. Once the finite resource's Quantity hits 0,
 the stat resource cannot be used until its Quantity is increased to 1 or above.
 
-#slantedColorbox(
-  title: "Finite Stat Resources Example",
-  width: auto,
-  radius: 0pt,
-  color: black,
-)[
-  #set text(size: 8pt)
-  // TODO: Create Finite Stat Resource Example
-  _Note: Finite stats are not to be confused with resources._
-   
-  _#lorem(100)_
-]
-
 ==== Infinite SRs
 
 Infinite stat resources are things like curses, reputation, and unusual
-abilities. infinite stat resources are more complicated than Finite ones, and
+abilities. Infinite stat resources are more complicated than Finite ones, and
 aren't used up when you use them - much the opposite. Infinite stat resources
 are like core stats, they typically level up like traditional stats and are used
 to solve problems all on their own.
-
-#slantedColorbox(
-  title: "Infinite Stat Resources Example",
-  width: auto,
-  radius: 0pt,
-  color: black,
-)[
-  #set text(size: 8pt)
-  _Note: Infinite stats can be used to represent non-fatal disease._
-   
-  #lorem(100)
-]
 
 === Skills
 
@@ -127,13 +102,14 @@ of law it's governed by.
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
+  #set text(size: 10pt)
+  #set par(spacing: 8pt)
   _Note: Skills can be composed of multiple roots._
-   
+
   *Name*: Blade
-   
+
   *Root(s)*: Power, Speed
-   
+
   *Description*: One's aptitude with bladed objects such as daggers, swords,
   greatswords, and axes. On a successful hit, roll the root to deal damage.
 ]
@@ -196,7 +172,7 @@ finally build a character.
 First and foremost; when making a new character, what resources are available to
 make a character should be made known by the GM. These resources are:
 
-- What method is prefered for Core Stats.
+- What method is preferred for Core Stats.
 - How many _Major Skills_ a character may start with.
 - The minimum and maximum number of Quirks.
 - The Stocks available and their Quirks.
@@ -225,7 +201,7 @@ Quantity of another Stat.
 
 When using Point Bought Stats, the GM will give you a number as a Point-Buy
 pool. You will the split this number up and distribute it across each Stat as
-you wish. 
+you wish.
 
 When spending these points, it's important to note that each Core Stat starts at
 B1. Spending 1 point on Power will raise it to B2.
@@ -256,7 +232,7 @@ may also spend another 5 to go from Adept to Superb.
 
 === Quirks
 
-Alongside Core Stats, choosing what Quirks a character has 
+Alongside Core Stats, choosing what Quirks a character has
 
 === Major Skills
 
@@ -267,7 +243,7 @@ You may choose _up to_ this number of skills to be _Major Skills_ - this means
 that your character starts with these skills, and the Quality and Quantity is
 equal to their Root(s). Major Skills are important starting pillars for any
 character. They represent the past actions and experience of the character, as
-well as the 
+well as the
 
 === Character Sheets
 
@@ -282,7 +258,7 @@ for you to print, although these require a lot of work to maintain with the
 current ruleset, so they will often be outdated - keep this in mind. Physical
 character sheets are nice for in-person sessions as they provide a certain level
 of intimacy with your character - they are made of your writing and thus are in
-some way a part of you. 
+some way a part of you.
 
 _Note: Make sure you use a pencil for a physical character sheets._
 
@@ -293,3 +269,4 @@ it's under the GitHub repos of #link("https://github.com/kalebvonburris/Arrata-A
 you can find the latest releases under #link("https://github.com/kalebvonburris/Arrata-APP/releases/latest").
 
 #pagebreak()
+

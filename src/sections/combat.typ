@@ -71,7 +71,7 @@ character's turn, they may use one Talent by spending its AP cost. Some Talents
 require a specific weapon, Skill, and/or piece of equipment to use, and these requirements are listed on the Talent's card.
 
 #slantedColorbox(title: "Talent Card", width: auto, radius: 0pt, color: black)[
-  #set text(size: 8pt)
+
   _Note: Red labels are annotations only and do not appear on the actual card._
   #v(-15pt)
   #align(center)[
@@ -101,7 +101,7 @@ any special effects or restrictions.
 #pagebreak()
 
 #slantedColorbox(title: "Weapon Card", width: auto, radius: 0pt, color: black)[
-  #set text(size: 8pt)
+
   _Note: Red labels are annotations only and do not appear on the actual card._
   #v(-15pt)
   #align(center)[
@@ -155,7 +155,7 @@ Heavier armors may impose additional penalties such as reduced Evasion or Speed,
 listed directly on the armor's card.
 
 #slantedColorbox(title: "Armor Card", width: auto, radius: 0pt, color: black)[
-  #set text(size: 8pt)
+
   _Note: Red labels are annotations only and do not appear on the actual card._
   #v(-15pt)
   #align(center)[
@@ -240,7 +240,7 @@ _all_ rolls.
 When a character's Injury level equals their *Forte Quantity*, they die.
 
 #slantedColorbox(title: "Injury Example", width: auto, radius: 0pt, color: black)[
-  #set text(size: 8pt)
+
   _Agnar has $B 3$ Forte, so he can sustain 3 levels of Injury before dying. He
   goes down and takes a hit while Downed, gaining 1 level of Injury. Revived
   by an ally's Field Dressing Talent, he fights on at $-1D$ to all rolls. Two

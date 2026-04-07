@@ -54,21 +54,23 @@ Flaw, and therefore the roll would have a level of advantage and disadvantage.
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
-  _Note: Bring your GM treats; they may consider your PC's Boons._
-  Here's an example of the _Veritable_ Quirk:
-   
+
+  #text(size: 10pt)[_Note: Bring your GM treats; they may reconsider your PC's Boons._]
+
+  #set par(spacing: 8pt)
+  #v(-10pt)
+
   *Name*: Veritable
-   
+
   *Defines*:
-   
+
   - Being a genuine article or item.
   - A real instance of something believed gone or impossible.
   - Acting genuinely or truthfully.
-   
+
   *Boons*: People will often trust or believe you. They might see you as an ally
   when things are wrong in the world.
-   
+
   *Flaws*: You may often disclose things you should not. When there is great
   abundance, you may be seen as archaic.
 ]
@@ -79,7 +81,7 @@ Doing something that isn't what a character would normally do is incredibly
 interesting, but only if such an event is justifiable, otherwise Quirks would
 have no meaning other than to provide you with advantage and disadvantage. In
 the event where a character might reasonably consider and even act in a way
-contrary to a Quirk, we say they're \emph{Fighting the Quirk}.
+contrary to a Quirk, we say they're _Fighting the Quirk_.
 
 To clarify, Fighting the Quirk is an event where a character might say;
 
@@ -147,7 +149,7 @@ every player should be earning 1-2 Intuition points per 3-4 hours of play.
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
+  #set text(size: 10pt)
   _Argos is a city in the Greek Peloponnese, the same island Sparta is situated on.
   Argo, the ship Jason used with his Argonauts, was the vessel by which he carried
   out his journey. Many terrible things happen on this adventure to find the
@@ -242,3 +244,4 @@ degenerates and what they lose. If it seems to be a total loss, _toss the charac
 They're gone, and there's nothing you can do about it.
 
 #pagebreak()
+

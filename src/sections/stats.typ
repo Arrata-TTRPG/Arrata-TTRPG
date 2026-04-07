@@ -45,7 +45,7 @@ Quality:
 
 - $10 d 6>3$ is $B$ Quality.
 - $4 d 6>2$ is $A$ Quality.
-- $ 5d 6>1$ is $S$ Quality.
+- $5d 6>1$ is $S$ Quality.
 
 Quality is special in terms of characters' stats as it represents not how much a
 person could do with a stat, but how easily they reach that maximum. Most stats
@@ -68,10 +68,12 @@ example stats:
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
+
   _Note: Modifiers are used later, but are important to keep in mind._
-   
-  $ overbracket("B", "Quality") #h(-1cm) underbracket(6, "Quantity") quad quad underbracket(100, "Quantity") #h(-0.3cm) overbracket("A", "Quality") quad underbracket("¿?!¡", "Modifiers") #h(-0.35cm) overbracket("S", "Quality") #h(-0.2cm) underbracket("40,000", "Quantity") $
+
+  $
+    overbracket("B", "Quality") #h(-22pt) underbracket(6, "Quantity") quad quad overbracket("A", "Quality") #h(-16pt) underbracket(100, "Quantity") quad quad underbracket("¿?!¡", "Modifiers") #h(-16pt) overbracket("S", "Quality") #h(-10pt) underbracket("40,000", "Quantity")
+  $
 ]
 
 Now that stats are defined, we can discuss what they're used for.
@@ -94,7 +96,7 @@ guide your character's changes are what this is all about.
 === Success and Failure
 
 Because Arrata uses dice pools and comparisons, every die rolled is defined as
-either a \emph{Success} or \emph{Failure}. 
+either a \emph{Success} or \emph{Failure}.
 
 Quality defines the threshold for what a success is; if a die is rolled and is
 greater than its Quality constant, then the die rolled is counted as a success.
@@ -111,16 +113,14 @@ Failures up, just the Successes.
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
-  _Note: Successes get probabilistically more occurrent with higher Quality._
+  #text(size: 10pt)[_Note: Successes get probabilistically more occurrent with higher Quality._]
+  #v(-15pt)
   #table(
     columns: (auto, auto),
-    [Rolling $B 2$:],
-    [$(4,2) > 3 = 1$ _Success_, $1$ _Failure_],
-    [Rolling $A 5$:],
-    [$(2, 6, 1, 3, 5) > 2 = 3$ _Successes_, $2$ _Failures_],
-    [Rolling $S 4$:],
-    [$(6, 2, 5, 4) > 1 = 4$ _Successes_, $0$ _Failures_],
+    stroke: (x, y) => (top: if y > 0 { 0.5pt + white }),
+    [Rolling $B 2$:], [$(4,2) > 3 = 1$ _Success_, $1$ _Failure_],
+    [Rolling $A 5$:], [$(2, 6, 1, 3, 5) > 2 = 3$ _Successes_, $2$ _Failures_],
+    [Rolling $S 4$:], [$(6, 2, 5, 4) > 1 = 4$ _Successes_, $0$ _Failures_],
   )
 ]
 
@@ -144,22 +144,19 @@ entire check, it is written in the form _Stat_ vs _Ob_ $X$.
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
-  _Note:_ vs _is a $>=$ operator, so $3$_ vs _$3$ is a Success._
-   
-  #align(center)[
-    Rolling $B 2$ vs _Ob_ 1: $B 2 = (2, 2)>3 = 0$ Successes
-     
-    0 Successes vs _Ob_ 1: _Failure..._
-     
-    Rolling $A 4$ vs _Ob_ 2: $A 4 = (5, 6, 3, 5)>2 = 3$ Successes
-     
-    3 Successes vs _Ob_ 2: *Success!*
-     
-    Rolling $S 6$ vs _Ob_ 4: $S 6 = (1, 5, 1, 2, 3, 4)>1 = 4$ _Successes_
-     
-    4 Successes vs _Ob_ 4: *Success*!
-  ]
+  #set text(size: 10pt)
+  _Note:_ "*vs*" _is a $>=$ operator, so $3$_ vs _$3$ is a Success._
+  #v(-15pt)
+  #align(center)[#table(
+    columns: auto,
+    stroke: (x, y) => (top: if y > 0 and calc.even(y) { 0.5pt + white }),
+    [Rolling $B 2$ vs _Ob_ 1: $B 2 = (2, 2)>3 = 0$ Successes],
+    [0 Successes vs _Ob_ 1: _Failure..._ ($0 < 1$)],
+    [Rolling $A 4$ vs _Ob_ 2: $A 4 = (5, 6, 3, 5)>2 = 3$ Successes],
+    [3 Successes vs _Ob_ 2: *Success!* ($3 >= 2$)],
+    [Rolling $S 6$ vs _Ob_ 4: $S 6 = (1, 5, 1, 2, 3, 4)>1 = 4$ _Successes_],
+    [4 Successes vs _Ob_ 4: *Success*! ($4 >= 4$)],
+  )]
 ]
 
 === Intent
@@ -167,7 +164,7 @@ entire check, it is written in the form _Stat_ vs _Ob_ $X$.
 When a check is called for, _Intent_ must be defined for all parties involved.
 It's the GM's job to sum up these Intents and put forward _outcomes_. For the
 GM, they should define at least two outcome: Success and Failure. If there is
-ambiguity, 
+ambiguity,
 
 === Extra Successes
 
@@ -185,15 +182,15 @@ The Monkey's Paw).
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
+
   _A cook is making a large volume of stew with their $B 5$ cooking skill. The GM
   declares that with their ingredients, the Obstacle of the check will be Ob 2.
   The cook rolls and gets all 5 successes! The GM says that because the cook not
   only met but surpassed the Obstacle, the resultant stew is incredibly delicious,
   and the patrons consuming it are mesmerized._
-   
-  _Note: There are no extra consequences to having successes under the Obstacle of
-  the check._
+
+  #text(size: 10pt)[_Note: There are no extra consequences to having successes under the Obstacle of
+  the check._]
 ]
 
 == Advantage
@@ -204,7 +201,7 @@ favorable conditions induce higher levels of Advantage. For example: exploiting
 the environment, having a relevant Quirk, playing into your Argos, having the
 high ground in a fight, and getting Help from another character would all induce
 a level of advantage, _each_. If someone truly possessed all of those
-conditions, we would say they _have 5 levels of advantage_. 
+conditions, we would say they _have 5 levels of advantage_.
 
 When advantage is had, the rolling side with advantage turns their roll into an
 open-ended roll. In addition, if multiple sources provide a level of advantage
@@ -213,19 +210,19 @@ advantage turn into $+1D$ each.
 
 With open-ended rolls, remember that any maxes of the die (6) will add $+1D$ to
 the roll. These 6s that have been rolled and are giving $+1D$ are also counted
-as successes. 
- 
+as successes.
+
 #slantedColorbox(title: "Advantage Example", width: auto, radius: 0pt, color: black)[
-  #set text(size: 8pt)
-  _Note: Open-ended rolls are denoted with a $!$ modifier._
-   
+  #text(size: 10pt)[_Note: Open-ended rolls are denoted with a $!$ modifier._]
+  #v(-10pt)
+  #set par(spacing: 8pt)
   #align(center)[
     Rolling $B$3 vs _Ob_ 4 with 3 levels of advantage:
-     
+
     $!B 3 + 2 = !(6, 4, 6, 2, 4)>3 = 4$ Successes $+ !B 2$
-     
+
     $4$ Successes $+ !(4, 2)>3$
-     
+
     $4$ Successes vs _Ob_ 4: *Success!*
   ]
 ]
@@ -242,16 +239,17 @@ the first level of disadvantage, or if the roll already has Evil dice, the check
 will have +1 Ob imposed per level of extra disadvantage.
 
 Evil dice subtract -1 Success from rolls that result in a minimum value for a d6
-(1). 
+(1).
 
 #slantedColorbox(title: "Disadvantage Example", width: auto, radius: 0pt, color: black)[
-  #set text(size: 8pt)
-  _Note: Rolls with Evil Dice are denoted with a ¡ modifier._
+  #text(size: 10pt)[_Note: Rolls with Evil Dice are denoted with a ¡ modifier._]
+  #set par(spacing: 8pt)
+  #v(-10pt)
   #align(center)[
-    Rolling $S 5$ vs _Ob_ 3 with 2 levels of disadvantage: 
-     
+    Rolling $S 5$ vs _Ob_ 3 with 2 levels of disadvantage:
+
     $¡ S 5 = (4, 1, 5, 2, 6)>1 = (3 - 1)$ Successes
-     
+
     2 Successes vs _Ob_ 4:_ Failure..._
   ]
 ]
@@ -270,15 +268,13 @@ Subtract the failures from the successes, and give that level of advantage to
 the leader of the roll. If the number is negative, give that level of
 disadvantage instead. Also, note down a check for all characters rolling here.
 
-Here is an example of Help:
-
 #slantedColorbox(
   title: "Agnar's Help",
   width: auto,
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
+  #set text(size: 10pt)
   _Agnar woke up at the bottom of a pit with a large boulder on top of him! He's
   uninjured, but at an awkward angle; luckily, his comrade Steven has arrived to
   help! Since Agnar is in the disadvantaged position and is the one in need of
@@ -286,7 +282,7 @@ Here is an example of Help:
   will be leading the roll with his weaker B4 Power stat. The GM puts that, to
   free Agnar, the Ob will be 3. Failing to meet that Ob will result in the boulder
   crushing Agnar's foot, injuring him!_
-   
+
   _Agnar rolls first: 3 successes - 2 failures, a net of +1! That means Steven gets
   to roll with a level of advantage! Steven rolls: !(6, 1, 5, 2), 2 successes but
   he gets to roll an extra B1 because of the help from Agnar: (4), making 3
@@ -294,22 +290,20 @@ Here is an example of Help:
   Steven some free liquor tonight!_
 ]
 
-And one of All at Once:
-
 #slantedColorbox(
   title: "All at Once",
   width: auto,
   radius: 0pt,
   color: black,
 )[
-  #set text(size: 8pt)
+  #set text(size: 10pt)
   _Steven hears the scraping of boots up ahead. Unfortunately, both Agnar and
   himself lost their weapons in the fall and will need to deploy stealth if they
   hope to avoid getting gutted. Unfortunately, this calls for a Stealth check, one
   that falls under All at Once, and Agnar has the tact and Stealthiness of a
   pregnant horse (B2). Steven sighs, and prepares his A6 Stealth roll. The GM
   declares that this Stealth check will be an Ob 4._
-   
+
   _He gets 5 successes - 1 failure! A net +4 advantage for Agnar! That means Agnar
   rolls a !B5: (6, 6, 3, 4, 1). 3 Successes so far, but he gets 2 more from the
   open-endedness of the roll: (4, 1). That makes 4 successes! Through some
@@ -318,3 +312,4 @@ And one of All at Once:
   pieces._
 ]
 #pagebreak()
+
