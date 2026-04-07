@@ -141,7 +141,7 @@
     "Pin Down",
     2,
     ranged,
-    none,
+    "Any Ranged",
     "Perform 1 attack at 50% weapon damage. On hit, target loses 2 AP next turn. Successes over provide -1 AP each.",
   ),
 
@@ -157,7 +157,7 @@
   talent(
     "Drag In",
     2,
-    none,
+    melee,
     "Brawling",
     "Roll Brawling vs target's Speed. On success, pull the target from Ranged to Melee distance.",
   ),
@@ -265,7 +265,7 @@
     "Aimed Shot",
     3,
     ranged,
-    "Archery",
+    "Any Ranged",
     "Perform 1 attack at 125% weapon damage. Ignores 25% of target's armor reduction.",
   ),
   talent("Flurry", 5, melee, "Blade", "Perform 3 attacks at 40% weapon damage each."),
@@ -273,7 +273,7 @@
     "Snipe",
     5,
     ranged,
-    "Archery",
+    "Any Ranged",
     "Perform 1 attack at 200% weapon damage. If target is unaware, inflict 1 Injury on hit.",
   ),
   talent(
