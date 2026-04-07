@@ -75,7 +75,7 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file_glob: true
-          file: *.pdf
+          file: ./*.pdf
           release_name: ${{ env.VERSION }}
           tag: ${{ env.VERSION }}
           overwrite: true
