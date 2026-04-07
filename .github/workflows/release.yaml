@@ -62,15 +62,14 @@ jobs:
         uses: lvignoli/typst-action@main
         with:
           source_file: src/main.typ
-      - name: Zip release
+      - name: Prepare release
         run: |
           mv src/main.pdf arrata-${{ env.VERSION }}.pdf
-          zip -r Arrata-${{ env.VERSION }}.zip arrata-${{ env.VERSION }}.pdf LICENSE.md src/Arrata-Ver0.4.pdf
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: Arrata-${{ env.VERSION }}.zip
+          file: arrata-${{ env.VERSION }}.pdf
           release_name: ${{ env.VERSION }}
           tag: ${{ env.VERSION }}
           overwrite: true
