@@ -14,8 +14,12 @@
 /// Returns a string of AP symbols: ◆ per point, V per 5 points.
 #let ap-symbols(ap) = {
   let result = ""
-  for _ in range(calc.floor(ap / 5)) { result += "V" }
-  for _ in range(calc.rem(ap, 5)) { result += "◆" }
+  for _ in range(calc.floor(ap / 50)) { result += "♥" }
+  ap = calc.rem(ap, 50)
+  for _ in range(calc.floor(ap / 10)) { result += "♠" }
+  ap = calc.rem(ap, 10)
+  for _ in range(calc.floor(ap / 5)) { result += "♣" }
+  for _ in range(calc.rem(ap, 5)) { result += text(baseline: -1.5pt)[◆] }
   result
 }
 
@@ -38,7 +42,7 @@
   block(
     width: if height == auto { 74.25mm } else { 100% },
     height: height,
-    stroke: (paint: fg, thickness: 1pt, dash: "dotted"),
+    stroke: (paint: fg, thickness: 1pt, dash: "loosely-dotted"),
     inset: 0pt,
   )[
     #grid(
