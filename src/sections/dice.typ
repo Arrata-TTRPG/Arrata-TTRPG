@@ -120,7 +120,7 @@ add +1D to the roll, rolling one more die. This can theoretically repeat
 infinitely, although the probability of that is essentially impossible.
 
 To denote a roll as exploding, add an exclamation point, $!$, to the front. Here
-are a few examples, not that they are summed to show how the value of the
+are a few examples, note that they are summed to show how the value of the
 exploded dice affected the outcome:
 
 #slantedColorbox(
@@ -153,7 +153,7 @@ the roll an additional die to roll and add to the sum, Evil dice give an extra
 D1 that subtracts from the roll.
 
 #slantedColorbox(
-  title: "Exploding Dice Examples",
+  title: "Evil Dice Examples",
   width: auto,
   radius: 0pt,
   color: black,

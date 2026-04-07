@@ -26,7 +26,7 @@
     1,
     none,
     "Intimidation",
-    "Roll Intimidation vs target's Will. On success, the target must direct their next attack at you. Every success over grants an addition round of redirection.",
+    "Roll Intimidation vs target's Will. On success, the target must direct their next attack at you. Every success over grants an additional round of redirection.",
   ),
   talent(
     "Create Opening",
@@ -243,7 +243,7 @@
     4,
     melee,
     none,
-    "Until your next turn, redirect all attacks against allies at the same distance to yourself. Gain +1 Evasion, -10% damage recieved.",
+    "Until your next turn, redirect all attacks against allies at the same distance to yourself. Gain +1 Evasion, -10% damage received.",
     notes: ("Requires a shield.",),
   ),
   talent(

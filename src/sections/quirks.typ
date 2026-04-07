@@ -139,7 +139,7 @@ every player should be earning 1-2 Intuition points per 3-4 hours of play.
 
 === Spending Intuition
 
-
+TODO: Fill this out!
 
 == Argos
 

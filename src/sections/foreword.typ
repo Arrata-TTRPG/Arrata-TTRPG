@@ -16,8 +16,9 @@ at all, _please_, email me at: `kaleb.r.burris@gmail.com` with the title `Arrata
 can. Hopefully you'll see your change and name (if you so choose) in the
 changelog and credits.
 
-I value criticism and learning from your mistakes; it's major part of Arrata,
+I value criticism and learning from your mistakes; it's a major part of Arrata,
 and I would be a fool to write such a system yet fail to act in a way that
 demonstrates those principles.
 
 #pagebreak()
+

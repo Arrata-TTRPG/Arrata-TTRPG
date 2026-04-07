@@ -82,8 +82,8 @@ Now that stats are defined, we can discuss what they're used for.
 
 A critical part of roleplaying is meeting something that is challenging for the
 character to overcome. When this happens; when an action is contested, a
-\textbf{Check} is called for. Dice are rolled and compared to a {\em difficulty
-level} to determine the outcome.
+*Check* is called for. Dice are rolled and compared to a _difficulty
+level_ to determine the outcome.
 
 Checks are the core of the vast majority of TTRPGs, and Arrata is no different
 in this regard. Knowing when a check occurs and what to do are critical pieces
@@ -96,7 +96,7 @@ guide your character's changes are what this is all about.
 === Success and Failure
 
 Because Arrata uses dice pools and comparisons, every die rolled is defined as
-either a \emph{Success} or \emph{Failure}.
+either a *Success* or *Failure*.
 
 Quality defines the threshold for what a success is; if a die is rolled and is
 greater than its Quality constant, then the die rolled is counted as a success.
@@ -164,7 +164,7 @@ entire check, it is written in the form _Stat_ vs _Ob_ $X$.
 When a check is called for, _Intent_ must be defined for all parties involved.
 It's the GM's job to sum up these Intents and put forward _outcomes_. For the
 GM, they should define at least two outcome: Success and Failure. If there is
-ambiguity,
+ambiguity, it is the GM's job to decide what is the most reasonable outcome for each result. For players, they should be clear about what they want to achieve with the check, and how they will react to the different outcomes.
 
 === Extra Successes
 
