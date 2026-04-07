@@ -14,18 +14,19 @@
 
 #set page(numbering: "1")
 
-#include("sections/foreword.typ")
+#include "sections/foreword.typ"
 
-#include("sections/introduction.typ")
+#include "sections/introduction.typ"
 
-#include("sections/dice.typ")
+#include "sections/dice.typ"
 
-#include("sections/stats.typ")
+#include "sections/stats.typ"
 
-#include("sections/quirks.typ")
+#include "sections/quirks.typ"
 
-#include("sections/characters.typ")
+#include "sections/characters.typ"
 
-#include("sections/combat.typ")
+#include "sections/combat.typ"
 
-#include("sections/credits.typ")
+#include "sections/credits.typ"
+
