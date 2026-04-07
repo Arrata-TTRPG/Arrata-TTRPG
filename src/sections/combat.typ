@@ -71,24 +71,22 @@ character's turn, they may use one Talent by spending its AP cost. Some Talents
 require a specific weapon, Skill, and/or piece of equipment to use, and these requirements are listed on the Talent's card.
 
 #slantedColorbox(title: "Talent Card", width: auto, radius: 0pt, color: black)[
-
-  _Note: Red labels are annotations only and do not appear on the actual card._
+  #text(size: 10pt)[_Note: Red labels are annotations only and do not appear on the actual card._]
   #v(-15pt)
   #align(center)[
     #pad(top: 14pt, left: 8pt, right: 8pt)[
-      #ann-card-shell(
-        [#text(weight: "bold", size: 13pt)[#ob("Double Strike", "Name")]#text(size: 10pt, style: "italic")[#h(2pt)#ob(
-              "· Blade",
-              "Req. skill",
-            )]],
-        text(weight: "bold", size: 12pt)[#ob("2 AP ◆◆", "AP cost")],
-        main-area(
-          text(size: 10pt)[#ub("Perform 2 attacks at 50% weapon damage each.", "Mechanical effect")],
-        ),
-      )
-    ]
+      #talent(
+        ob("Double Strike", "Name", size: 16pt, weight: "bold"),
+        ob("2 AP ◆◆", "AP cost", size: 14pt, weight: "bold"),
+        ub(melee, "Type"),
+        ub("Skill: Blade", "Skill req.", size: 11pt, style: "italic"),
+        ob(text[Perform 2 attacks at 50% weapon #linebreak() damage each.], "Mechanical effect", size: 11pt),
+        height: auto,
+      )    ]
   ]
 ]
+
+
 
 == Weapons
 
@@ -98,53 +96,27 @@ Some weapons add a stat modifier to their base damage, representing the physical
 force or technique behind the blow. A weapon's card lists all of this alongside
 any special effects or restrictions.
 
-#pagebreak()
-
 #slantedColorbox(title: "Weapon Card", width: auto, radius: 0pt, color: black)[
-
-  _Note: Red labels are annotations only and do not appear on the actual card._
+  #text(size: 10pt)[_Note: Red labels are annotations only and do not appear on the actual card._]
   #v(-15pt)
   #align(center)[
     #pad(top: 14pt, left: 8pt, right: 8pt)[
-      #ann-card-shell(
-        text(weight: "bold", size: 13pt)[#ob("Longsword", "Name")],
-        text(weight: "bold", size: 12pt)[#ob("Melee", "Weapon type")],
-        main-area(
-          stack(
-            spacing: 8pt,
-            stack(
-              dir: ltr,
-              spacing: 4pt,
-              text(fill: ann)[$overbracket(
-                #text(fill: white, weight: "bold", size: 26pt)[3],
-                upright(#text(size: 8pt, fill: ann)[Base dmg])
-              )$],
-              align(horizon)[#text(fill: ann)[$overbracket(
-                #text(fill: white, weight: "bold", size: 13pt)[#sym.plus Power],
-                upright(#text(size: 8pt, fill: ann)[Stat mod.])
-              )$]],
-            ),
-            v(2pt),
-            text(size: 10pt)[#ub("Physical", "Damage type")],
-            text(size: 9pt)[#ub("+10%/Success over", "Per-success bonus")],
-          ),
-          note: align(left)[#pad(bottom: 6pt)[#text(fill: ann)[$cases(
-            delim: "[", reverse: #true,
-            #text(fill: white, style: "italic", size: 9pt)[*May be used one-handed at -1 damage.*]
-          ) #h(2pt) #text(size: 7pt)[Special note]$]]],
-        ),
-        tag: pad(top: 5pt)[#text(fill: ann)[$overbracket(
-            #text(fill: white)[Blade],
-            upright(#text(size: 8pt, fill: ann)[Skill])
-          )$] #text(fill: ann)[$overbracket(
-            #text(fill: white)[· B3],
-            upright(#text(size: 8pt, fill: ann)[Skill #linebreak() req.])
-          )$]],
+      #weapon(
+        ob("Longsword", "Name", size: 16pt, weight: "bold"),
+        ob(melee, "Range", size: 14pt, weight: "bold"),
+        ob("Blade", "Skill Used", size: 11pt, style: "italic"),
+        ob("B3", "Skill Req.", size: 11pt, style: "italic"),
+        ob("3", "Base dmg.", size: 31pt, weight: "bold"),
+        ub("Physical", "Damage type", size: 12pt),
+        stat-mod: ob("Power", "Stat mod.", size: 16pt, weight: "bold"),
+        tags: (ob(two-handed, "Requires two hands", size: 11pt, style: "italic"),),
+        notes: (ub("May be used one-handed at -1 damage.", "Special note", size: 11pt, style: "italic"),),
+        bonus: ub("+10%/Success over", "Per-success bonus", size: 11pt),
+        height: auto,
       )
     ]
   ]
 ]
-
 == Armor
 
 Armor reduces incoming damage before it is applied to Health. A character's
@@ -155,20 +127,19 @@ Heavier armors may impose additional penalties such as reduced Evasion or Speed,
 listed directly on the armor's card.
 
 #slantedColorbox(title: "Armor Card", width: auto, radius: 0pt, color: black)[
-
-  _Note: Red labels are annotations only and do not appear on the actual card._
+  #text(size: 10pt)[_Note: Red labels are annotations only and do not appear on the actual card._]
   #v(-15pt)
   #align(center)[
     #pad(top: 14pt, left: 8pt, right: 8pt)[
-      #ann-card-shell(
-        text(weight: "bold", size: 13pt)[#ob("Chain Mail", "Name")],
-        [],
-        main-area(
-          stack(spacing: 10pt, text(size: 10pt)[#ub("-25% damage", "% damage reduction")], text(size: 10pt)[#ub(
-            "-1 Evasion",
-            "Stat penalty",
-          )]),
+      #armor(
+        ob("Ceremonial Plate", "Name", size: 16pt, weight: "bold"),
+        (
+          ob("-35% damage", "Damage multiplier", size: 11pt),
+          ob("-2 Evasion", "Evasion reduction", size: 11pt),
+          ob("-1 Speed", "Speed Reduction", size: 11pt),
+          ob("+1 advantage on Persuasion checks", "Special passive effect", size: 11pt),
         ),
+        height: auto,
       )
     ]
   ]
@@ -176,8 +147,8 @@ listed directly on the armor's card.
 
 == Attacking
 
-When a character uses a Talent to attack, the attacker rolls the *Skill
-associated with their weapon* and the defender rolls their *Evasion*. If the
+When a character uses a Talent to attack, the attacker rolls the Skill
+associated with their weapon and the defender rolls their _Evasion_. If the
 attacker's successes meet or exceed the defender's, the attack lands. If the
 attacker's successes fall short, the attack misses entirely.
 
@@ -190,38 +161,62 @@ hits, all attacks hit; if it misses, all attacks miss.
 
 === Damage
 
-When an attack lands, damage is calculated in two steps:
+When an attack lands, damage is calculated in three steps:
 
 + *Sum all flat modifiers*: Start with the weapon's base damage and stat roll,
-  then add or subtract any flat bonuses from Talents, and subtract any flat
-  armor reductions. \
-  $italic("base") + italic("stat roll") + sum italic("flat modifiers") - italic("armor flat")$
-+ *Multiply all percentage modifiers*: Multiply the result by every percentage
+  then add or subtract any flat bonuses from Talents armors, weapons, etc. \
+  $italic("base") + italic("stat roll") + sum italic("flat modifiers") = italic("Flat dmg.")$
++ *Multiply all percentage modifiers*: Multiply every percentage
   modifier together: Talent multipliers, the weapon's per-success bonus
   (+X% per success over, noted on the weapon's card), and armor percentage
-  reductions. Round the final result at 0.5. Minimum 0. \
-  $times product italic("% modifiers")$
-
-#slantedColorbox(title: "Damage Formula", width: auto, radius: 0pt, color: black)[
-  #set text(size: 12pt)
-  #align(center)[
-    $round((italic("base") + italic("stat") + sum italic("flat")) times product italic("% mods"))$
-  ]
-]
+  reductions. \
+  $times product italic("% modifiers") = italic("Dmg. mult")$
++ *Multiply the two together*: Multiply the total flat damage by the total percentage
+  modifiers, then round to the nearest whole number. \
+  $round(italic("Flat dmg.") times italic("Dmg. mult")) = italic("Final damage")$
 
 #slantedColorbox(title: "Attack Example", width: auto, radius: 0pt, color: black)[
-  #set text(size: 10pt)
+  #set text(size: 9pt)
   _Mira uses Double Strike (2 attacks, 50% damage each) against a bandit wearing
   Chain Mail (-25% damage). Her longsword has +10%/Success over._
 
   _She makes one roll for both attacks: $B 5$ Blade rolls 4 successes. The bandit
   rolls Evasion and rolls 2 successes. Both attacks land with 2 successes over._
 
-  _She rolls Power and rolls 2 successes: $3 + 2 = 5$ flat damage. Her percentage
-  modifiers are: Double Strike (×0.5), 2 successes over (×1.2), Chain Mail
-  (×0.75). Multiplied together: $0.5 times 1.2 times 0.75 = 0.45$. Each attack
-  deals $round(5 times 0.45) = round(2.25) =$ 2 damage, for a total of *4 damage*._
+  _She rolls Power and rolls 2 successes and calculates step 1:_
+  $
+    underbracket(
+      overbracket(3, "Base" #linebreak() "dmg".)
+      #h(-2pt) + #h(-2pt)
+      overbracket(2, "Stat" #linebreak() "mod.")
+      #h(-2pt) + #h(-2pt)
+      overbracket(0, sum #linebreak() "flat" #linebreak() "mods")
+      #h(2pt) = #h(-5pt)
+      overbracket(
+        5,
+        "Total flat" #linebreak() "damage"
+      ), italic("base") + italic("stat roll") + sum italic("flat modifiers")\, "Step 1"
+    )
+  $
+
+  _Her percentage modifiers are: Double Strike (×0.5), 2 successes over (×1.2), Chain Mail
+  (×0.75). Multiplied together into step 2:_
+  $
+    underbracket(
+      overbracket(0.5, "Double" #linebreak() "Strike")
+      #h(-3pt) times #h(-3pt)
+      overbracket(1.2, "Successes" #linebreak() "over")
+      #h(-3pt) times
+      overbracket(0.75, "Chain" #linebreak() "Mail") = overbracket(0.45, "Total" #linebreak() "mult"),
+      times product italic("% mods")\, "Step 2"
+    )
+  $
+  _Each attack deals_ #h(-9pt) $overbracket(floor.l 5, "Flat dmg.") #h(-3pt) times #h(-1pt) overbracket(0.45 ceil.r, "Dmg. mult") #h(-1.5pt) = overbracket(round(2.25) = 2, "Final damage")$ _damage for a total of *4 damage*. Remember, Mira used a Talent with *2* attacks that evaluate to the same value, so we can simply multiply_ $2 times 2$.
 ]
+
+== Distances
+
+There are two primary distance categories in combat: *Melee* and *Ranged*. All characters start the battle in melee range, however some Talents allow a character to retreat back to the Ranged distance. At this distance, they cannot be targeted by melee attacks, but they also cannot use melee weapons or talents that require melee range, only Ranged Talents and Ranged weapons are usable.
 
 == Injury & Death
 
@@ -260,28 +255,35 @@ are converted into permanent stat reductions instead. For each such level,
 roll a $d 6$ to determine which stat is reduced by 1:
 
 #slantedColorbox(title: "Injury Recovery", width: auto, radius: 0pt, color: black)[
-  #set text(size: 9pt)
   #grid(
     columns: (1fr, 1fr),
-    gutter: 8pt,
+    gutter: 12pt,
+    align: center,
     table(
-      columns: (auto, auto),
-      inset: (x: 6pt, y: 2pt),
+      columns: (1fr, 1fr),
+      stroke: (x, y) => (
+        left: if x > 0 { 0.5pt + white } else { none },
+        top: if y > 0 { 0.5pt + white } else { none },
+      ),
       [*Roll*], [*Stat*],
       [1], [Will],
       [2], [Power],
       [3], [Perception],
     ),
     table(
-      columns: (auto, auto),
-      inset: (x: 6pt, y: 2pt),
+      columns: (1fr, 1fr),
+      stroke: (x, y) => (
+        left: if x > 0 { 0.5pt + white } else { none },
+        top: if y > 0 { 0.5pt + white } else { none },
+      ),
       [*Roll*], [*Stat*],
       [4], [Speed],
       [5], [Conscious],
       [6], [Forte],
     ),
   )
-  _Recalculate maximum Health after any change to Will or Forte._
+  #v(-10pt)
+  #text(size: 10pt)[_Note: Recalculate maximum Health after any change to Will or Forte._]
 ]
 
 #pagebreak()

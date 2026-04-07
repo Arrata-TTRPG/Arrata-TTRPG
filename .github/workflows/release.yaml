@@ -58,18 +58,23 @@ jobs:
       - name: Write CURRENT_VERSION
         run: |
           sed -i "s/CURRENT_VERSION/${{ env.VERSION }}/" src/main.typ
-      - name: Compile release
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: src/main.typ
+      - name: Install Typst
+        uses: typst-community/setup-typst@v5
+      - name: Compile Typst files
+        run: |
+          typst compile src/main --root src
+          for f in cards/*.typ; do typst compile "$f" --root src; done
       - name: Prepare release
         run: |
           mv src/main.pdf arrata-${{ env.VERSION }}.pdf
+          mv src/cards/armor.pdf armor-${{ env.VERSION }}.pdf
+          mv src/cards/talents.pdf talents-${{ env.VERSION }}.pdf
+          mv src/cards/weapons.pdf weapons-${{ env.VERSION }}.pdf
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: arrata-${{ env.VERSION }}.pdf
+          file: *.pdf
           release_name: ${{ env.VERSION }}
           tag: ${{ env.VERSION }}
           overwrite: true

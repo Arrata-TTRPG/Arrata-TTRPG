@@ -1,11 +1,17 @@
-// ── Shared constants ─────────────────────────────────────────────────────────
-#let card-w = 88mm
+// ── Constants ────────────────────────────────────────────────────────────────
+
+/// Weapon/Talent type constants.
+#let melee = "Melee"
+#let ranged = "Ranged"
+
+/// Grip constant for weapon tags.
+#let two-handed = "Two-handed"
+
+// ── Shared internals ────────────────────────────────────────────────────────
 #let body-inset = 6mm
-#let dot-stroke = (paint: white, thickness: 0.5pt, dash: "dotted")
 #let ann = rgb("#ff4444")
 
 /// Returns a string of AP symbols: ◆ per point, V per 5 points.
-/// e.g. 7 AP → "V◆◆"
 #let ap-symbols(ap) = {
   let result = ""
   for _ in range(calc.floor(ap / 5)) { result += "V" }
@@ -13,176 +19,211 @@
   result
 }
 
-/// Main content area: optional italic note top-left, content below.
-#let main-area(content, note: none) = {
-  if note != none {
-    stack(spacing: 4pt, align(left)[#note], align(center)[#content])
-  } else { align(center)[#content] }
+/// Joins an array of content/strings with `  ·  ` separators.
+#let dot-join(parts) = {
+  parts.filter(p => p != none).join([#h(4pt)·#h(4pt)])
 }
 
-/// Base card shell. All card types are built on this.
+// ── Card shell ──────────────────────────────────────────────────────────────
+
+/// Base card shell. Colors inherit from `#set text(fill: ...)`.
 ///
 /// - name (content): Header left side.
 /// - right-label (content): Header right side.
 /// - main (content): Main body content.
-/// - tag (content, none): Optional italic tag row below header.
-#let card-shell(name, right-label, main, tag: none) = block(
-  width: card-w,
-  stroke: (paint: white, thickness: 1pt, dash: "dotted"),
-  inset: 0pt,
-)[
-  #grid(
-    columns: (1fr,),
-    rows: (auto, if tag != none { auto } else { 0pt }, auto),
-    stack(
-      block(width: 100%, inset: (x: body-inset, top: body-inset, bottom: 3pt))[
-        #grid(
-          columns: (1fr, auto),
-          align: (left + horizon, right + horizon),
-          name, right-label,
-        )
-      ],
-      line(length: 100%, stroke: 0.5pt + white),
-    ),
-    if tag != none {
+/// - note (content, none): Optional note in the body area.
+/// - height (length): `100%` for grid use, `auto` for standalone.
+#let card-shell(name, right-label, main, note: none, height: 100%) = context {
+  let fg = text.fill
+  block(
+    width: if height == auto { 74.25mm } else { 100% },
+    height: height,
+    stroke: (paint: fg, thickness: 1pt, dash: "dotted"),
+    inset: 0pt,
+  )[
+    #grid(
+      columns: (1fr,),
+      rows: (auto, if height == auto { auto } else { 1fr }),
       stack(
-        block(width: 100%, inset: (x: body-inset, y: 2pt))[
-          #text(style: "italic", size: 9pt, fill: white)[#tag]
+        block(width: 100%, inset: (x: body-inset, top: body-inset / 2, bottom: 6pt))[
+          #grid(
+            columns: (1fr, auto),
+            align: (left + horizon, right + horizon),
+            name, right-label,
+          )
         ],
-        line(length: 100%, stroke: dot-stroke),
-      )
-    },
-    block(width: 100%, inset: (x: body-inset, y: 6pt))[#main],
-  )
-]
+        line(length: 100%, stroke: 0.5pt + fg),
+      ),
+      if height == auto {
+        block(width: 100%, inset: (x: body-inset, top: 6pt, bottom: 10pt))[
+          #if note != none {
+            align(left)[#note]
+          }
+          #align(center + top)[#main]
+        ]
+      } else {
+        block(width: 100%, height: 100%, inset: 0pt)[
+          #if note != none {
+            place(top + left, dx: body-inset, dy: 4pt)[#note]
+          }
+          #align(center + horizon, block(inset: (x: body-inset, y: 6pt))[#main])
+        ]
+      },
+    )
+  ]
+}
 
-/// Annotated card shell: same as card-shell but with extra bottom padding
-/// so underbracket labels don't clip the card border.
-#let ann-card-shell(name, right-label, main, tag: none) = block(
-  width: card-w,
-  stroke: (paint: white, thickness: 1pt, dash: "dotted"),
-  inset: 0pt,
-)[
-  #grid(
-    columns: (1fr,),
-    rows: (auto, if tag != none { auto } else { 0pt }, auto),
-    stack(
-      block(width: 100%, inset: (x: body-inset, top: body-inset, bottom: 3pt))[
-        #grid(
-          columns: (1fr, auto),
-          align: (left + horizon, right + horizon),
-          name, right-label,
-        )
-      ],
-      line(length: 100%, stroke: 0.5pt + white),
-    ),
-    if tag != none {
-      stack(
-        block(width: 100%, inset: (x: body-inset, y: 2pt))[
-          #text(style: "italic", size: 9pt, fill: white)[#tag]
-        ],
-        line(length: 100%, stroke: dot-stroke),
-      )
-    },
-    block(width: 100%, inset: (x: body-inset, top: 6pt, bottom: 10pt))[#main],
-  )
-]
+// ── Annotation helpers ──────────────────────────────────────────────────────
 
-/// Annotation helper: overbracket with red bracket and label.
-#let ob(content, label) = text(fill: ann)[
-  $overbracket(#text(fill: white)[#content], upright(#text(size: 8pt)[#label]))$
-]
+/// Overbracket annotation: red math bracket with label above content.
+/// Pass `size`, `weight`, `style` to format the content inside math mode.
+#let ob(content, label, size: 10pt, weight: "regular", style: "normal") = context {
+  let fg = text.fill
+  text(fill: ann)[$overbracket(
+    #text(fill: fg, size: size, weight: weight, style: style, font: "Fira Sans")[#content],
+    upright(#pad(top: 10pt)[#text(size: 10pt)[#label]])
+  )$]
+}
 
-/// Annotation helper: underbracket with red bracket and label.
-#let ub(content, label) = text(fill: ann)[
-  $underbracket(#text(fill: white)[#content], upright(#text(size: 8pt)[#label]))$
-]
+/// Underbracket annotation: red math bracket with label below content.
+/// Pass `size`, `weight`, `style` to format the content inside math mode.
+#let ub(content, label, size: 10pt, weight: "regular", style: "normal") = context {
+  let fg = text.fill
+  text(fill: ann)[$underbracket(
+    #text(fill: fg, size: size, weight: weight, style: style, font: "Fira Sans")[#content],
+    upright(#pad(bottom: 10pt)[#text(size: 10pt)[#label]])
+  )$]
+}
 
-// ── Card types ────────────────────────────────────────────────────────────────
+// ── Card types ──────────────────────────────────────────────────────────────
 
 /// Renders a Talent card.
 ///
-/// - name (str): Talent name.
-/// - ap (int): AP cost.
-/// - skill (str, none): Required weapon skill shown next to name, or none.
-/// - equip (str, none): Required equipment note shown italic top-left, or none.
-/// - effect (str): Mechanical effect.
-#let talent(name, ap, skill, equip, effect) = {
-  let title = if skill != none {
-    [#text(weight: "bold", size: 13pt, fill: white)[#name]#text(size: 10pt, style: "italic", fill: white)[ · #skill]]
-  } else {
-    text(weight: "bold", size: 13pt, fill: white)[#name]
+/// All parameters accept strings or pre-formatted content (e.g. `ob()` wrappers).
+///
+/// - name (str, content): Talent name.
+/// - ap (int, content): AP cost as integer, or pre-formatted content for annotations.
+/// - w-type (str, content, none): "Melee"/"Ranged" or `melee`/`ranged` constants.
+/// - skill (str, content, none): Required skill name (e.g. "Blade").
+/// - effect (str, content): Mechanical effect text.
+/// - notes (array): Additional notes (e.g. equipment requirements). Rendered on line 2.
+/// - height (length): `100%` for grid use, `auto` for standalone/annotated.
+#let talent(name, ap, w-type, skill, effect, notes: (), height: 100%) = {
+  let ap-content = if type(ap) == int {
+    [#str(ap) AP #ap-symbols(ap)]
+  } else { ap }
+
+  let line1-parts = ()
+  if w-type != none { line1-parts.push(w-type) }
+  if skill != none {
+    line1-parts.push(if type(skill) == str { [Skill: #skill] } else { skill })
   }
+
+  let has-line1 = line1-parts.len() > 0
+  let has-notes = notes.len() > 0
+
+  let note-content = if has-line1 or has-notes {
+    text(style: "italic", size: 11pt)[
+      #if has-line1 { dot-join(line1-parts) }
+      #if has-notes {
+        if has-line1 { linebreak() }
+        notes.join(linebreak())
+      }
+    ]
+  } else { none }
+
   card-shell(
-    title,
-    text(weight: "bold", size: 12pt, fill: white)[#str(ap) AP #ap-symbols(ap)],
-    main-area(
-      text(size: 10pt, fill: white)[#effect],
-      note: if equip != none { text(style: "italic", size: 9pt, fill: white)[#equip] } else { none },
-    ),
+    text(weight: "bold", size: 16pt)[#name],
+    text(weight: "bold", size: 14pt)[#ap-content],
+    text(size: 12pt)[#effect],
+    note: note-content,
+    height: height,
   )
 }
 
 /// Renders a Weapon card.
 ///
-/// - name (str): Weapon name.
-/// - w-type (str): "Melee", "Ranged", or "Special".
-/// - skill (str): Associated skill (e.g. "Blade").
-/// - min-skill (str): Minimum skill level required (e.g. "B3", "A2").
-/// - dmg (str): Damage value, may include stat modifier (e.g. "3 + Power").
-/// - dmg-type (str): Damage type (e.g. "Physical", "Fire").
-/// - effects (array): Optional additional effects (e.g. ("-1 Evasion",)).
-/// - bonus (str): Per-success bonus (default "+10%/Success over").
-/// - one-handed (str, none): One-handed penalty note, or none.
+/// All parameters accept strings or pre-formatted content (e.g. `ob()` wrappers).
+///
+/// - name (str, content): Weapon name.
+/// - w-type (str, content): "Melee"/"Ranged" or `melee`/`ranged` constants.
+/// - skill (str, content): Associated skill (e.g. "Blade", "Blunt", "Polearms").
+/// - min-skill (str, content): Minimum skill level (e.g. "B3", "A2").
+/// - base-dmg (str, content): Base damage value (e.g. "3").
+/// - dmg-type (str, content): Damage type (e.g. "Physical", "Fire").
+/// - stat-mod (str, content, none): Stat modifier added to damage (e.g. "Power").
+/// - bonus (str, content): Per-success bonus text.
+/// - effects (array): Additional effect strings shown below damage.
+/// - tags (array): Short tags joined on note line 1 (e.g. `(two-handed,)`).
+/// - notes (array): Longer notes shown on note line 2+ (e.g. one-handed usage).
+/// - height (length): `100%` for grid use, `auto` for standalone/annotated.
 #let weapon(
   name,
   w-type,
   skill,
   min-skill,
-  dmg,
+  base-dmg,
   dmg-type,
-  effects: (),
+  stat-mod: none,
   bonus: "+10%/Success over",
-  one-handed: none,
+  effects: (),
+  tags: (),
+  notes: (),
+  height: 100%,
 ) = {
+  // Build note area
+  let line1-parts = (skill, min-skill, ..tags)
+  let has-notes = notes.len() > 0
+
+  let note-content = text(style: "italic", size: 11pt)[
+    #dot-join(line1-parts)
+    #if has-notes {
+      linebreak()
+      notes.join(linebreak())
+    }
+  ]
+
+  // Build damage display
   let dmg-content = stack(
-    spacing: 4pt,
-    context {
-      let parts = dmg.split(" + ")
-      if parts.len() == 2 {
-        stack(dir: ltr, spacing: 4pt, text(parts.at(0), weight: "bold", size: 26pt, fill: white), align(horizon, text(
-          sym.plus + " " + parts.at(1),
-          weight: "bold",
-          size: 13pt,
-          fill: white,
-        )))
-      } else { text(dmg, weight: "bold", size: 26pt, fill: white) }
+    spacing: 5pt,
+    if stat-mod != none {
+      stack(
+        dir: ltr,
+        spacing: 4pt,
+        text(weight: "bold", size: 31pt)[#base-dmg],
+        align(horizon, text(weight: "bold", size: 16pt)[#sym.plus #stat-mod]),
+      )
+    } else {
+      text(weight: "bold", size: 31pt)[#base-dmg]
     },
-    text(size: 10pt, fill: white)[#dmg-type],
-    text(size: 9pt, style: "italic", fill: white)[#bonus],
-    ..effects.map(e => text(size: 9pt, fill: white)[#e]),
+    text(size: 12pt)[#dmg-type],
+    text(size: 11pt, style: "italic")[#bonus],
+    ..effects.map(e => text(size: 11pt)[#e]),
   )
+
   card-shell(
-    text(weight: "bold", size: 13pt, fill: white)[#name],
-    text(weight: "bold", size: 12pt, fill: white)[#w-type],
-    main-area(
-      dmg-content,
-      note: if one-handed != none { text(style: "italic", size: 9pt, fill: white)[#one-handed] } else { none },
-    ),
-    tag: skill + " · " + min-skill,
+    text(weight: "bold", size: 16pt)[#name],
+    text(weight: "bold", size: 14pt)[#w-type],
+    dmg-content,
+    note: note-content,
+    height: height,
   )
 }
 
 /// Renders an Armor card.
 ///
-/// - name (str): Armor name.
-/// - effects (array): List of effect strings.
-/// - note (str, none): Optional restriction note (e.g. "Cannot use with two-handed weapons.").
-#let armor(name, effects, note: none) = card-shell(
-  text(weight: "bold", size: 13pt, fill: white)[#name],
+/// All parameters accept strings or pre-formatted content (e.g. `ob()` wrappers).
+///
+/// - name (str, content): Armor name.
+/// - effects (array): List of effect strings shown centered.
+/// - notes (array): Optional restriction notes shown top-left.
+/// - height (length): `100%` for grid use, `auto` for standalone/annotated.
+#let armor(name, effects, notes: (), height: 100%) = card-shell(
+  text(weight: "bold", size: 16pt)[#name],
   [],
-  main-area(
-    stack(spacing: 4pt, ..effects.map(e => text(size: 10pt, fill: white)[#e])),
-    note: if note != none { text(style: "italic", size: 9pt, fill: white)[#note] } else { none },
-  ),
+  stack(spacing: 5pt, ..effects.map(e => text(size: 12pt)[#e])),
+  note: if notes.len() > 0 {
+    text(style: "italic", size: 11pt)[#notes.join(linebreak())]
+  } else { none },
+  height: height,
 )
