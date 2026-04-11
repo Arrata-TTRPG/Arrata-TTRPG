@@ -66,7 +66,8 @@
     h(1fr) + text(0.95em, smallcaps(emph(hydra())))
   })
 
-  set heading(numbering: "1.")
+  set heading(numbering: "1.1")
+  show heading: set text(font: "FiraCode Nerd Font")
 
   // Configure headings: level 1 as full-page Part dividers, others inline.
   show heading: it => {

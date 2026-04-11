@@ -29,7 +29,7 @@ entirely up to the imagination. The GM assigns an Obstacle for the Prayer, or
 allows it to be open-ended, depending on the scale of the Divine Intervention
 requested. As a general guide:
 
-#align(center)[#table(
+#align(center)[#block(breakable: false)[#table(
   columns: (auto, 1fr),
   inset: 5pt,
   align: left,
@@ -47,7 +47,7 @@ requested. As a general guide:
   [7], [A plague is cured, water is made walkable.],
   [8], [A great mystery is revealed.],
   [9], [A powerful opponent is banished to another plane, the sky rains gold.],
-)]
+)]]
 
 // TODO: "a wound is healed" at Ob 4 — confirm this interacts correctly with
 // the current Injury/Recovery system (Medicine vs Injury Ob). Does Prayer
