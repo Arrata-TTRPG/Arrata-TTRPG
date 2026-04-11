@@ -80,6 +80,20 @@
     v(0.5em)
   }
 
+  // Configure references
+
+  show ref: it => {
+    let el = it.element
+    if el != none and el.func() == heading {
+      let nums = counter(heading).at(el.location())
+      let number = numbering(el.numbering, ..nums)
+      link(el.location(), [#el.supplement #number: #el.body])
+    } else {
+      it
+    }
+  }
+
+
   body
 }
 

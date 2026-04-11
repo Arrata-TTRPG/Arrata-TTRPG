@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Quirks
+= Quirks <quirks>
 
 Quirks are the backbone of any character. They help you as a player or GM define
 who exactly a character is, how they operate, and how you should be representing

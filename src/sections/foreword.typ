@@ -1,4 +1,4 @@
-﻿= Foreword
+﻿= Foreword <foreword>
 
 Arrata is a project I've been working on for a few years now, and it's the
 successor to some other custom TTRPGs I've worked on with friends. There's a lot
@@ -19,6 +19,16 @@ changelog and credits.
 I value criticism and learning from your mistakes; it's a major part of Arrata,
 and I would be a fool to write such a system yet fail to act in a way that
 demonstrates those principles.
+
+Complete sections:
+- @intro
+- @dice
+- @stats
+
+In progress:
+- @quirks
+- @characters
+- @combat
 
 #pagebreak()
 

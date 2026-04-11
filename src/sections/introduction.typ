@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Introduction
+= Introduction <intro>
 
 Arrata is a roleplaying system inspired by the work of more traditional
 roleplaying games with an emphasis on universality. The purpose of this system

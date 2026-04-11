@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Dice
+= Dice <dice>
 
 == Why Dice?
 
@@ -73,7 +73,7 @@ random for this book, and will be written as $(1, 2, 3, ...)$.
     ),
     [*Example in English*], [*Dice Notation*],
     [I rolled a six-sided die and got a $4$.], [$1 d 6 = (4)$],
-    [I rolled 3 twenty-sided dice and got 5, 15, and 20.], [$3 d 20 = (5, 14, 20)$],
+    [I rolled 3 twenty-sided dice and got 5, 14, and 20.], [$3 d 20 = (5, 14, 20)$],
     [I rolled 100 one-hundred-sided dice and got 99, 65, ..., 23, and 55.], [$100 d 100 = (99, 65, ..., 23, 55)$],
   )
 ]
@@ -83,7 +83,7 @@ random for this book, and will be written as $(1, 2, 3, ...)$.
 There will be cases where a roll would be given or have lost dice to roll, in
 which case we represent the change to a quantity of dice as $plus.minus X D$,
 where $X$ is the number of dice being added or subtracted and $D$ (always
-capitalized) is denoting that $X$ represents a quantity of dice.
+capitalized when adding/subtracting) is denoting that $X$ represents a quantity of dice.
 
 Separately, if two different-sided quantities of dice are added, there is no
 attempt to unify them into a single roll. Instead, they are left in their
@@ -150,7 +150,10 @@ exploded dice affected the outcome:
 In opposition to exploding dice, Arrata will deal with *Evil dice*. Evil dice
 are denoted by adding an upside-down exclamation point, $¡$. Instead of giving
 the roll an additional die to roll and add to the sum, Evil dice give an extra
-D1 that subtracts from the roll.
+D1 that subtracts from the roll whenever the minimum value is rolled (1).
+
+Evil dice can compound, so an evil dice roll of 1, will generate _another_ evil
+die to roll, in the same way exploding dice can compound.
 
 #slantedColorbox(
   title: "Evil Dice Examples",
@@ -160,7 +163,7 @@ D1 that subtracts from the roll.
 )[
 
   #set text(size: 10pt)
-  _Note: Evil dice and Exploding dice can happen simultaneously!_
+  _Note: Count the highlighted ones (*1*) and count them for the evil roll._
   #v(-15pt)
   #align(center)[#table(
     columns: (auto, auto),

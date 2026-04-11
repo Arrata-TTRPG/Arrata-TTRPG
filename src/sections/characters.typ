@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Characters
+= Characters <characters>
 
 This chapter deals with what and who characters are; what are they composed of,
 how are they compiled, and how do we go about creating them?
@@ -232,7 +232,12 @@ may also spend another 5 to go from Adept to Superb.
 
 === Quirks
 
-Alongside Core Stats, choosing what Quirks a character has
+Alongside Core Stats, choosing what Quirks a character has is extremely important.
+There are a few paths, but ultimately it is up to the Player to build their character
+appropriately for the story and setting.
+
+There are no definite rules on how many Quirks a character should have, but a very
+good starting point is to have up to 5 Quirks, and at least 1 in each category.
 
 === Major Skills
 
@@ -242,8 +247,13 @@ character may have.
 You may choose _up to_ this number of skills to be _Major Skills_ - this means
 that your character starts with these skills, and the Quality and Quantity is
 equal to their Root(s). Major Skills are important starting pillars for any
-character. They represent the past actions and experience of the character, as
-well as the
+character. They represent the past actions and experience of the character.
+
+=== New Skills
+
+When a character uses a new Skill that they don't have, they can choose to add
+it to their character sheet. All New Skills start at the Quality of their root(s),
+and with a Quantity of 1.
 
 === Character Sheets
 

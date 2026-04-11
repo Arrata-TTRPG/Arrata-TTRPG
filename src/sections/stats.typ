@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Stats
+= Stats <stats>
 
 Now that we've established the basic rules of dice, we can translate those into
 the mechanics, different parts of Characters, and the components that make them
@@ -234,21 +234,20 @@ unfavorable, your Quirks are opposed to the action, it opposes your Argos,
 having the low ground in combat, and enemies harrying you would all induce a
 level of disadvantage each.
 
-Disadvantage imposes Evil dice to the roll, and is also obtained in levels. Past
-the first level of disadvantage, or if the roll already has Evil dice, the check
-will have +1 Ob imposed per level of extra disadvantage.
-
-Evil dice subtract -1 Success from rolls that result in a minimum value for a d6
-(1).
+Disadvantage imposes a special form of Evil dice to the roll, and is also obtained in
+levels like Advantage. For every level of disadvantage past +1, or if the roll already has
+Disadvantage, the check will have +1 Ob imposed per level of extra disadvantage.
 
 #slantedColorbox(title: "Disadvantage Example", width: auto, radius: 0pt, color: black)[
-  #text(size: 10pt)[_Note: Rolls with Evil Dice are denoted with a ¡ modifier._]
+  #text(size: 10pt)[_Note: Rolls with Disadvantage are denoted with a ¡ modifier._]
   #set par(spacing: 8pt)
   #v(-10pt)
   #align(center)[
     Rolling $S 5$ vs _Ob_ 3 with 2 levels of disadvantage:
 
-    $¡ S 5 = (4, 1, 5, 2, 6)>1 = (3 - 1)$ Successes
+    $
+      ¡ S 5 = \(4, #h(-40pt) overbracket(bold(1), "This 1 imposes -1 success") #h(-43pt), 5, 2, 6\)>1 = (3 - 1) "Successes"
+    $
 
     2 Successes vs _Ob_ 4:_ Failure..._
   ]
@@ -283,11 +282,11 @@ disadvantage instead. Also, note down a check for all characters rolling here.
   free Agnar, the Ob will be 3. Failing to meet that Ob will result in the boulder
   crushing Agnar's foot, injuring him!_
 
-  _Agnar rolls first: 3 successes - 2 failures, a net of +1! That means Steven gets
-  to roll with a level of advantage! Steven rolls: !(6, 1, 5, 2), 2 successes but
-  he gets to roll an extra B1 because of the help from Agnar: (4), making 3
-  successes! They both roll the boulder off Agnar, an act that seems to have won
-  Steven some free liquor tonight!_
+  _Agnar rolls first: $¡ A 5 = (6, 4, bold(1), 3, 4) > 3 = (4 - 1) = 3$, 3 successes,
+  1 failure; a net of +2! That means Steven gets to roll with two level of advantage!
+  Steven rolls: $! B 4 + 1 = !(6, 1, 5, 2)$, 2 successes but he gets to roll an extra
+  B1 because of the help from Agnar: $! B 1 = (4)$, making 3 successes! They both roll the boulder
+  off Agnar, an act that seems to have won Steven some free liquor tonight!_
 ]
 
 #slantedColorbox(
@@ -302,14 +301,37 @@ disadvantage instead. Also, note down a check for all characters rolling here.
   hope to avoid getting gutted. Unfortunately, this calls for a Stealth check, one
   that falls under All at Once, and Agnar has the tact and Stealthiness of a
   pregnant horse (B2). Steven sighs, and prepares his A6 Stealth roll. The GM
-  declares that this Stealth check will be an Ob 4._
+  declares that this Stealth check will be an Ob 4 after rolling the opponent's Perception._
 
-  _He gets 5 successes - 1 failure! A net +4 advantage for Agnar! That means Agnar
-  rolls a !B5: (6, 6, 3, 4, 1). 3 Successes so far, but he gets 2 more from the
-  open-endedness of the roll: (4, 1). That makes 4 successes! Through some
+  _Steven gets 5 successes and only 1 failure! A net +4 advantage for Agnar! That means Agnar
+  rolls a $! B 2 + 3 = (6, 6, 3, 4, 1) > 3 = 3$. 3 Successes so far, but he gets 2 more from rolling
+  two 6's with advantage $(4, 1) > 3 = 1$. That makes $3 + 1 = 4$ successes! Through some
   miracle, Steven manages to compensate for Agnar's bumbling mess of a stealth
-  attempt, and they sneak past whatever's prowling these halls in one- well, two
+  attempt, and they sneak past whatever is prowling these halls in one... well, two
   pieces._
 ]
+
+== Stacking Advantage and Disadvantage
+
+As previously mentioned, multiple levels of advantage and disadvantage stack on top of each other.
+None of these cancel out in any way. A roll can have +4 Advantage and +2 Disadvantage, and
+both systems apply. In that case, simply follow the rules of both at the same time.
+
+#slantedColorbox(
+  title: "Stacking Advantage and Disadvantage",
+  width: auto,
+  radius: 0pt,
+  color: black,
+)[
+  #set text(size: 10pt)
+  Rolling B5 with +2 Advantage and +1 Disadvantage vs Ob 4:
+  $
+    ¡ ! B 5 = (bold(6), 2, 4, 4 bold(1)) > 3 \
+    = (3 - 1) + B 1 = 2 + (5 > 3) = 2 + 1 = 3 "Successes" \
+  $
+
+  #align(center)[3 Successes vs Ob 4: _Failure..._]
+]
+
 #pagebreak()
 

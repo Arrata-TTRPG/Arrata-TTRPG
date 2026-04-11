@@ -1,7 +1,7 @@
 #import "../typst-boxes.typ": *
 #import "../talent-cards.typ": *
 
-= Combat
+= Combat <combat>
 
 There comes a time when fighting is inevitable; you just have to beat an
 opponent into submission. *Combat* is the first _subsystem_ for Arrata, and will
@@ -63,6 +63,19 @@ order. Unspent AP carries over to the next turn.
   2 AP on Double Strike and pass with 1 AP remaining._
 ]
 
+An important note here is _round_ and _turn_. A *round* is a complete cycle of combat;
+the character who started combat is either going again now, or they are dead and the
+next character in order is starting their *turn*. A *turn* is the time where a character
+is acting in combat.
+
+Some effects will state they last for some number of rounds, meaning they start when that
+character starts that effect, and their "turn counter" decreases by 1 at the start of the
+first character in Combat's turn.
+
+Some effects will state they last for some number of turns, meaning the effect begins
+immediately, and finishes at the end of that character's turn at whatever number of turns
+are specified from now.
+
 == Talents
 
 Talents are special abilities a character has learned, found, or been trained in.
@@ -117,6 +130,12 @@ any special effects or restrictions.
     ]
   ]
 ]
+
+=== Handedness
+
+Some weapons require two-hands to use, and this will be notes on the weapon's description.
+If a weapon is two-handed, it cannot be used in conjunction with a shield or other weapon.
+
 == Armor
 
 Armor reduces incoming damage before it is applied to Health. A character's
@@ -145,6 +164,19 @@ listed directly on the armor's card.
   ]
 ]
 
+== Equipment
+
+You will not have access to all equipment at all times. As is with handedness, you can't
+use things like a Longbow and a Shield. Likewise, you can't claim during a defensive roll
+that your previous Longbow attack was dropped and now you suddenly have a shield and dagger
+equipped.
+
+At the start of Combat, you must specify what equipment you have equipped.
+
+Additionally, if you would like to change any weapons or armor you have equipped, you
+must spend a turn doing so. This means you cannot attack and then swap to a defensive
+pieces of armor in one turn (unless a talent specifies you may).
+
 == Attacking
 
 When a character uses a Talent to attack, the attacker rolls the Skill
@@ -152,7 +184,10 @@ associated with their weapon and the defender rolls their _Evasion_. If the
 attacker's successes meet or exceed the defender's, the attack lands. If the
 attacker's successes fall short, the attack misses entirely.
 
-=== Multi-Attack
+These individual rolls are referenced as *Attacks*. They are the fundamental
+unit of combat, with Talents modifying how they act.
+
+=== Multi-Attacks
 
 Some Talents perform more than one attack at once. When this happens, the
 attacker makes a single roll for all attacks, and the defender makes a single
@@ -234,7 +269,7 @@ _all_ rolls.
 
 When a character's Injury level equals their *Forte Quantity*, they die.
 
-#slantedColorbox(title: "Injury Example", width: auto, radius: 0pt, color: black)[
+#slantedColorbox(title: "Injury - Example", width: auto, radius: 0pt, color: black)[
 
   _Agnar has $B 3$ Forte, so he can sustain 3 levels of Injury before dying. He
   goes down and takes a hit while Downed, gaining 1 level of Injury. Revived
@@ -249,12 +284,11 @@ explicitly revives them. Recovering from Injury requires treatment: a character
 with the *Medicine* skill must roll Medicine against an Obstacle equal to the
 injured character's current Injury level.
 
-The number of successes determines how many Injury levels are removed. All
-Injury is cleared after treatment, but any levels _not_ covered by successes
+On any Recovery roll, all Injury is cleared after treatment, but any Successes _under_
 are converted into permanent stat reductions instead. For each such level,
 roll a $d 6$ to determine which stat is reduced by 1:
 
-#slantedColorbox(title: "Injury Recovery", width: auto, radius: 0pt, color: black)[
+#slantedColorbox(title: "Injury - Recovery", width: auto, radius: 0pt, color: black)[
   #grid(
     columns: (1fr, 1fr),
     gutter: 12pt,
@@ -284,6 +318,17 @@ roll a $d 6$ to determine which stat is reduced by 1:
   )
   #v(-10pt)
   #text(size: 10pt)[_Note: Recalculate maximum Health after any change to Will or Forte._]
+  #v(-10pt)
+
+  _Agnar gets isolated, and tries to heal his 3 levels of Injury with his pitiful B2 in Medicine. He rolls:
+  $B 2 = (1, 4) > 3 = 1$ success. He now has 0 levels of Injury, but because he rolled
+  $3 - 1 = 2$ under, he therefore takes 2 permanent stat reductions.
+  He rolls $2 d 6 = (2, 2)$, reducing Power by 2 from A5 to A3._
 ]
+
+=== Injury Neglect
+
+When injuries are left untreated, they worsen. For every 24 hours a character spends with untreated Injury,
+the current Injury level increases by 50%. 5 Injury increases to $round(5 * 1.5) = round(7.5) = 8$ Injury after 24 hours.
 
 #pagebreak()
