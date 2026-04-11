@@ -26,6 +26,8 @@
 
 #include "sections/characters.typ"
 
+#include "sections/skills.typ"
+
 #include "sections/combat.typ"
 
 #include "sections/credits.typ"
