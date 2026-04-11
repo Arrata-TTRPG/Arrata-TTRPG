@@ -57,7 +57,7 @@
   set par(leading: 0.65em, spacing: 2em, justify: true)
 
   // Start with an outline.
-  outline(title: [Table of Contents])
+  outline(title: [Table of Contents], indent: 2em)
 
   // Configure page properties.
   set page(numbering: "1", header: context {
