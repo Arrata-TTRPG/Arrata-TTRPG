@@ -1,8 +1,8 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Dice <dice>
+== Dice <dice>
 
-== Why Dice?
+=== Why Dice?
 
 Dice are tools that are used to generate random numbers, which are in turn used
 to determine the outcome of certain scenarios. By adjusting things like how we
@@ -10,7 +10,7 @@ count the value of each die, how many dice are rolled, and what special rules
 apply to them, we turn completely random, arbitrary values into probabilities
 that reflect the upper and lower bounds of a particular thing.
 
-== Dice Notation
+=== Dice Notation
 
 When using and discussing quantities of dice, often the term Dice Notation may
 be used. This refers to a system that helps define two things about the dice
@@ -48,7 +48,7 @@ Individual dice are often written without the $Y$ value as $d X$.
   )]
 ]
 
-== Rolled Dice
+=== Rolled Dice
 
 When a roll is made, the result in this book will be recorded in (parentheses)
 and each die's result will be separated, by, commas. These values are chosen at
@@ -78,7 +78,7 @@ random for this book, and will be written as $(1, 2, 3, ...)$.
   )
 ]
 
-== Addition and Subtraction
+=== Addition and Subtraction
 
 There will be cases where a roll would be given or have lost dice to roll, in
 which case we represent the change to a quantity of dice as $plus.minus X D$,
@@ -112,7 +112,7 @@ separate states and written as $Y_1$d$X_1$ + $Y_2$d$X_2$.
   )]
 ]
 
-== Exploding Dice
+=== Exploding Dice
 
 There are also cases where dice can "explode". This means that when the maximum
 possible value of a die is rolled, the value of that die is kept, and you can
@@ -145,7 +145,7 @@ exploded dice affected the outcome:
 ]
 
 
-== Evil Dice
+=== Evil Dice
 
 In opposition to exploding dice, Arrata will deal with *Evil dice*. Evil dice
 are denoted by adding an upside-down exclamation point, $¡$. Instead of giving
@@ -175,13 +175,13 @@ die to roll, in the same way exploding dice can compound.
     [$¡3 d 10$], [$= (bold(1) + bold(1) + bold(1)) = 3 - ¡3 d 10 = 3 - (bold(1) + 2 + bold(1)) = ...$],
   )]
 ]
-== Dice Pools
+=== Dice Pools
 
 Arrata functions on *Dice Pools*. This is a way of rolling dice that focuses not
 on the sum of the values of the dice rolled, but by comparing each value to a
 constant, $C$.
 
-=== Conditionals
+==== Conditionals
 
 For Dice Pools, conditionals are used along with a given constant $C$ to achieve
 a specific effect. For Arrata, this conditional is the $>$ comparison operator.
@@ -210,7 +210,7 @@ This counted sum can be used for several schemas, and the value of $C$ can be
 used to adjust the probabilities of certain outcomes. The larger $C$ is, the
 lower the counted sum is and vice versa.
 
-== The d6
+=== The d6
 
 Arrata uses the d6 as its only die to roll. It's a convenient die as they're
 extremely stackable, provide a decent window of probabilities, and are often

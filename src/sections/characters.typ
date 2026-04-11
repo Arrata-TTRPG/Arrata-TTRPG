@@ -1,11 +1,11 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Characters <characters>
+== Characters <characters>
 
 This chapter deals with what and who characters are; what are they composed of,
 how are they compiled, and how do we go about creating them?
 
-== Character Stats
+=== Character Stats
 
 As a component of a character, a character's stats define _what_ they are in the
 world; what they're capable of, and what they aren't. As an overview, these are
@@ -17,7 +17,9 @@ aspects of characters that don't deserve an entire section:
 - Age: How long has this character lived in this world.
 - Stock: The race or species this character hails from.
 
-== Core Stats
+#include "quirks.typ"
+
+=== Core Stats
 
 The core stats of a character are generalized parts of them: how strong, fast,
 and smart they are. These stats are used for general scenarios that involve
@@ -40,7 +42,7 @@ The second group is the _physical stats_:
 - *Forte*: Physical health, conditioning, and ability to resist malicious
   infection.
 
-=== Stat Resources
+==== Stat Resources
 
 Stat resources (SRs) are a measure of something that a character has or
 something they're enduring; things like a curse, wealth, or the support of the
@@ -56,7 +58,7 @@ free to ignore Stat Resources altogether.
 
 Stat resources are divided into being either _Finite_ or _Infinite_.
 
-==== Finite SRs
+===== Finite SRs
 
 Finite stat resources are things like wealth, the favor of the people, rations
 for a journey, and so on. These are things that are destroyed, lost, or
@@ -67,7 +69,7 @@ and modify rolls, but at a cost. When rolling a finite stat resource, _any failu
 the Quantity of the resource by 1. Once the finite resource's Quantity hits 0,
 the stat resource cannot be used until its Quantity is increased to 1 or above.
 
-==== Infinite SRs
+===== Infinite SRs
 
 Infinite stat resources are things like curses, reputation, and unusual
 abilities. Infinite stat resources are more complicated than Finite ones, and
@@ -75,7 +77,7 @@ aren't used up when you use them - much the opposite. Infinite stat resources
 are like core stats, they typically level up like traditional stats and are used
 to solve problems all on their own.
 
-=== Skills
+==== Skills
 
 Skills are the primary way your character will interact with the world. They're
 niche abilities and knowledge sets that your character has and is actively
@@ -114,27 +116,27 @@ of law it's governed by.
   greatswords, and axes. On a successful hit, roll the root to deal damage.
 ]
 
-==== Multiple Roots
+===== Multiple Roots
 
 Some skills come with more than one root. In this case, the _composite root_ is
 calculated to have the highest of the roots' Qualities, and the average of their
 Quantities.
 
-== Change
+=== Change
 
 *Change* is a core pillar of Arrata; we don't have _worthwhile_ stories if
 nothing changes. The primary way we make them worthwhile in Arrata is through
 the change of the characters - how they grow stronger, learn from their
 mistakes, and develop their quirks.
 
-=== Changing Stats
+==== Changing Stats
 
 Leveling is a mechanical process through which characters improve their
 abilities by performing actions and learning from their experiences. Most stats
 in the game are levelable, but it's important to consult your GM to confirm
 whether things like _Resource stats_ are eligible for leveling.
 
-==== Check 'Points'
+===== Check 'Points'
 
 Each time you make a check for a stat that can be leveled, you gain a 'check'
 (point). These points accumulate slowly, increasing by +1 for every check made.
@@ -147,7 +149,7 @@ designated area to record the current value, such as filling in empty circles or
 iterating a number field. Regardless of the method, it's crucial to keep track
 of your checks, as this is the _only_ way a stat can be leveled.
 
-=== Optional: Intuition
+==== Optional: Intuition
 
 When sufficient check points are available for a stat to level, you don't
 immediately level that stat. Instead, you must spend an intuition point of any
@@ -157,14 +159,14 @@ more numbers-inclined players to focus on roleplay while still being able to
 experience that precious dopamine hit. It also forces the players to spend their
 characters' Intuition more wisely.
 
-=== Changing Quirks
+==== Changing Quirks
 
 For the moment, an adequate solution to the "Quirk Change" problem has not been
 found. Assume Quirks are static and do not change - this will be changed in the
 future! People changing their Quirks is incredbily important, so if you come up
 with a homebrew solution, feel free to use and share it.
 
-== Building a Character
+=== Building a Character
 
 Now we have everything. We can use all of the pieces we've learned so far to
 finally build a character.
@@ -178,7 +180,7 @@ make a character should be made known by the GM. These resources are:
 - The Stocks available and their Quirks.
 - A setting to help write a backstory.
 
-=== Choosing Core Stats
+==== Choosing Core Stats
 
 Core Stats are the fundamental building blocks of any character, and choosing
 what they are should be the first or second step taken when making them.
@@ -186,7 +188,7 @@ what they are should be the first or second step taken when making them.
 There are two preferred methods of _distributing_ Core Stats; _Rolled_ and _Point Buy_.
 Which is used is up to the GM.
 
-==== Rolled
+===== Rolled
 
 When using rolled Core Stats, the GM will specify a roll in Dice Notation. You
 will make a roll for each Core Stat, and for each value rolled, that will be the
@@ -197,7 +199,7 @@ creation stage we will rewrite the character once or twice, so if a given roll
 does not meet the Quantity demands you have a Stat, you can swap it with the
 Quantity of another Stat.
 
-==== Point Buy
+===== Point Buy
 
 When using Point Bought Stats, the GM will give you a number as a Point-Buy
 pool. You will the split this number up and distribute it across each Stat as
@@ -225,12 +227,12 @@ would correlate with:
 For a typical game, it's recommended to start out in the 26-35 range, although
 starting lower can be better for first-timers and those who want a challenge.
 
-==== Buying Quality
+===== Buying Quality
 
 You may also spend *5 Quantity* to increase the Quality from Basic to Adept. You
 may also spend another 5 to go from Adept to Superb.
 
-=== Quirks
+==== Quirks
 
 Alongside Core Stats, choosing what Quirks a character has is extremely important.
 There are a few paths, but ultimately it is up to the Player to build their character
@@ -239,7 +241,7 @@ appropriately for the story and setting.
 There are no definite rules on how many Quirks a character should have, but a very
 good starting point is to have up to 5 Quirks, and at least 1 in each category.
 
-=== Major Skills
+==== Major Skills
 
 When making a character, the GM will give a value for the maximum number of _Major Skills_ a
 character may have.
@@ -249,13 +251,13 @@ that your character starts with these skills, and the Quality and Quantity is
 equal to their Root(s). Major Skills are important starting pillars for any
 character. They represent the past actions and experience of the character.
 
-=== New Skills
+==== New Skills
 
 When a character uses a new Skill that they don't have, they can choose to add
 it to their character sheet. All New Skills start at the Quality of their root(s),
 and with a Quantity of 1.
 
-=== Character Sheets
+==== Character Sheets
 
 The Character Sheet is an incredibly important part of playing any TTRPG - it's
 how you track your character's development and store all of their information.

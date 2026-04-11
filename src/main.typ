@@ -18,17 +18,29 @@
 
 #include "sections/introduction.typ"
 
+= Fundamentals <fundamentals>
+
 #include "sections/dice.typ"
 
 #include "sections/stats.typ"
 
-#include "sections/quirks.typ"
+= Characters <characters-part>
 
 #include "sections/characters.typ"
 
-#include "sections/skills.typ"
+= Gameplay <gameplay>
 
 #include "sections/combat.typ"
+
+#include "sections/skills.typ"
+
+#include "sections/arcana.typ"
+
+#include "sections/faith.typ"
+
+= Roleplay <roleplay-part>
+
+#include "sections/roleplay.typ"
 
 #include "sections/credits.typ"
 

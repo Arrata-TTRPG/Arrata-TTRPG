@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Skills
+== Skills
 
 This section details each skill, its roots, and its applications. A skill's
 roots determine its starting Quality and Quantity as described in the Characters

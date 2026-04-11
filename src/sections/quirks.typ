@@ -1,6 +1,6 @@
-﻿#import "../typst-boxes.typ": *
+#import "../typst-boxes.typ": *
 
-= Quirks <quirks>
+=== Quirks <quirks>
 
 Quirks are the backbone of any character. They help you as a player or GM define
 who exactly a character is, how they operate, and how you should be representing
@@ -12,7 +12,7 @@ particular characteristic of someone. They are not intended to be stereotypes or
 absolute rules of how a character works. Instead, they define the boundaries,
 biases, beliefs, and any aspect of the character that's relevant to the story.
 
-== Quirk Types
+==== Quirk Types
 
 Quirks are divided into three categories under the three classical rhetorical
 appeals: *Ethos*, *Pathos*, and *Logos*. Each category defines a set of Quirks
@@ -20,26 +20,26 @@ and what they usually do for a character. By building a character with at least
 one or two Quirks in each category, you're almost guaranteed to have at least a
 half-interesting person.
 
-=== Ethos
+===== Ethos
 
 Ethos expresses a character's Ethical, Moral, Societal, and Religious beliefs
 and context. Often they contain information about their past and how they're
 currently seen by the society they live in today. Ethos Quirks are usually what
 gets a person into trouble; what they use to stir the pot and cause conflict.
 
-=== Pathos
+===== Pathos
 
 Pathos deals with a character's emotional situation - how they act around other
 people and with what level of apathy or empathy they approach different tasks.
 Pathos Quirks tend to define things that may seem simple or stereotypical but
 can be used in much more nuanced ways when combined with other Quirks.
 
-=== Logos
+===== Logos
 
 Logos is how a character makes decisions; it's their inner voice that drives
 their actions step by step through whatever mess the other Quirks put them into.
 
-== Boons and Flaws
+==== Boons and Flaws
 
 Quirks can offer _Boons_ and _Flaws_ which allow for relevant rolls to be
 modified. When a check is made such that a Quirk's Boons seem relevant, then
@@ -75,7 +75,7 @@ Flaw, and therefore the roll would have a level of advantage and disadvantage.
   abundance, you may be seen as archaic.
 ]
 
-== Fighting Quirks
+==== Fighting Quirks
 
 Doing something that isn't what a character would normally do is incredibly
 interesting, but only if such an event is justifiable, otherwise Quirks would
@@ -94,7 +94,7 @@ the controller of your character and are ultimately the one who pilots the fate
 of your character. Part of that fate is deciding if a character _Accepts_ or _Rejects_ their
 Quirks.
 
-=== Acceptance and Rejection
+===== Acceptance and Rejection
 
 _Acceptance_ and _Rejection_ are measures of how much a character likes or
 dislikes a particular Quirk. Utilizing a Quirk in ways that demonstrate not only
@@ -114,7 +114,7 @@ Quirk's Acceptance, and acts that fight the Quirk gain equal levels of advantage
 to its Rejection.
 
 
-== Intuition
+==== Intuition
 
 Intuition is a point system that seeks to reward good character crafting and
 storytelling; when Quirks are roleplayed well, and when the conflict in the
@@ -137,11 +137,11 @@ freely.
 How often and in what volume Intuition is given out is dependent on the GM, but
 every player should be earning 1-2 Intuition points per 3-4 hours of play.
 
-=== Spending Intuition
+===== Spending Intuition
 
 TODO: Fill this out!
 
-== Argos
+==== Argos
 
 #slantedColorbox(
   title: "Argos - Etymology",
@@ -205,7 +205,7 @@ Not all Argos are noble. People fight and die for incredibly stupid reasons
 constantly. A hope with Arrata is to allow you to see those purposes and their
 reasons, even if you might disagree with them, and understand them better.
 
-=== Completing Argos
+===== Completing Argos
 
 If the Argos of a character is made true, then we say that the character has _Completed their Argos_.
 Their journey in this story is over, the control of the player over the
@@ -225,7 +225,7 @@ the character's player, you should choose an option best fitting the character
 and see them through to the end well: it's your last responsibility to that
 character.
 
-=== Breaking Argos
+===== Breaking Argos
 
 In opposition, there might come a time when an Argos is made void; a family
 seeking to be reunited is destroyed, a wish for peace is turned into an eternal
@@ -243,5 +243,5 @@ difficult. The GM should assign a few checks to see in what ways the character
 degenerates and what they lose. If it seems to be a total loss, _toss the character aside_.
 They're gone, and there's nothing you can do about it.
 
-#pagebreak()
+
 

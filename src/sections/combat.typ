@@ -1,14 +1,14 @@
 #import "../typst-boxes.typ": *
 #import "../talent-cards.typ": *
 
-= Combat <combat>
+== Combat <combat>
 
 There comes a time when fighting is inevitable; you just have to beat an
 opponent into submission. *Combat* is the first _subsystem_ for Arrata, and will
 detail how to deal with physical, violent conflict, how damage is dealt and
 mitigated, and what damage can do to a character.
 
-== Health
+=== Health
 
 Each character has a *Health* stat, a _Finite Stat Resource_ representing how
 much physical punishment they can endure before going down. A character's
@@ -21,7 +21,7 @@ maximum Health is equal to *2 $times$ Will Quantity $+$ 4 $times$ Forte Quantity
   their maximum Health becomes $(2 times 3) + (4 times 5) = 26$._
 ]
 
-== Evasion
+=== Evasion
 
 *Evasion* represents a character's ability to avoid, deflect, or weather incoming
 attacks. It is a _Skill_ with *Speed* and *Conscious* as its roots, and begins at
@@ -31,7 +31,7 @@ Evasion can be leveled like any other Skill.
 When a character is attacked, they roll their Evasion. The attacker must meet or
 exceed the defender's Evasion roll to land a hit.
 
-== Combat Start
+=== Combat Start
 
 When a violent encounter begins, all characters, players and NPCs alike, roll
 their *Speed* stat. The number of successes determines turn order, with the
@@ -47,7 +47,7 @@ among themselves to determine order.
   rolls 1, so the final order is: Mira, the bandit, Agnar, then the archer._
 ]
 
-== Taking a Turn
+=== Taking a Turn
 
 At the start of each of their turns, a character gains *Action Points (AP)*
 equal to a roll of their Speed, with a minimum of 1. AP carries over between
@@ -76,7 +76,7 @@ Some effects will state they last for some number of turns, meaning the effect b
 immediately, and finishes at the end of that character's turn at whatever number of turns
 are specified from now.
 
-== Talents
+=== Talents
 
 Talents are special abilities a character has learned, found, or been trained in.
 Each Talent has an AP cost and describes exactly what it does when used. On a
@@ -101,7 +101,7 @@ require a specific weapon, Skill, and/or piece of equipment to use, and these re
 
 
 
-== Weapons
+=== Weapons
 
 Every weapon has a base damage value, a damage type, and an associated Skill - it's important to look next to the skill used by a weapon, as it might specify a Skill requirement. If it does, you must meet both the minimum Quality and Quantity of that Skill requirement to use the weapon at all.
 
@@ -131,12 +131,12 @@ any special effects or restrictions.
   ]
 ]
 
-=== Handedness
+==== Handedness
 
 Some weapons require two-hands to use, and this will be notes on the weapon's description.
 If a weapon is two-handed, it cannot be used in conjunction with a shield or other weapon.
 
-== Armor
+=== Armor
 
 Armor reduces incoming damage before it is applied to Health. A character's
 equipped armor lists its damage reduction as either a flat value (e.g. _-1
@@ -164,7 +164,7 @@ listed directly on the armor's card.
   ]
 ]
 
-== Equipment
+=== Equipment
 
 You will not have access to all equipment at all times. As is with handedness, you can't
 use things like a Longbow and a Shield. Likewise, you can't claim during a defensive roll
@@ -177,7 +177,7 @@ Additionally, if you would like to change any weapons or armor you have equipped
 must spend a turn doing so. This means you cannot attack and then swap to a defensive
 pieces of armor in one turn (unless a talent specifies you may).
 
-== Attacking
+=== Attacking
 
 When a character uses a Talent to attack, the attacker rolls the Skill
 associated with their weapon and the defender rolls their _Evasion_. If the
@@ -187,14 +187,14 @@ attacker's successes fall short, the attack misses entirely.
 These individual rolls are referenced as *Attacks*. They are the fundamental
 unit of combat, with Talents modifying how they act.
 
-=== Multi-Attacks
+==== Multi-Attacks
 
 Some Talents perform more than one attack at once. When this happens, the
 attacker makes a single roll for all attacks, and the defender makes a single
 Evasion roll. The result applies to every attack in the group: if the roll
 hits, all attacks hit; if it misses, all attacks miss.
 
-=== Damage
+==== Damage
 
 When an attack lands, damage is calculated in three steps:
 
@@ -249,19 +249,19 @@ When an attack lands, damage is calculated in three steps:
   _Each attack deals_ #h(-9pt) $overbracket(floor.l 5, "Flat dmg.") #h(-3pt) times #h(-1pt) overbracket(0.45 ceil.r, "Dmg. mult") #h(-1.5pt) = overbracket(round(2.25) = 2, "Final damage")$ _damage for a total of *4 damage*. Remember, Mira used a Talent with *2* attacks that evaluate to the same value, so we can simply multiply_ $2 times 2$.
 ]
 
-== Distances
+=== Distances
 
 There are two primary distance categories in combat: *Melee* and *Ranged*. All characters start the battle in melee range, however some Talents allow a character to retreat back to the Ranged distance. At this distance, they cannot be targeted by melee attacks, but they also cannot use melee weapons or talents that require melee range, only Ranged Talents and Ranged weapons are usable.
 
-== Injury & Death
+=== Injury & Death
 
-=== Going Down
+==== Going Down
 
 When a character's Health reaches 0, they are *Downed*. A Downed character
 cannot act on their turn and falls prone. Any attack that hits a Downed character
 deals no further damage to Health, but instead inflicts a level of *Injury*.
 
-=== Injury
+==== Injury
 
 Injury represents lasting physical trauma: broken bones, deep wounds, and
 failing organs. Each level of Injury imposes a cumulative *$-1D$* penalty to
@@ -277,7 +277,7 @@ When a character's Injury level equals their *Forte Quantity*, they die.
   more Injuries will kill him._
 ]
 
-=== Recovery
+==== Recovery
 
 A Downed character can only be brought back into the fight by a Talent that
 explicitly revives them. Recovering from Injury requires treatment: a character
@@ -326,7 +326,7 @@ roll a $d 6$ to determine which stat is reduced by 1:
   He rolls $2 d 6 = (2, 2)$, reducing Power by 2 from A5 to A3._
 ]
 
-=== Injury Neglect
+==== Injury Neglect
 
 When injuries are left untreated, they worsen. For every 24 hours a character spends with untreated Injury,
 the current Injury level increases by 50%. 5 Injury increases to $round(5 * 1.5) = round(7.5) = 8$ Injury after 24 hours.

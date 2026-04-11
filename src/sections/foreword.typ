@@ -1,4 +1,4 @@
-﻿= Foreword <foreword>
+﻿== Foreword <foreword>
 
 Arrata is a project I've been working on for a few years now, and it's the
 successor to some other custom TTRPGs I've worked on with friends. There's a lot
@@ -29,6 +29,9 @@ In progress:
 - @quirks
 - @characters
 - @combat
+- @arcana
+- @faith
+- @roleplay
 
 #pagebreak()
 

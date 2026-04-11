@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Introduction <intro>
+== Introduction <intro>
 
 Arrata is a roleplaying system inspired by the work of more traditional
 roleplaying games with an emphasis on universality. The purpose of this system
@@ -21,7 +21,7 @@ fictional worlds is that they have no physical consequence - they cannot and
 will not hurt you, so you are free to try the things you want to, and to fail
 and succeed in amazing and interesting ways.
 
-== Other Worlds
+=== Other Worlds
 
 In using this system, a fictional world is constructed by a _Game Master_ (GM).
 This world is populated with characters and given things like factions, peoples,
@@ -47,7 +47,7 @@ their decisions determined by their Stats.
   change yourself._
 ]
 
-== Examples
+=== Examples
 
 This book contains many examples of different systems and situations, and for
 your convenience, each example will be enclosed in a box with a title, and will
@@ -65,7 +65,7 @@ look like this:
 
   $ Gamma(x) = integral_(0)^(infinity)t^(x-1)e^(-1) dif x $
 ]
-== Game Masters
+=== Game Masters
 
 Game Masters (GMs) are a critical part of any roleplaying system. Their job is
 to:
@@ -104,7 +104,7 @@ typically to discuss the issue with the other Players and GM. Mediation and
 communication are critical skills in roleplaying, but if you fail to solve your
 issues, it's usually best to leave the group altogether.
 
-== Players and their Characters
+=== Players and their Characters
 
 Players are the people in charge of player characters (PCs); their job is to be
 the "soul" driving their character. Players are charged with the following
@@ -122,7 +122,7 @@ interact with the story. Their PC is the primary responsibility of the Player,
 and thus if a conflict arises regarding your PC, it is the duty of the Player to
 back up their PC and fight on their behalf.
 
-== Non-Player Characters
+=== Non-Player Characters
 Non-Player Characters (NPCs) are characters in the story created by the GM or
 players that act without player input. Instead, the GM acts as the "soul" of
 every NPC and treats one of many of their characters.

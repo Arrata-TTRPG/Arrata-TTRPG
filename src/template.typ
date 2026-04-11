@@ -1,4 +1,4 @@
-﻿// hydra for advanced headers
+// hydra for advanced headers
 #import "@preview/hydra:0.6.1": hydra
 
 // This function gets your whole document as its `body` and formats
@@ -68,16 +68,26 @@
 
   set heading(numbering: "1.")
 
-  // Configure chapter headings.
+  // Configure headings: level 1 as full-page Part dividers, others inline.
   show heading: it => {
-    // Create the heading numbering.
-    let number = if it.numbering != none {
-      counter(heading).display(it.numbering)
-      h(7pt, weak: true)
-    }
+    if it.level == 1 {
+      pagebreak(weak: true)
+      align(center + horizon)[
+        #let roman = counter(heading).display("I")
+        #text(size: 28pt, weight: "bold")[#roman]
+        #v(0.3em)
+        #text(size: 20pt)[— #it.body —]
+      ]
+      pagebreak()
+    } else {
+      let number = if it.numbering != none {
+        counter(heading).display(it.numbering)
+        h(7pt, weak: true)
+      }
 
-    text(block([#number #it.body]))
-    v(0.5em)
+      text(block([#number #it.body]))
+      v(0.5em)
+    }
   }
 
   // Configure references

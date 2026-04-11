@@ -1,6 +1,6 @@
 ﻿#import "../typst-boxes.typ": *
 
-= Stats <stats>
+== Stats <stats>
 
 Now that we've established the basic rules of dice, we can translate those into
 the mechanics, different parts of Characters, and the components that make them
@@ -13,7 +13,7 @@ Stats are values that represent the capability of a single part of something or
 someone. They represent, in a statistical sense, the upper and lower bounds of
 what that part can do.
 
-== Quantity
+=== Quantity
 
 Quantity has already been defined; it is the number of dice rolled, specifically
 in $d 6$s. It specifies the $Y$ component of $Y d X$ or the value of the dice
@@ -28,7 +28,7 @@ values from 1 to 10. In rare cases, Quantities might be in excess of 20, but
 those are extremely rare and represent supernatural forces beyond conventional
 limits.
 
-== Quality
+=== Quality
 
 Quality is the $C$ constant used for a conditional roll for the dice pool. In
 Arrata, Quantity comes in 3 levels:
@@ -53,7 +53,7 @@ will be of Basic Quality, being Adept or Superb means that stat is beyond
 conventional ability; usually representing some sort of prodigal ability or
 technologically advanced method.
 
-== Composition
+=== Composition
 
 Stats in Arrata are not written in dice notation. Instead, they are composed in
 the format $Q Y$ where $Q$ is the letter of the Quality and $Y$ is the value of
@@ -78,7 +78,7 @@ example stats:
 
 Now that stats are defined, we can discuss what they're used for.
 
-== Checks
+=== Checks
 
 A critical part of roleplaying is meeting something that is challenging for the
 character to overcome. When this happens; when an action is contested, a
@@ -93,7 +93,7 @@ discover, learn, and change. This seemingly secondary role is where you will
 often find the most drama, and how you choose to pursue challenges and how you
 guide your character's changes are what this is all about.
 
-=== Success and Failure
+==== Success and Failure
 
 Because Arrata uses dice pools and comparisons, every die rolled is defined as
 either a *Success* or *Failure*.
@@ -124,7 +124,7 @@ Failures up, just the Successes.
   )
 ]
 
-=== Obstacle
+==== Obstacle
 
 In Arrata we refer to the _difficulty level_ as *Obstacle*. When making a check,
 this value will be provided by the GM, by a specific subsystem, or it may not be
@@ -159,14 +159,14 @@ entire check, it is written in the form _Stat_ vs _Ob_ $X$.
   )]
 ]
 
-=== Intent
+==== Intent
 
 When a check is called for, _Intent_ must be defined for all parties involved.
 It's the GM's job to sum up these Intents and put forward _outcomes_. For the
 GM, they should define at least two outcome: Success and Failure. If there is
 ambiguity, it is the GM's job to decide what is the most reasonable outcome for each result. For players, they should be clear about what they want to achieve with the check, and how they will react to the different outcomes.
 
-=== Extra Successes
+==== Extra Successes
 
 When you roll past the Obstacle of a check, it might be that your GM allows for
 additional boons depending on your intent in the task. If you're trying to
@@ -193,7 +193,7 @@ The Monkey's Paw).
   the check._]
 ]
 
-== Advantage
+=== Advantage
 
 Events may occur such that a side in a check has manipulated the circumstances
 in their favor. We refer to this favor as _Advantage_, and multiple instances of
@@ -227,7 +227,7 @@ as successes.
   ]
 ]
 
-== Disadvantage
+=== Disadvantage
 
 There are also situations where the inverse may be true; the terrain is
 unfavorable, your Quirks are opposed to the action, it opposes your Argos,
@@ -253,7 +253,7 @@ Disadvantage, the check will have +1 Ob imposed per level of extra disadvantage.
   ]
 ]
 
-== Help, All at Once
+=== Help, All at Once
 
 There comes a time when two or more characters will be working towards the same
 goal at the same time. It could be that someone is attempting to help others,
@@ -311,7 +311,7 @@ disadvantage instead. Also, note down a check for all characters rolling here.
   pieces._
 ]
 
-== Stacking Advantage and Disadvantage
+=== Stacking Advantage and Disadvantage
 
 As previously mentioned, multiple levels of advantage and disadvantage stack on top of each other.
 None of these cancel out in any way. A roll can have +4 Advantage and +2 Disadvantage, and
