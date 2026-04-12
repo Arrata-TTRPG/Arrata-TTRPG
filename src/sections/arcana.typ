@@ -40,10 +40,10 @@ Arcane Impeti are the foundations of spellcraft. Each provides a broad category
 of what can be done with Arcana. Impeti with additional modifiers are detailed
 in their own subsections.
 
-#align(center)[#block(breakable: false)[#table(
+#align(center)[#table(
   columns: (auto, 1fr, auto),
   inset: 5pt,
-  align: left,
+  align: (center + horizon, left, center + horizon),
   stroke: (x, y) => (
     left: if x > 0 { 0.5pt + white },
     top: if y > 0 { 0.5pt + white },
@@ -75,19 +75,19 @@ in their own subsections.
   [Unleash],
   [The most personal and powerful Impetus. Force your Will upon a
     target. Comes in two forms: Assault and Domination.],
-  [See below],
-)]]
+  [+2],
+)]
 
 
 === Arcane Manifestations
 
 Manifestations define how a spell appears and interacts with the world. Each
-Manifestation determines what the defender rolls against when targeted.
+Manifestation determines what the defender rolls (under *Defense*) against when targeted.
 
-#align(center)[#block(breakable: false)[#table(
+#align(center)[#table(
   columns: (auto, 1fr, auto, auto),
   inset: 5pt,
-  align: left,
+  align: (center + horizon, left, center + horizon, center + horizon),
   stroke: (x, y) => (
     left: if x > 0 { 0.5pt + white },
     top: if y > 0 { 0.5pt + white },
@@ -112,41 +112,29 @@ Manifestation determines what the defender rolls against when targeted.
     caster.],
   [Speed],
   [+3],
-)]]
+)]
 
 
 === Arcane Effects
 
 Arcane Effects are shared modifiers available across multiple Impeti:
 
-#align(center)[#block(breakable: false)[#table(
+#align(center)[#table(
   columns: (auto, 1fr, auto),
   inset: 5pt,
-  align: left,
+  align: (center + horizon, left, center + horizon),
   stroke: (x, y) => (
     left: if x > 0 { 0.5pt + white },
     top: if y > 0 { 0.5pt + white },
   ),
-  [*Effect*], [*Description*], [*Ob Per*],
-  [Duration], [How long the spell persists. Instant or up to 3 turns.], [+1],
-  [Duration], [Hours.], [+2],
-  [Duration], [Permanent.], [+4],
-  [Distance],
-  [Move or teleport something. Each +1 Ob adds Will's Quantity in
-    relative distance.],
-  [+1],
-
-  [Level],
-  [Overcome a task or impose an Obstacle: unlocking a lock, healing
-    Injuries, imposing a Will check with Unleash. Each level of the target or
-    Ob of the task.],
-  [+1#super[1]#h(0pt)/#sub[3]],
-
-  [Mass],
-  [The mass of an object affected. Each +1 Ob affects Will's
-    Quantity $times$ 10 lbs.],
-  [+1],
-)]]
+  [*Effect*], [*Description*], [*Ob Per Level*],
+  [Duration], [Per round.], [+1],
+  [Duration], [Per Hour.], [+2],
+  [Duration], [Per-manent.], [+4],
+  [Distance], [Per Will's Quantity of distance.], [+1],
+  [Imposed Ob level], [Per level of Ob you are imposing on the target.], [+1 $1/3$],
+  [Mass], [Per Will's Quantity $times$ 5 in Kilograms.], [+1],
+)]
 
 === Elements
 
@@ -154,10 +142,10 @@ The Arcane Elements define what a spell fundamentally _is_. To manifest an
 Element, a caster must *Understand* it through practice and developing their
 grasp of the Arcane Impeti.
 
-#align(center)[#block(breakable: false)[#table(
+#align(center)[#table(
   columns: (auto, 1fr),
   inset: 5pt,
-  align: left,
+  align: (center + horizon, left),
   stroke: (x, y) => (
     left: if x > 0 { 0.5pt + white },
     top: if y > 0 { 0.5pt + white },
@@ -185,11 +173,17 @@ grasp of the Arcane Impeti.
     structures.],
 
   [Water], [Liquids. Create water, control fluid flow, perform hydrolysis.],
-)]]
+)]
 
 Choosing Sorcery as a Major skill automatically grants the character two
 understood Elements, with more becoming available as it makes sense in the
 story.
+
+=== Impeti in Combat
+
+Each Impetus plays differently in combat, having its own set of unique rules and
+interactions. The following sections detail how each Impetus functions in combat,
+along with examples.
 
 ==== Destroy
 
@@ -201,19 +195,23 @@ $ round(("Will roll" + sum "flat modifiers") times product "% modifiers") = "Fin
 Sorcery Talents and spell effects may add flat or percentage modifiers, just as
 weapon Talents do.
 
+#v(-10pt)
+
 #align(center)[#block(breakable: false)[#table(
   columns: (auto, 1fr, auto),
   inset: 5pt,
-  align: left,
+  align: (center + horizon, left, center + horizon),
   stroke: (x, y) => (
     left: if x > 0 { 0.5pt + white },
     top: if y > 0 { 0.5pt + white },
   ),
   [*Modifier*], [*Description*], [*Ob*],
-  [Targets], [Each additional target beyond one.], [+1],
-  [All Targets], [All targets in range.], [+4],
-  [+% / Success Over], [Per +5% damage per success over.], [+1],
+  [Targets], [Per additional target.], [+1/per],
+  [All Targets], [All enemy targets in melee.], [+4],
+  [+% / Success Over], [+10% damage / success over.], [+1/per],
 )]]
+
+#v(-10pt)
 
 #align(center)[
   #talent(
@@ -226,26 +224,29 @@ weapon Talents do.
   )
 ]
 
+#v(-10pt)
+
 #slantedColorbox(title: "Destroy Example", width: auto, radius: 0pt, color: black)[
   #set text(size: 9pt)
-  _Vel, a Gifted sorcerer, uses the Destroy Talent (1 AP) to hurl a bolt of
-  fire at a bandit. He chooses: Destroy (+1 Ob), Projectile (+1 Ob), Fire
-  (+0 Ob). The spell's total Ob is *2*._
+  _Vel, a novice sorcerer is at *Ranged* distance, and uses the Destroy Talent
+  (1 AP) to hurl a bolt of fire at a bandit. He chooses: Destroy (+1 Ob),
+  Projectile (+1 Ob, required at Ranged), Fire (+0 Ob), and adds 1 level of +10%
+  damage / success over (+1 Ob). The spell's total Ob is *3*._
 
-  _He rolls Sorcery at $B 4$ and gets 4 successes. Since $4 >= 2$, the spell
-  is cast with *2 successes over* the Ob._
+  _He rolls Sorcery and gets 4 successes. Since $4 >= 3$, the spell
+  is cast with *1 success over* the Ob, adding 1 level of +10% damage._
 
   _His 4 successes become the Ob for the bandit's defense. The bandit rolls
   Evasion (determined by Projectile) and gets 3 successes — less than 4, so
   the spell lands._
 
-  _Vel rolls Will at $B 3$ and gets 2 successes for base damage:_
+  _Vel rolls Will at $B 6$ and gets 5 successes for base damage:_
   $
-    overbracket(2, "Will" #linebreak() "roll")
-    #h(-2pt) times #h(-2pt)
-    overbracket(1.0, "100%" #linebreak() "damage")
+    overbracket(5, "Will" #linebreak() "roll")
+    #h(-2pt) times #h(-3pt)
+    overbracket(1.1, "+10%" #linebreak() "damage")
     #h(-2pt) =
-    overbracket(round(2 times 1.0) = 2, "Final" #linebreak() "damage")
+    overbracket(round(5.5) = 6, "Final" #linebreak() "damage")
   $
 ]
 
