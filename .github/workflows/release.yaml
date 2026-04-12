@@ -71,6 +71,7 @@ jobs:
           mv src/cards/armor.pdf release/armor-${{ env.VERSION }}.pdf
           mv src/cards/talents.pdf release/talents-${{ env.VERSION }}.pdf
           mv src/cards/weapons.pdf release/weapons-${{ env.VERSION }}.pdf
+          mv src/cards/sorcery.pdf release/sorcery-${{ env.VERSION }}.pdf
           zip release/arrata-complete-${{ env.VERSION }}.zip release/*.pdf LICENSE.md
           mv LICENSE.md release/LICENSE.md
       - name: Upload release
