@@ -310,9 +310,29 @@ enchantments stack.
   [Permanent], [Lasts until dispelled.], [+4],
 )]]
 
+==== Influence
+
+Influence communicates ideas and imposes conditions on the battlefield. It is an
+exception to the standard casting resolution: Influence spells have *no
+defensive roll*. The caster rolls Sorcery against the spell's Ob only — the
+caster's total successes do _not_ become an Ob for the defender. If the cast
+succeeds, the effect is applied immediately.
+
+Influence spells use the *Animus* Element and impose conditional or triggered
+effects rather than direct impact. These conditions last for the spell's
+duration, determined by the Duration table. Triggered conditions (e.g. "each
+time the target is hit") expire after the duration in rounds, not on first
+trigger.
+
 === Create
 
+Create manifests an Element permanently into the world. The creation persists
+until destroyed or dispelled. Outside of combat, Create is used for crafting,
+building, and problem solving — the GM sets the Ob based on the complexity and
+mass of what is being created, using the Mass effect as a guide.
 
-
+In combat, Create conjures physical objects or entities: barriers, weapons, and
+summoned allies. Creations use the Duration table; permanent creations persist
+until destroyed or dispelled.
 
 #pagebreak()

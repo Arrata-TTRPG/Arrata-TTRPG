@@ -11,6 +11,19 @@
 #let body-inset = 6mm
 #let ann = rgb("#ff4444")
 
+/// Tries progressively smaller text sizes until content fits the container.
+#let fit-text(body, max-size: 12pt, min-size: 7pt, step: 0.5pt) = {
+  layout(size => context {
+    let n = int((max-size - min-size) / step) + 1
+    let sizes = range(n).map(i => max-size - i * step)
+    let fitting = sizes.filter(s => {
+      measure(block(width: size.width)[#text(size: s)[#body]]).height <= size.height
+    })
+    let final-size = if fitting.len() > 0 { fitting.first() } else { min-size }
+    text(size: final-size)[#body]
+  })
+}
+
 /// Returns a string of AP symbols: ◆ per point, V per 5 points.
 #let ap-symbols(ap) = {
   let result = ""
@@ -67,10 +80,16 @@
         ]
       } else {
         block(width: 100%, height: 100%, inset: 0pt)[
-          #if note != none {
-            place(top + left, dx: body-inset, dy: 4pt)[#note]
-          }
-          #align(center + horizon, block(inset: (x: body-inset, y: 6pt))[#main])
+          #grid(
+            columns: (1fr,),
+            rows: if note != none { (auto, 1fr) } else { (1fr,) },
+            ..if note != none {(
+              block(width: 100%, inset: (x: body-inset, top: 4pt))[
+                #align(left)[#note]
+              ],
+            )},
+            align(center + horizon, block(inset: (x: body-inset, y: 4pt))[#main]),
+          )
         ]
       },
     )
@@ -139,7 +158,7 @@
   card-shell(
     text(weight: "bold", size: 16pt)[#name],
     text(weight: "bold", size: 14pt)[#ap-content],
-    text(size: 12pt)[#effect],
+    fit-text(effect),
     note: note-content,
     height: height,
   )

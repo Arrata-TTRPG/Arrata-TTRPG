@@ -372,3 +372,121 @@
     "Cast an Enchant spell with the Earth Element on armor. +10% damage reduction/success over. -1 Speed while active.",
   ),
 )
+#pagebreak()
+
+// ── Page 4: Influence Talents ───────────────────────────────────────────────
+
+#grid(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1fr, 1fr, 1fr, 1fr),
+
+  talent(
+    "Mark",
+    4,
+    "Sorcery",
+    "Sorcery",
+    "Cast an Influence spell with the Animus Element. Target takes +1 disadvantage for each time they are hit. Lasts for the spell's duration.",
+  ),
+  talent(
+    "Expose",
+    2,
+    "Sorcery",
+    "Sorcery",
+    "Cast an Influence spell with the Animus Element. Reveal target's current HP and AP. +1 additional stat revealed/success over: 1 for weapon stats, 2 for armor bonuses, 3 for available talents.",
+  ),
+  talent(
+    "Phantom",
+    4,
+    "Sorcery",
+    "Sorcery",
+    "Cast an Influence spell with the Animus Element. Create an illusory ally. Enemies must spend AP to interact with it. Destroyed on hit. Lasts for the spell's duration.",
+  ),
+  talent(
+    "Unsettle",
+    3,
+    "Sorcery",
+    "Sorcery",
+    "Cast an Influence spell with the Animus Element. The next attack against the target gains +1 advantage/success over.",
+  ),
+
+  talent(
+    "Link",
+    6,
+    "Sorcery",
+    "Sorcery",
+    "Cast an Influence spell with the Animus Element. Choose two allies. When one lands an attack, the other immediately attacks for free. Lasts for the spell's duration. Can be permanent with concentration.",
+  ),
+  talent(
+    "Foresight",
+    4,
+    "Sorcery",
+    "Sorcery",
+    "Cast an Influence spell with the Animus Element on an ally. The next attack against them has +1 disadvantage/success over.",
+  ),
+)
+#pagebreak()
+
+// ── Page 5: Create Talents ──────────────────────────────────────────────────
+
+#grid(
+  columns: (1fr, 1fr, 1fr, 1fr),
+  rows: (1fr, 1fr, 1fr, 1fr),
+
+  talent(
+    "Barrier",
+    3,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell. Conjure a barrier that absorbs damage for an ally. Absorbs Will roll + 5 flat damage/success over. Destroyed when absorption is depleted.",
+  ),
+  talent(
+    "Conjure Weapon",
+    3,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell. Conjure a weapon with base damage equal to your Will Quantity and +5%/success over per-success bonus. Lasts for the spell's duration.",
+  ),
+  talent(
+    "Summon",
+    5,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell. Summon an elemental ally with HP equal to your Will roll, 1 AP, and the Destroy talent at 50% of your Will. Lasts for the spell's duration.",
+  ),
+  talent(
+    "Greater Summon",
+    6,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell. Summon an elemental ally with HP equal to 2x your Will roll, 2 AP, and the Destroy talent at 100% of your Will. Lasts for the spell's duration.",
+  ),
+
+  talent(
+    "Forge",
+    4,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell with the Earth Element. Conjure a piece of armor with +5% damage reduction/success over. Lasts for the spell's duration.",
+  ),
+  talent(
+    "Ice Wall",
+    3,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell with the Ice Element. Conjure a barrier that blocks all attacks from Ranged distance. Absorbs 10 flat damage/success over. Destroyed when absorption is depleted.",
+  ),
+  talent(
+    "Living Flame",
+    4,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell with the Fire Element. Summon a fire elemental with HP equal to your Will roll and 1 AP. Its attacks light targets aflame for 30% damage per turn for 2 turns.",
+  ),
+  talent(
+    "Stone Sentinel",
+    5,
+    "Sorcery",
+    "Sorcery",
+    "Cast a Create spell with the Earth Element. Summon an earth elemental with HP equal to 2x your Will roll, 2 AP, and 25% damage reduction. Lasts for the spell's duration.",
+  ),
+)
