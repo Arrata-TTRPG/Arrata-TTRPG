@@ -1,6 +1,6 @@
 #import "../talent-cards.typ": *
 
-#set page(paper: "a4", flipped: true, margin: 0pt)
+#set page(paper: "us-letter", flipped: true, margin: 0pt)
 
 // Notes for editors:
 // - All weapons inherit default per-success bonus "+10%/Success over".
