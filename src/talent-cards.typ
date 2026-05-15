@@ -7,6 +7,19 @@
 /// Grip constant for weapon tags.
 #let two-handed = "Two-handed"
 
+/// Format an Advantage/Disadvantage modifier from a signed integer.
+///
+/// - Positive `n` renders as `+N Advantage`.
+/// - Negative `n` renders as `+N Disadvantage`.
+/// - Zero is rejected (no meaningful modifier).
+///
+/// - n (int): Signed advantage level. Negative values flip to Disadvantage.
+#let advantage(n) = {
+  assert(n != 0, message: "advantage(0) has no meaning")
+  let label = if n > 0 { "Advantage" } else { "Disadvantage" }
+  [+#calc.abs(n) #label]
+}
+
 // ── Shared internals ────────────────────────────────────────────────────────
 #let body-inset = 6mm
 #let ann = rgb("#ff4444")

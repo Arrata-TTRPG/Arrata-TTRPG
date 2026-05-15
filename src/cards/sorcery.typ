@@ -2,7 +2,12 @@
 
 #set page(paper: "a4", flipped: true, margin: 0pt)
 
-// ── Page 1: Destroy Talents ─────────────────────────────────────────────────
+// Notes for editors:
+// - Use `advantage(n)` for Advantage/Disadvantage modifiers.
+// - "Success over" = successes over the spell's Obstacle, not the defender's roll.
+// - Capitalize game terms (Advantage, Success, AP, Evasion, Will, etc.).
+
+// Page 1: Destroy Talents
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
@@ -43,14 +48,14 @@
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Ice Element at 50% damage. -1 AP/success over.",
+    "Cast a Destroy spell with the Ice Element at 50% damage. -1 AP/Success over.",
   ),
   talent(
     "Thunderstrike",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Lightning Element at 100% damage. -1 Evasion/success over until target's next turn.",
+    "Cast a Destroy spell with the Lightning Element at 100% damage. -1 Evasion/Success over until target's next turn.",
   ),
   talent(
     "Gale",
@@ -65,14 +70,14 @@
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Water Element at 100% damage. -1 Speed/success over for 1 turn.",
+    "Cast a Destroy spell with the Water Element at 100% damage. -1 Speed/Success over for 1 turn.",
   ),
   talent(
     "Shockwave",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Sound Element at 75% damage. -1 Perception/success over for 2 turns.",
+    "Cast a Destroy spell with the Sound Element at 75% damage. -1 Perception/Success over for 2 turns.",
   ),
   talent(
     "Wither",
@@ -94,7 +99,7 @@
     4,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Lightning Element at 50% damage. +1 additional target/success over.",
+    "Cast a Destroy spell with the Lightning Element at 50% damage. +1 additional target/Success over.",
   ),
   talent(
     "Quake",
@@ -108,19 +113,19 @@
     5,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Earth Element at 200% damage. Skip your next turn; do not collect AP.",
+    "Cast a Destroy spell with the Earth Element at 200% damage. Skip your next turn and do not collect AP.",
   ),
   talent(
     "Flash",
     1,
     "Sorcery",
     "Sorcery",
-    "Cast a Destroy spell with the Light Element at 0% damage. -1 advantage/success over on target's next roll.",
+    [Cast a Destroy spell with the Light Element at 0% damage. #advantage(-1)/Success over on target's next roll.],
   ),
 )
 #pagebreak()
 
-// ── Page 2: Unleash Talents ─────────────────────────────────────────────────
+// Page 2: Unleash & Control Talents
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
@@ -131,24 +136,24 @@
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Unleash Assault spell. +1 Injury/success over (Will vs Will). If the caster loses, the caster takes +1 Injury/success over instead.",
+    "Cast an Unleash Assault spell. +1 Injury/Success over (Will vs Will). If the caster loses, the caster takes +1 Injury/Success over instead.",
   ),
   talent(
     "Dominate",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Unleash Domination spell. Target becomes an ally for 1 turn/success over (Will vs Will). If the caster loses, the caster is dominated instead.",
+    "Cast an Unleash Domination spell. Target becomes an ally for 1 turn/Success over (Will vs Will). If the caster loses, the caster is dominated instead.",
   ),
   talent(
     "Enslave",
     5,
     "Sorcery",
     "Sorcery",
-    "Cast an Unleash Domination spell with concentration. Target makes a Will check at the start of their turn vs the caster's successes to break free. +1 Disadvantage/success over (Will vs Will) on breaking free checks. If the caster loses, the caster is enslaved instead.",
+    [Cast an Unleash Domination spell with concentration. Target makes a Will check at the start of their turn vs the caster's successes to break free, with #advantage(-1)/Success over (Will vs Will). If the caster loses, the caster is enslaved instead.],
   ),
 
-  // ── Control: Utility ──
+  // Control: Utility
   talent(
     "Heal",
     2,
@@ -161,7 +166,7 @@
     1,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell. Remove 1 turn of a debuff from a target. +1 turn removed/success over.",
+    "Cast a Control spell. Remove 1 turn of a debuff from a target. +1 turn removed/Success over.",
   ),
   talent(
     "Cleanse",
@@ -178,34 +183,34 @@
     "Cast a Control spell. Grant a target 10% damage reduction for 3 turns.",
   ),
 
-  // ── Control: Debuffs ──
+  // Control: Debuffs
   talent(
     "Frostbite",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell with the Ice Element at 0% damage. -2 AP/success over.",
+    "Cast a Control spell with the Ice Element at 0% damage. -2 AP/Success over.",
   ),
   talent(
     "Static",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell with the Lightning Element at 0% damage. -2 Evasion/success over until target's next turn.",
+    "Cast a Control spell with the Lightning Element at 0% damage. -2 Evasion/Success over until target's next turn.",
   ),
   talent(
     "Shackle",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell with the Force Element at 0% damage. -2 Speed/success over for 1 turn.",
+    "Cast a Control spell with the Force Element at 0% damage. -2 Speed/Success over for 1 turn.",
   ),
   talent(
     "Deafen",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell with the Sound Element at 0% damage. -2 Perception/success over for 2 turns.",
+    "Cast a Control spell with the Sound Element at 0% damage. -2 Perception/Success over for 2 turns.",
   ),
 
   talent(
@@ -213,75 +218,75 @@
     1,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell with the Light Element at 0% damage. -2 advantage/success over on target's next roll.",
+    [Cast a Control spell with the Light Element at 0% damage. #advantage(-2)/Success over on target's next roll.],
   ),
 
-  // ── Control: Buffs ──
+  // Control: Buffs
   talent(
     "Haste",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell on an ally. +1 Speed/success over for 2 turns.",
+    "Cast a Control spell on an ally. +1 Speed/Success over for 2 turns.",
   ),
   talent(
     "Aegis",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell on an ally. +1 Evasion/success over for 2 turns.",
+    "Cast a Control spell on an ally. +1 Evasion/Success over for 2 turns.",
   ),
   talent(
     "Empower",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell on an ally. +1 advantage/success over for 2 turns.",
+    [Cast a Control spell on an ally. #advantage(1)/Success over for 2 turns.],
   ),
   talent(
     "Invigorate",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Control spell on an ally. +1 AP/success over.",
+    "Cast a Control spell on an ally. +1 AP/Success over.",
   ),
 )
 #pagebreak()
 
-// ── Page 3: Enchant Talents ─────────────────────────────────────────────────
+// Page 3: Enchant Talents
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
   rows: (1fr, 1fr, 1fr, 1fr),
 
-  // ── Weapon Enchants ──
+  // Weapon Enchants
   talent(
     "Sharpen",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on a weapon. +1 flat damage/success over.",
+    "Cast an Enchant spell on a weapon. +1 flat damage/Success over.",
   ),
   talent(
     "Imbue",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on a weapon. +5% damage/success over.",
+    "Cast an Enchant spell on a weapon. +5% damage/Success over.",
   ),
   talent(
     "Ignite Blade",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Fire Element on a weapon. Hits light targets aflame, dealing 10% of damage each turn for 1 turn/success over.",
+    "Cast an Enchant spell with the Fire Element on a weapon. Hits light targets aflame, dealing 10% of damage each turn for 1 turn/Success over.",
   ),
   talent(
     "Frost Edge",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Ice Element on a weapon. Hits apply -1 AP/success over to the target.",
+    "Cast an Enchant spell with the Ice Element on a weapon. Hits apply -1 AP/Success over to the target.",
   ),
 
   talent(
@@ -289,58 +294,58 @@
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Lightning Element on a weapon. Hits apply -1 disadvantage/success over on the target's next attack.",
+    [Cast an Enchant spell with the Lightning Element on a weapon. Hits apply #advantage(-1)/Success over on the target's next attack.],
   ),
   talent(
     "Vorpal",
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Force Element on a weapon. +10%/success over to the weapon's per-success bonus.",
+    "Cast an Enchant spell with the Force Element on a weapon. +10%/Success over to the weapon's per-success bonus.",
   ),
   talent(
     "Attune Weapon",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on a weapon. +1 [chosen stat]/success over to the wielder while equipped.",
+    "Cast an Enchant spell on a weapon. +1 [chosen stat]/Success over to the wielder while equipped.",
   ),
   talent(
     "Siphon",
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Life Element on a weapon. Hits restore 1 HP/success over to the wielder.",
+    "Cast an Enchant spell with the Life Element on a weapon. Hits restore 1 HP/Success over to the wielder.",
   ),
 
-  // ── Armor Enchants ──
+  // Armor Enchants
   talent(
-    "Fortify",
+    "Harden",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on armor. +5% damage reduction/success over.",
+    "Cast an Enchant spell on armor. +5% damage reduction/Success over.",
   ),
   talent(
     "Reinforce",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on armor. +1 flat damage reduction/success over.",
+    "Cast an Enchant spell on armor. +1 flat damage reduction/Success over.",
   ),
   talent(
     "Insulate",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with a chosen Element on armor. Negate 10% damage/success over from that Element.",
+    "Cast an Enchant spell with a chosen Element on armor. Negate 10% damage/Success over from that Element.",
   ),
   talent(
     "Attune Armor",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on armor. +1 [chosen stat]/success over to the wearer while equipped.",
+    "Cast an Enchant spell on armor. +1 [chosen stat]/Success over to the wearer while equipped.",
   ),
 
   talent(
@@ -348,33 +353,33 @@
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Animus Element on armor. +1 Will/success over when defending against spells.",
+    "Cast an Enchant spell with the Animus Element on armor. +1 Will/Success over when defending against spells.",
   ),
   talent(
     "Featherlight",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Force Element on armor. Remove 1 armor penalty/success over (Evasion or Speed reductions).",
+    "Cast an Enchant spell with the Force Element on armor. Remove 1 armor penalty/Success over (Evasion or Speed reduction).",
   ),
   talent(
     "Thornmail",
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell on armor. Attackers take 1 flat damage/success over when hitting the wearer in melee.",
+    "Cast an Enchant spell on armor. Attackers take 1 flat damage/Success over when hitting the wearer in melee.",
   ),
   talent(
     "Bulwark",
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Enchant spell with the Earth Element on armor. +10% damage reduction/success over. -1 Speed while active.",
+    "Cast an Enchant spell with the Earth Element on armor. +10% damage reduction/Success over. -1 Speed while active.",
   ),
 )
 #pagebreak()
 
-// ── Page 4: Influence Talents ───────────────────────────────────────────────
+// Page 4: Influence Talents
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
@@ -385,28 +390,28 @@
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Influence spell with the Animus Element. Target takes +1 disadvantage for each time they are hit. Lasts for the spell's duration.",
+    [Cast an Influence spell with the Animus Element. Target takes #advantage(-1) for each time they are hit. Lasts for the spell's duration.],
   ),
   talent(
     "Expose",
     2,
     "Sorcery",
     "Sorcery",
-    "Cast an Influence spell with the Animus Element. Reveal target's current HP and AP. +1 additional stat revealed/success over: 1 for weapon stats, 2 for armor bonuses, 3 for available talents.",
+    "Cast an Influence spell with the Animus Element. Reveal target's current HP and AP. +1 additional stat revealed/Success over: 1 for weapon stats, 2 for armor bonuses, 3 for available Talents.",
   ),
   talent(
     "Phantom",
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Influence spell with the Animus Element. Create an illusory ally. Enemies must spend AP to interact with it. Destroyed on hit. Lasts for the spell's duration.",
+    "Cast an Influence spell with the Animus Element. Conjure an illusory ally with 1 HP, acting on your initiative. Each turn the Phantom may attack one enemy: roll Will vs target's Evasion, dealing half your Will roll on hit. Destroyed on any successful hit against it. Lasts for the spell's duration.",
   ),
   talent(
     "Unsettle",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast an Influence spell with the Animus Element. The next attack against the target gains +1 advantage/success over.",
+    [Cast an Influence spell with the Animus Element. The next attack against the target gains #advantage(1)/Success over.],
   ),
 
   talent(
@@ -421,12 +426,12 @@
     4,
     "Sorcery",
     "Sorcery",
-    "Cast an Influence spell with the Animus Element on an ally. The next attack against them has +1 disadvantage/success over.",
+    [Cast an Influence spell with the Animus Element on an ally. The next attack against them has #advantage(-1)/Success over.],
   ),
 )
 #pagebreak()
 
-// ── Page 5: Create Talents ──────────────────────────────────────────────────
+// Page 5: Create Talents
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
@@ -437,14 +442,14 @@
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Create spell. Conjure a barrier that absorbs damage for an ally. Absorbs Will roll + 5 flat damage/success over. Destroyed when absorption is depleted.",
+    "Cast a Create spell. Conjure a barrier that absorbs damage for an ally. Absorbs Will roll + 5 flat damage/Success over. Destroyed when absorption is depleted.",
   ),
   talent(
     "Conjure Weapon",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Create spell. Conjure a weapon with base damage equal to your Will Quantity and +5%/success over per-success bonus. Lasts for the spell's duration.",
+    "Cast a Create spell. Conjure a weapon with base damage equal to your Will Quantity and a per-success bonus of +5% per spell Success over. Lasts for the spell's duration.",
   ),
   talent(
     "Summon",
@@ -466,14 +471,14 @@
     4,
     "Sorcery",
     "Sorcery",
-    "Cast a Create spell with the Earth Element. Conjure a piece of armor with +5% damage reduction/success over. Lasts for the spell's duration.",
+    "Cast a Create spell with the Earth Element. Conjure a piece of armor with +5% damage reduction/Success over. Lasts for the spell's duration.",
   ),
   talent(
     "Ice Wall",
     3,
     "Sorcery",
     "Sorcery",
-    "Cast a Create spell with the Ice Element. Conjure a barrier that blocks all attacks from Ranged distance. Absorbs 10 flat damage/success over. Destroyed when absorption is depleted.",
+    "Cast a Create spell with the Ice Element. Conjure a barrier that blocks all attacks from Ranged distance. Absorbs 10 flat damage/Success over. Destroyed when absorption is depleted.",
   ),
   talent(
     "Living Flame",

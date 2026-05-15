@@ -2,15 +2,19 @@
 
 #set page(paper: "a4", flipped: true, margin: 0pt)
 
-// ── Page 1: Melee Weapons ───────────────────────────────────────────────────
+// Notes for editors:
+// - All weapons inherit default per-success bonus "+10%/Success over".
+// - Armor-penetration effects have been intentionally removed; per-weapon
+//   armor-bypass is no longer part of the system.
+// - Use `advantage(n)` helper for any Advantage/Disadvantage text.
+
+// Page 1: Melee Weapons
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
   rows: (1fr, 1fr, 1fr, 1fr),
 
-  weapon("Dagger", melee, "Blade", "B1", "1", "Physical", bonus: "+15%/Success over", effects: (
-    "Ignores 15% armor damage reduction.",
-  )),
+  weapon("Dagger", melee, "Blade", "B1", "1", "Physical", bonus: "+15%/Success over"),
   weapon("Shortsword", melee, "Blade", "B2", "2", "Physical", stat-mod: "Speed"),
   weapon(
     "Longsword",
@@ -35,9 +39,7 @@
     tags: (two-handed,),
     notes: ("May be used one-handed at -1 damage.",),
   ),
-  weapon("Mace", melee, "Blunt", "B2", "3", "Physical", stat-mod: "Power", bonus: "+5%/Success over", effects: (
-    "Ignores 10% armor damage reduction.",
-  )),
+  weapon("Mace", melee, "Blunt", "B2", "3", "Physical", stat-mod: "Power", bonus: "+5%/Success over"),
   weapon("Spear", melee, "Polearms", "B2", "3", "Physical", stat-mod: "Speed", bonus: "+10%/Success over"),
   weapon(
     "Halberd",
@@ -49,7 +51,6 @@
     stat-mod: "Power",
     tags: (two-handed,),
     bonus: "+10%/Success over",
-    effects: ("Ignores 20% damage armor reduction.",),
   ),
 
   weapon(
@@ -62,7 +63,7 @@
     stat-mod: "Power",
     tags: (two-handed,),
     bonus: "+10%/Success over",
-    effects: ("-1 Evasion", "+1 Advantage vs unarmored opponents."),
+    effects: ("-1 Evasion", [#advantage(1) vs unarmored opponents.]),
   ),
   weapon(
     "War Hammer",
@@ -74,19 +75,16 @@
     stat-mod: "Power",
     tags: (two-handed,),
     bonus: "+5%/Success over",
-    effects: ("-1 Evasion", "Ignores 25% armor damage reduction."),
+    effects: ("-1 Evasion",),
   ),
   weapon("Whip", melee, "Blunt", "B2", "1", "Physical", stat-mod: "Speed", effects: (
     "Successful hits reduce target's AP by 1.",
   )),
   weapon("Chain Flail", melee, "Blunt", "B3", "2", "Physical", stat-mod: "Power", bonus: "+15%/Success over", effects: (
     "-1 Evasion",
-    "Ignores 10% armor damage reduction.",
   )),
 
-  weapon("Morningstar", melee, "Blunt", "B3", "4", "Physical", stat-mod: "Power", effects: (
-    "Ignores 15% armor damage reduction.",
-  )),
+  weapon("Morningstar", melee, "Blunt", "B3", "4", "Physical", stat-mod: "Power"),
   weapon("Scimitar", melee, "Blade", "B3", "2", "Physical", stat-mod: "Speed", effects: (
     "+5% damage per consecutive successful hit. Resets on miss.",
   )),
@@ -112,12 +110,12 @@
     stat-mod: "Power",
     tags: (two-handed,),
     bonus: "+10%/Success over",
-    effects: ("-2 Evasion", "-1 Speed", "+1 Advantage vs unarmed opponents."),
+    effects: ("-2 Evasion", "-1 Speed", [#advantage(1) vs unarmored opponents.]),
   ),
 )
 #pagebreak()
 
-// ── Page 2: Ranged & Exotic Weapons ─────────────────────────────────────────
+// Page 2: Ranged & Exotic Weapons
 
 #grid(
   columns: (1fr, 1fr, 1fr, 1fr),
@@ -131,7 +129,7 @@
     "Archery",
     "B3",
     "3",
-    "Perception",
+    "Physical",
     stat-mod: "Perception",
     tags: (two-handed,),
     effects: ("-1 Evasion",),
@@ -152,9 +150,7 @@
     bonus: "+15%/Success over",
     effects: ("Single use. Recoverable.",),
   ),
-  weapon("Hand Cannon", ranged, "Firearms", "B3", "3", "Physical", stat-mod: "Perception", effects: (
-    "Ignores 15% armor damage reduction.",
-  )),
+  weapon("Hand Cannon", ranged, "Firearms", "B3", "3", "Physical", stat-mod: "Perception"),
   weapon(
     "Arbalest",
     ranged,
@@ -163,7 +159,7 @@
     "6",
     "Physical",
     tags: (two-handed,),
-    effects: ("-2 Evasion", "Ignores 20% armor damage reduction."),
+    effects: ("-2 Evasion",),
   ),
 
   weapon(
@@ -204,9 +200,7 @@
     tags: (two-handed,),
     effects: ("Target's next Evasion suffers -1D.",),
   ),
-  weapon("Crystal Focus", melee, "Blade", "A4", "3", "Arcane", stat-mod: "Conscious", effects: (
-    "Ignores all armor damage reductions.",
-  )),
+  weapon("Crystal Focus", melee, "Blade", "A4", "3", "Arcane", stat-mod: "Conscious"),
   weapon(
     "Runic Glaive",
     melee,
